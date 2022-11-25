@@ -10,7 +10,7 @@ const Header = () => {
             <Logo/>
             <Input/>
             <Button className='' value='Каталог'/>
-            <Button/>
+            <Button className='' value='Акции' />
             <Button/>
             <Button className='' value='Доставка'/>
             <Button/>
