@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Input = (value) => {
+const Input = ({value,className}) => {
     return (
-        <input>
+        <input className={className}>
             {value}
         </input>
     );
