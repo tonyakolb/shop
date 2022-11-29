@@ -34,7 +34,7 @@
 .search-icon{
     position: absolute;
     z-index: 1;
-    top: 4%;
+    padding-top: 5px;
     padding-left: 10px;
     width: 18px;
     height: 18px;
