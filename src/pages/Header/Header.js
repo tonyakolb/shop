@@ -6,7 +6,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header>
+        <header className='header'>
             <Logo/>
             <Input/>
             <a className='' >Каталог</a>
@@ -14,8 +14,9 @@ const Header = () => {
             <a>Доставка</a>
             <a className=''>Контакты</a>
             <a>Иконка</a>
-            <p>+375</p>
-            <p>Время работы</p>
+            <p>+375 (44) 584 20 68</p>
+            <p>Вт-Вс: 10:00 - 20:00</p>
+            <p>Пн: выходной</p>
         </header>
     );
 };
