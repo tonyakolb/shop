@@ -3,7 +3,7 @@
     background-color: #3E3E44;
     height: 60px;
     color: #FFFFFF;
-    padding: 0px 35px;
+    padding: 0 35px;
     justify-content: space-between;
     align-items: center;
 }
@@ -39,10 +39,31 @@
     width: 18px;
     height: 18px;
 }
+
 .header-schedule {
     display: flex;
     flex-direction: column;
     height: 42px;
     justify-content: space-between;
-    text-align: center
+    text-align: center;
+}
+
+.basket{
+    position:relative;
+}
+
+.basket-counter{
+    background-color: #FFFFFF;
+    width:22px;
+    height: 22px;
+    border-radius: 10px;
+    position:absolute;
+    top: -10px;
+    right:-10px;
+}
+
+.counter{
+    color: black;
+    font-size: 14px;
+    padding-left: 7px;
 }
