@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    background-color: #3E3E44;
+    height: 60px;
+    color: #FFFFFF;
+    padding: 0px 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .header a {
+        color: #FFFFFF;
+    }
+
+.header-phone{
+    font-weight: 700;
+}
+
+.header-search{
+    width: 245px;
+    height: 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    float: left;
+    padding-left: 40px;
+}
+
+.header-schedule {
+    display: flex;
+    flex-direction: column;
+    height: 42px;
+    justify-content: space-between;
+    text-align: center
+}
