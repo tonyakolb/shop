@@ -24,12 +24,21 @@
     border: none;
     float: left;
     padding-left: 40px;
+    position: relative;
 }
 
 ::placeholder {
     color: #292D51;
 }
 
+.search-icon{
+    position: absolute;
+    z-index: 1;
+    top: 4%;
+    padding-left: 10px;
+    width: 18px;
+    height: 18px;
+}
 .header-schedule {
     display: flex;
     flex-direction: column;
