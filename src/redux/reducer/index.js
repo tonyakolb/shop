@@ -13,9 +13,7 @@ const persistConfig = {
 };
 
 const reducers = combineReducers({
-
     search: searchReducer,
-
 });
 
 const persistedReducers = persistReducer(persistConfig, reducers);
