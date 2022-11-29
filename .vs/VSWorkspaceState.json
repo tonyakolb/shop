@@ -2,9 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Components",
-    "\\src\\Components\\Button",
-    "\\src\\Components\\Input"
+    "\\src\\assets",
+    "\\src\\components",
+    "\\src\\components\\Button",
+    "\\src\\components\\Header",
+    "\\src\\components\\Header\\Search",
+    "\\src\\components\\Input",
+    "\\src\\pages",
+    "\\src\\pages\\Header"
   ],
+  "SelectedNode": "\\webpack.config.js",
   "PreviewInSolutionExplorer": false
 }
