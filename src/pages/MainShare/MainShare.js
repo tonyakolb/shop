@@ -1,4 +1,6 @@
 import React from "react";
+import Main from "../../assets/images/main-image.jpg";
+
 
 
 const MainShare = () => {

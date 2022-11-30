@@ -3,14 +3,15 @@
     "",
     "\\src",
     "\\src\\assets",
-    "\\src\\assets\\images",
+    "\\src\\assets\\css",
     "\\src\\components",
     "\\src\\components\\Header",
     "\\src\\components\\Header\\Search",
     "\\src\\components\\Input",
     "\\src\\pages",
+    "\\src\\pages\\Advantages",
     "\\src\\pages\\Header"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\pages\\Header\\Header.js",
   "PreviewInSolutionExplorer": false
 }

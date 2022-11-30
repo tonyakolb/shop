@@ -1,0 +1,26 @@
+.advantages {
+    display: flex;
+    background-color: #3E3E44;
+    height: 318px;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.advantages img{
+    width: 150px;
+    height: 192px;
+    margin: 20px 0;
+}
+
+.advantages p{
+    height: 66px;
+    line-height: 21.8px;
+    padding: 0 5px;
+}
+
+.advantage {
+    width: 255px;
+    margin: 0 40px;
+}
