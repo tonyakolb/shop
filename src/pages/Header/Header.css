@@ -1,69 +1,69 @@
 .header {
-    display: flex;
-    background-color: #3E3E44;
-    height: 60px;
-    color: #FFFFFF;
-    padding: 0 35px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  background-color: #3e3e44;
+  height: 60px;
+  color: #ffffff;
+  padding: 0 35px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-    .header a {
-        color: #FFFFFF;
-    }
+.header a {
+  color: #ffffff;
+}
 
-.header-phone{
-    font-weight: 700;
+.header-phone {
+  font-weight: 700;
 }
 
 .header-search {
-    width: 245px;
-    height: 30px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    float: left;
-    padding-left: 40px;
-    position: relative;
+  width: 245px;
+  height: 30px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  float: left;
+  padding-left: 40px;
+  position: relative;
 }
 
 ::placeholder {
-    color: #292D51;
+  color: #292d51;
 }
 
-.search-icon{
-    position: absolute;
-    z-index: 1;
-    padding-top: 5px;
-    padding-left: 10px;
-    width: 18px;
-    height: 18px;
+.search-icon {
+  position: absolute;
+  z-index: 1;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 18px;
+  height: 18px;
 }
 
 .header-schedule {
-    display: flex;
-    flex-direction: column;
-    height: 42px;
-    justify-content: space-between;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 42px;
+  justify-content: space-between;
+  text-align: center;
 }
 
-.basket{
-    position:relative;
+.basket {
+  position: relative;
 }
 
-.basket-counter{
-    background-color: #FFFFFF;
-    width:22px;
-    height: 22px;
-    border-radius: 10px;
-    position:absolute;
-    top: -10px;
-    right:-10px;
+.basket-counter {
+  background-color: #ffffff;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
-.counter{
-    color: black;
-    font-size: 14px;
-    padding-left: 7px;
+.counter {
+  color: black;
+  font-size: 14px;
+  padding-left: 7px;
 }
