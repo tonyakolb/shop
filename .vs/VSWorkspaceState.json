@@ -12,6 +12,6 @@
     "\\src\\pages\\Header",
     "\\src\\pages\\MainShare"
   ],
-  "SelectedNode": "\\src\\assets\\images\\main-image.jpg",
+  "SelectedNode": "\\src\\pages\\MainShare\\MainShare.js",
   "PreviewInSolutionExplorer": false
 }

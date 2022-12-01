@@ -1,0 +1,36 @@
+﻿.main {
+    background-color: #F0F0F2;
+    height: 596px;
+    display: flex;
+}
+
+.main-share {
+    display: flex;
+    height: 500px;
+    width: 80%;
+    text-align: center;
+    margin: 48px 120px;
+    background-color: #ffffff;
+    justify-content: center;
+    border-radius: 28px;
+}
+
+.main-share-text {
+    flex: 3 1 100px;
+    padding: 120px 0;
+    line-height: 65px;
+}
+
+.main-share-text p{
+    font-size: 48px;
+    padding: 0 5%;
+}
+
+main-share-img {
+    flex: 2 1 100px;
+}
+
+.main-share img {
+    width: 520px;
+    height: auto;
+}

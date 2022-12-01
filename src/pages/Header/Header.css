@@ -63,7 +63,10 @@
 }
 
 .counter {
-  color: black;
-  font-size: 14px;
-  padding-left: 7px;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 22px;
 }
