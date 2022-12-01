@@ -1,0 +1,39 @@
+﻿.bestsellers {
+    height: 603px;
+    background-color: #F0F0F2;
+}
+
+.bestsellers-caption{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.bestsellers-caption p, a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #292D51;
+    line-height: 32.68px;
+}
+
+.bestsellers-caption a{
+    text-decoration: underline 1px; 
+}
+
+.bestsellers-item {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    height: 450px;
+    margin-left: 40px;
+    background-color: #ffffff;
+}
+
+.bestseller-img {
+    height: 284px;
+}
+
+.bestseller-img img {
+    height: 284px;
+    width: 252px;
+}
