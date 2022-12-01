@@ -1,13 +1,24 @@
 import React from "react";
+import {useSelector} from "react-redux";
 import Input from "../../components/Input/Input";
 import Logo from "../../components/Header/Logo/Logo";
-// import { basketDataLengthSelector } from "../../redux/ducks/basketAdditing/basket_selectors";
 import Icon from "../../assets/images/Icon-basket.svg";
 import SearchIcon from "../../assets/images/search-icon.svg";
 import "./Header.css";
+import {createSelector} from "reselect";
+
 
 const Header = () => {
-    // const basketLength = useSelector(basketDataLengthSelector);
+    const basketDataLengthSelector = (state) => state.basket.data.length;
+    const basketLength = useSelector(basketDataLengthSelector);
+    // const basketDataLengthSelector = (state) => state.basket.data.length;
+    //const basketLength = useSelector(basketDataLengthSelector);
+
+
+    // const basketLength = useSelector(
+    //     createSelector(
+    //     (state) => state.basket.data.length
+    // ));
 
   return (
     <header className="header">
@@ -32,7 +43,7 @@ const Header = () => {
         <div className="basket">
           <img src={Icon} alt="basket" />
           <div className="basket-counter">
-            {/*<span className="counter">{basketLength}</span>*/}
+            <span className="counter">{basketLength}</span>
           </div>
         </div>
       </a>

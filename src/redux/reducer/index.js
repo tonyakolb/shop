@@ -5,6 +5,7 @@ import storage from 'redux-persist/lib/storage';
 //reducers
 
 import searchReducer from './searchReducer';
+import basketReducer from './basketReducer';
 
 
 const persistConfig = {
@@ -13,6 +14,7 @@ const persistConfig = {
 };
 
 const reducers = combineReducers({
+    basket: basketReducer,
     search: searchReducer,
 });
 
