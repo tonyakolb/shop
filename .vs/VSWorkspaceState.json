@@ -3,15 +3,15 @@
     "",
     "\\src",
     "\\src\\assets",
-    "\\src\\assets\\css",
+    "\\src\\assets\\images",
     "\\src\\components",
-    "\\src\\components\\Header",
-    "\\src\\components\\Header\\Search",
     "\\src\\components\\Input",
     "\\src\\pages",
+    "\\src\\pages\\AboutUs",
     "\\src\\pages\\Advantages",
-    "\\src\\pages\\Header"
+    "\\src\\pages\\Header",
+    "\\src\\pages\\MainShare"
   ],
-  "SelectedNode": "\\src\\pages\\Header\\Header.js",
+  "SelectedNode": "\\src\\assets\\images\\main-image.jpg",
   "PreviewInSolutionExplorer": false
 }
