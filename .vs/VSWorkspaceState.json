@@ -4,14 +4,14 @@
     "\\src",
     "\\src\\assets",
     "\\src\\assets\\images",
-    "\\src\\components",
-    "\\src\\components\\Input",
     "\\src\\pages",
     "\\src\\pages\\AboutUs",
     "\\src\\pages\\Advantages",
+    "\\src\\pages\\Bestsellers",
     "\\src\\pages\\Header",
+    "\\src\\pages\\MainPage",
     "\\src\\pages\\MainShare"
   ],
-  "SelectedNode": "\\src\\pages\\MainShare\\MainShare.js",
+  "SelectedNode": "\\src\\pages\\Advantages\\Advantages.js",
   "PreviewInSolutionExplorer": false
 }

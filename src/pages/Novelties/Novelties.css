@@ -1,31 +1,32 @@
-﻿.bestsellers {
+﻿.novelties {
     height: 603px;
     background-color: #F0F0F2;
     position: relative;
 }
 
-.bestsellers-caption{
+.novelties-caption {
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
 
-.bestsellers-caption p, a {
+.novelties-caption p, a {
     font-size: 24px;
     font-weight: 700;
     color: #292D51;
-    line-height: 32.68px;
+    line-height: 32.68px; 
+
 }
 
-.bestsellers-caption a{
-    text-decoration: underline 1px; 
+.novelties-caption a {
+    text-decoration: underline 1px;
 }
 
-.bestsellers-items{
+.novelties-items {
     display: flex;
 }
 
-.bestsellers-item {
+.novelties-item {
     display: flex;
     flex-direction: column;
     width: 252px;
@@ -35,26 +36,27 @@
     border-radius: 16px 16px 0px 0px;
 }
 
-.bestseller-img {
+.noveltie-img {
     height: 284px;
     position: relative;
 }
 
-.bestseller-img img {
+.noveltie-img img {
     height: 284px;
     width: 252px;
     position: relative;
     border-radius: 16px 16px 0px 0px;
 }
 
-.bestseller-price {
+.noveltie-price {
     display: flex;
     text-align: center;
     color: #ffffff;
     font-weight: 400;
 }
 
-.actual-price, .old-price{
+
+.actual-price, .old-price {
     width: 126px;
     height: 27px;
     padding-top: 4px;
@@ -71,7 +73,7 @@
     text-decoration-thickness: 1px;
 }
 
-.bestseller-about {
+.noveltie-about {
     padding: 3.5px 16px 0 16px
 }
 
@@ -99,7 +101,7 @@
     border-radius: 8px;
 }
 
-.shop-rate{
+.shop-rate {
     display: flex;
 }
 

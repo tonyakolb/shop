@@ -1,0 +1,83 @@
+﻿.about-us {
+    height: 934px;
+    background: #F0F0F2;
+    padding: 0 40px;
+}
+
+.about-us p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #292D51;
+    padding: 40px 0;
+}
+
+.about-company {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-company-text {
+    height: 446px;
+    background: #3E3E44;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 655px;
+}
+
+.about-company-text img{
+    margin-top: 40px;
+    width: 160px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.about-company-text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0 40px;
+    padding-top: 30px;
+
+}
+
+.about-company-image {
+    height: 446px;
+    width: 655px;
+}
+
+.about-company-image img{
+    height: 446px;
+}
+
+.company-awards {
+    display: flex;
+    height: 295px;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 59px;
+    gap: 90px;
+}
+
+.award {
+    flex: 1;
+}
+
+.award p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    padding: 0 0 55px 0;
+}
+
+.award img {
+    width: 200px;
+    height: 135px;
+}

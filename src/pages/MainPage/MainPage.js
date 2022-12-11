@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header/Header";
+import Header from "../Header/Header";  
 import MainShare from "../MainShare/MainShare";
 import Advantages from "../Advantages/Advantages";
 import Bestsellers from "../Bestsellers/Bestsellers";
