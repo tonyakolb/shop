@@ -5,13 +5,12 @@
     "\\src\\assets",
     "\\src\\assets\\images",
     "\\src\\pages",
-    "\\src\\pages\\AboutUs",
-    "\\src\\pages\\Advantages",
-    "\\src\\pages\\Bestsellers",
-    "\\src\\pages\\Header",
-    "\\src\\pages\\MainPage",
-    "\\src\\pages\\MainShare"
+    "\\src\\pages\\CatalogCategories",
+    "\\src\\pages\\Delivery",
+    "\\src\\pages\\OrderReady",
+    "\\src\\pages\\PaymentMethods",
+    "\\src\\redux"
   ],
-  "SelectedNode": "\\src\\pages\\Advantages\\Advantages.js",
+  "SelectedNode": "\\src\\pages\\PaymentMethods\\PaymentMethods.css",
   "PreviewInSolutionExplorer": false
 }

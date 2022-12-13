@@ -1,0 +1,49 @@
+﻿.catalog-categories {
+    height: 503px;
+    background-color: #F0F0F2;
+    padding: 40px 0;
+}
+
+.catalog-categories-info {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.catalog-categories-caption {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.catalog-categories-caption p, a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #292D51;
+    line-height: 32.68px;
+}
+
+.catalog-categories-caption a{
+    text-decoration: underline 1px; 
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-name {
+    width: 290px;
+    height: 82px;
+    background: #292D51;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    padding-top: 24.5px;
+}

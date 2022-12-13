@@ -11,6 +11,7 @@ import "./AboutUs.css";
 const AboutUs = () => {
     return (
         <div className='about-us'>
+            <div className='about-us-info'>
             <p>О компании SOQO</p>
             <div className='about-company'>
                 <div className='about-company-text'>
@@ -54,6 +55,7 @@ const AboutUs = () => {
                     <img src={FifthImage} alt="award" />
                     <p>Письмо о назначении<br />
                         Луо Сяоцзюнь назначается заместителем директора Профессионального комитета сантехники Китайской ассоциации ежедневных потребностей</p>
+                </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,46 @@
+﻿.payment-methods {
+    margin: 0 auto;
+    width: 1360px;
+}
+
+.payment-methods-caption {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-methods-caption p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #0F0E0E;
+}
+
+.payment-methods-caption img {
+    width: 17px;
+}
+
+.method {
+    padding-bottom: 30px;
+}
+
+.method-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    padding-bottom: 30px;
+}
+
+.method p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.method ul {
+    margin-left: 20px;
+}
+
+.method li {
+    line-height: 2;
+}

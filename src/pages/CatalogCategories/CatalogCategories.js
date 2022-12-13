@@ -4,40 +4,36 @@ import KitchenImage from "../../assets/images/kitchen.png";
 import BathroomImage from "../../assets/images/bathroom.png";
 import ToiletImage from "../../assets/images/toilet.png";
 import OtherImage from "../../assets/images/other-image.png";
+import "./CatalogCategories.css";
+
 
 const CatalogCategories = () => {
   return (
-    <div>
-      <div>
-        <p>Категории каталога</p>
-        <Link to="/catalog">Перейти в каталог</Link>
-      </div>
-      <div>
-        <div>
-          <Link to="/kitchen-catalog">
+    <div className='catalog-categories'>
+        <div className='catalog-categories-info'>
+              <div className='catalog-categories-caption'>
+                  <p>Категории каталога</p>
+                  <a href='/'>Перейти в каталог</a>
+              </div>
+              <div className='categories'>
+                  <div className='category'>
             <img src={KitchenImage} alt="kitchen" />
-            <div>Кухни</div>
-          </Link>
+                      <div className='category-name'>Кухни</div>
         </div>
-        <div>
-          <Link to="/bathroom-catalog">
+                  <div className='category'>
             <img src={BathroomImage} alt="bathroom" />
-            <div>Ванная комната</div>
-          </Link>
+                      <div className='category-name'>Ванная комната</div>
         </div>
-        <div>
-          <Link to="/toilet-catalog">
+                  <div className='category'>
             <img src={ToiletImage} alt="toilet" />
-            <div>Туалетная комната</div>
-          </Link>
+                      <div className='category-name'>Туалетная комната</div>
         </div>
-        <div>
-          <Link to="/other-catalog">
+                  <div className='category'>
             <img src={OtherImage} alt="other" />
-            <div>Прочее</div>
-          </Link>
+                      <div className='category-name'>Прочее</div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

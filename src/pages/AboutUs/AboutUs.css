@@ -1,7 +1,11 @@
 ﻿.about-us {
     height: 934px;
     background: #F0F0F2;
-    padding: 0 40px;
+}
+
+.about-us-info {
+    width: 1360px;
+    margin: 0 auto;
 }
 
 .about-us p {
@@ -62,7 +66,7 @@
     text-align: center;
     justify-content: space-between;
     padding-top: 59px;
-    gap: 90px;
+    gap: 6%;
 }
 
 .award {
