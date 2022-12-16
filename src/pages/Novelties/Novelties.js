@@ -6,6 +6,8 @@ import "./Novelties.css";
 import Image from '../../assets/images/main-image.jpg';
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
 import Arrow from "../../assets/images/Arrow-navigation.svg";
+import Button from '../../components/Button/Button';
+
 
 const Novelties = () => {
 
@@ -14,7 +16,6 @@ const Novelties = () => {
     const handleAddClick = (e) => {
         e.preventDefault();
         e.stopPropagation();
-        e.target.innerText = 'ADDED';
         dispatch(addToBasket(item));
     }
 
@@ -58,9 +59,9 @@ const Novelties = () => {
                                 Артикул: SQ3787
                             </div>
                             <div className='shop-rate'>
-                                <button className='add-to-basket' onClick={handleAddClick}>
+                                <Button className='add-to-basket' onClick={handleAddClick}>
                                     <img src={Icon} alt="basket" />
-                                </button>
+                                </Button>
                                 <div className='rating'>
                                     Отзывы
                                 </div>

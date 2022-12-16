@@ -10,6 +10,8 @@ import Footer from "../Footer/Footer";
 import Delivery from "../Delivery/Delivery";
 import PaymentMethods from "../PaymentMethods/PaymentMethods";
 import OrderReady from "../OrderReady/OrderReady";
+import Stock from "../Stock/Stock";
+import AddToCart from "../AddToCart/AddToCart";
 
 
 
@@ -28,6 +30,8 @@ const MainPage = () => {
       <Delivery />
       <PaymentMethods />
       <OrderReady />
+      <Stock />
+      <AddToCart />
     </>
   );
 };

@@ -9,8 +9,9 @@
     "\\src\\pages\\Delivery",
     "\\src\\pages\\OrderReady",
     "\\src\\pages\\PaymentMethods",
+    "\\src\\pages\\Stock",
     "\\src\\redux"
   ],
-  "SelectedNode": "\\src\\pages\\PaymentMethods\\PaymentMethods.css",
+  "SelectedNode": "\\src\\assets\\images\\About1.png",
   "PreviewInSolutionExplorer": false
 }
