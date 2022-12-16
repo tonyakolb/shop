@@ -18,16 +18,16 @@ const Delivery = () => {
                 </div>
                 <div className='delivery-ways'>
                     <div>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={Home} alt="pickup" />
                                 Самовывоз из магазина
                             </div>
                             <p>Вы можете забрать заказ самостоятельно в нашем  магазине по адресу: г.Минск, ул.Кульман, 5Б. Павильон 195.</p>
                             <p>Срок хранения заказа в магазине 7 дней.</p>
                          </div>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={DeliveryCar} alt="courier" />
                                 Курьер
                             </div>
@@ -45,8 +45,8 @@ const Delivery = () => {
                 </div>
 
                 <div className='delivery-post'>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={PostBox} alt="post" />
                                 Белпочта
                             </div>
@@ -60,8 +60,8 @@ const Delivery = () => {
 
                         </ul>
                         </div>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={PostBox} alt="post" />
                                 Европочта
                             </div>

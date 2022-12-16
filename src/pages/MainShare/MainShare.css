@@ -5,7 +5,8 @@
     display: flex;
 }
 
-.main-share {
+/*.slide {*/
+.main-share{
     display: flex;
     height: 500px;
     width: 80%;
@@ -31,59 +32,8 @@
     flex: 2 1 100px;
 }
 
-.main-share img {
+.main-share-img img{
+
     width: 520px;
     height: auto;
-}
-
-.arrow-left, .arrow-right {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    top: 274px;
-    background-color: #292D51;
-    border-radius: 45px;
-    z-index: 2;
-}
-
-.arrow-left {
-    left: 30px;
-}
-
-.arrow-right {
-    right: 30px;
-}
-
-.arrow-left img {
-    padding: 7.59px 14.59px;
-    width: 48px;
-    height: 48px;
-}
-
-.arrow-right img {
-    padding: 7.59px 14.59px;
-    transform: rotate(180deg);
-    width: 48px;
-    height: 48px;
-}
-
-.main-ellipses {
-    position: absolute;
-    display: flex;
-    top: 494px;
-    text-align: center;
-    width: 40px;
-    height: 8px;
-    gap: 8px;
-}
-
-.main-ellipse, .main-ellipse-select {
-    border-radius: 45px;
-    width: 8px;
-    height: 8px;
-    background: #292D51;
-}
-
-.main-ellipse {
-    background: #A7A7A8;
 }

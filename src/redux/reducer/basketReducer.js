@@ -28,7 +28,7 @@ const handlers = {
         if(state.data.find((item) => item.id === action.payload.id)){
             alert('This item in basket');
             return {...state}
-        }else {
+        } else {
             return {
                 ...state,
                 data: [...state.data, action.payload],
