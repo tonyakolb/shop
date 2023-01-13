@@ -1,24 +1,14 @@
 import React from "react";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
+import { basketDataLengthSelector } from "../../redux/selectors/basketSelectors";
 import Input from "../../components/Input/Input";
 import Logo from "../../components/Header/Logo/Logo";
 import Icon from "../../assets/images/Icon-basket.svg";
 import SearchIcon from "../../assets/images/search-icon.svg";
 import "./Header.css";
-import {createSelector} from "reselect";
-
 
 const Header = () => {
-    const basketDataLengthSelector = (state) => state.basket.data.length;
-    const basketLength = useSelector(basketDataLengthSelector);
-    // const basketDataLengthSelector = (state) => state.basket.data.length;
-    //const basketLength = useSelector(basketDataLengthSelector);
-
-
-    // const basketLength = useSelector(
-    //     createSelector(
-    //     (state) => state.basket.data.length
-    // ));
+  const basketLength = useSelector(basketDataLengthSelector);
 
   return (
     <header className="header">
@@ -27,7 +17,7 @@ const Header = () => {
         <div className="search-icon">
           <img src={SearchIcon} alt="search-icon" />
         </div>
-        <Input className="header-search" placeholder='Поиск'/>
+        <Input className="header-search" placeholder="Поиск" />
       </div>
       <a href="/" className="">
         Каталог

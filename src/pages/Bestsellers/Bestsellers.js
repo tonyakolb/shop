@@ -1,15 +1,14 @@
-import React from 'react';
-import {useDispatch} from "react-redux";
-import {addToBasket} from "../../redux/actions/basketAction";
+import React from "react";
+import { useDispatch } from "react-redux";
+import { addToBasket } from "../../redux/actions/basketAction";
 import "./Bestsellers.css";
-import Image from '../../assets/images/main-image.jpg';
+import Image from "../../assets/images/main-image.jpg";
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
 import Arrow from "../../assets/images/Arrow-navigation.svg";
+import Button from "../../components/Button/Button";
 
-
-const Bestsellers = ({item}) => {
-
-    const dispatch = useDispatch();
+const Bestsellers = ({ item }) => {
+  const dispatch = useDispatch();
 
     const handleAddClick = (e) => {
         e.preventDefault();

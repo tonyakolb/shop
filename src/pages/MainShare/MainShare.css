@@ -5,7 +5,8 @@
     display: flex;
 }
 
-.main-share {
+/*.slide {*/
+.main-share{
     display: flex;
     height: 500px;
     width: 80%;
@@ -31,7 +32,8 @@
     flex: 2 1 100px;
 }
 
-.main-share img {
+.main-share-img img{
+
     width: 520px;
     height: auto;
 }
