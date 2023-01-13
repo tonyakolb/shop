@@ -91,7 +91,6 @@
 }
 
 .add-to-basket {
-    background-color: #A7A7A8;
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
@@ -99,6 +98,11 @@
     height: 40px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #A7A7A8;
 }
 
 .shop-rate {
@@ -111,19 +115,20 @@
     line-height: 19px;
 }
 
-.not-available {
+.presence {
     width: 105px;
-    background-color: #A7A7A8;
     left: 20px;
+}
+
+.not-available {
+    background-color: #A7A7A8;
 }
 
 .available {
-    width: 105px;
     background-color: #292D51;
-    left: 20px;
 }
 
-.sale, .available, .not-available {
+.sale, .presence {
     position: absolute;
     height: 27px;
     top: 20px;
@@ -140,52 +145,4 @@
     width: 49px;
     background-color: #292D51;
     right: 20px;
-}
-
-.ellipses {
-    position: absolute;
-    display: flex;
-    top: 256px;
-    left: 106px;
-    width: 40px;
-    height: 8px;
-    gap: 8px;
-}
-
-.ellipse, .ellipse-select {
-    border-radius: 45px;
-    width: 8px;
-    height: 8px;
-    background: #292D51;
-}
-
-.ellipse {
-    background: #F0F0F2;
-}
-
-.arrow-left, .arrow-right {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    top: 314px;
-    background-color: #292D51;
-    border-radius: 45px;
-    z-index: 2;
-}
-
-.arrow-left {
-    left: 40px;
-}
-
-.arrow-right {
-    right: 40px;
-}
-
-.arrow-left img {
-    padding: 7.59px 14.59px;
-}
-
-.arrow-right img {
-    padding: 7.59px 14.59px;
-    transform: rotate(180deg);
 }

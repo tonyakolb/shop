@@ -10,6 +10,9 @@
 
 .header a {
   color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .header-phone {
@@ -50,6 +53,7 @@
 
 .basket {
   position: relative;
+  padding-top: 5px;
 }
 
 .basket-counter {
@@ -58,8 +62,8 @@
   height: 22px;
   border-radius: 10px;
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: -1px;
+  right: -14px;
 }
 
 .counter {

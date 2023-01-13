@@ -5,13 +5,12 @@
     "\\src\\assets",
     "\\src\\assets\\images",
     "\\src\\pages",
-    "\\src\\pages\\CatalogCategories",
-    "\\src\\pages\\Delivery",
+    "\\src\\pages\\Header",
+    "\\src\\pages\\Novelties",
     "\\src\\pages\\OrderReady",
-    "\\src\\pages\\PaymentMethods",
     "\\src\\pages\\Stock",
     "\\src\\redux"
   ],
-  "SelectedNode": "\\src\\assets\\images\\About1.png",
+  "SelectedNode": "\\src\\pages\\AddToCart\\AddToCart.css",
   "PreviewInSolutionExplorer": false
 }

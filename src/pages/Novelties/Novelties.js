@@ -5,7 +5,6 @@ import { addToBasket } from "../../redux/actions/basketAction";
 import "./Novelties.css";
 import Image from '../../assets/images/main-image.jpg';
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
-import Arrow from "../../assets/images/Arrow-navigation.svg";
 import Button from '../../components/Button/Button';
 
 
@@ -25,27 +24,18 @@ const Novelties = () => {
                 <p>Новинки</p>
                 <a href='/'>Перейти в каталог</a>
             </div>
-            <div className='arrow-left'>
-                <img src={Arrow} alt="arrow" />
-            </div>
-            <div className='arrow-right'>
-                <img src={Arrow} alt="arrow" />
-            </div>
+            
             <div className='novelties-items'>
                 <div className='novelties-item'>
                     <div className='noveltie-img'>
                         <img src={Image} alt='image' />
-                        <div className='available'>
+                        <div className='presence available'>
                             В наличии
                         </div>
                         <div className='sale'>
                             New
                         </div>
-                        <div className='ellipses'>
-                            <div className='ellipse-select'></div>
-                            <div className='ellipse'></div>
-                            <div className='ellipse'></div>
-                        </div>
+                        
                     </div>
                     <div className='noveltie-price'>
                         <div className='actual-price'>102,00 руб</div>
@@ -59,9 +49,9 @@ const Novelties = () => {
                                 Артикул: SQ3787
                             </div>
                             <div className='shop-rate'>
-                                <Button className='add-to-basket' onClick={handleAddClick}>
+                                <button className='add-to-basket available' onClick={handleAddClick}>
                                     <img src={Icon} alt="basket" />
-                                </Button>
+                                </button>
                                 <div className='rating'>
                                     Отзывы
                                 </div>
@@ -73,17 +63,13 @@ const Novelties = () => {
                 <div className='novelties-item'>
                     <div className='noveltie-img'>
                         <img src={Image} alt='image' />
-                        <div className='available'>
+                        <div className='presence available'>
                             В наличии
                         </div>
                         <div className='sale'>
                             New
                         </div>
-                        <div className='ellipses'>
-                            <div className='ellipse-select'></div>
-                            <div className='ellipse'></div>
-                            <div className='ellipse'></div>
-                        </div>
+                        
                     </div>
                     <div className='noveltie-price'>
                         <div className='actual-price'>102,00 руб</div>
@@ -97,7 +83,7 @@ const Novelties = () => {
                                 Артикул: SQ3787
                             </div>
                             <div className='shop-rate'>
-                                <button className='add-to-basket' onClick={handleAddClick}>
+                                <button className='add-to-basket available' onClick={handleAddClick}>
                                     <img src={Icon} alt="basket" />
                                 </button>
                                 <div className='rating'>

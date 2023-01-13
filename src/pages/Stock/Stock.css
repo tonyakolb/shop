@@ -37,10 +37,12 @@
     width: 1200px;
     padding-bottom: 30px;
     margin: 0 auto;
+    flex-wrap: wrap
 }
 
 .one-sale {
     width: 560px;
+    padding-bottom: 30px;
 }
 
 .status {

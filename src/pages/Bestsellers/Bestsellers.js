@@ -14,7 +14,6 @@ const Bestsellers = ({item}) => {
     const handleAddClick = (e) => {
         e.preventDefault();
         e.stopPropagation();
-        e.target.innerText = 'ADDED';
         dispatch(addToBasket(item));
     }
 
@@ -24,27 +23,18 @@ const Bestsellers = ({item}) => {
                 <p>Хиты продаж</p>
                 <a href='/'>Перейти в каталог</a>
             </div>
-            <div className='arrow-left'>
-                <img src={Arrow} alt="arrow" />
-            </div>
-            <div className='arrow-right'>
-                <img src={Arrow} alt="arrow" />
-            </div>
+            
             <div className='bestsellers-items'>
             <div className='bestsellers-item'>
                 <div className='bestseller-img'>
                     <img src={Image} alt='image' />
-                        <div className='not-available'>
+                        <div className='presence not-available'>
                         Нет в наличии
                     </div>
                     <div className='sale'>
                         -30%
                     </div>
-                        <div className='ellipses'>
-                            <div className='ellipse-select'></div>
-                            <div className='ellipse'></div>
-                            <div className='ellipse'></div>
-                        </div>
+                        
                 </div>
                 <div className='bestseller-price'>
                     <div className='actual-price'>102,00 руб</div>
@@ -59,7 +49,7 @@ const Bestsellers = ({item}) => {
                             Артикул: SQ3787
                         </div>
                         <div className='shop-rate'>
-                        <button className='add-to-basket' onClick={handleAddClick}>
+                        <button className='add-to-basket not-available' onClick={handleAddClick}>
                             <img src={Icon} alt="basket" />
                         </button>
                             <div className='rating'>
@@ -73,17 +63,13 @@ const Bestsellers = ({item}) => {
             <div className='bestsellers-item'>
                 <div className='bestseller-img'>
                     <img src={Image} alt='image' />
-                        <div className='available'>
+                        <div className='presence available'>
                         В наличии
                     </div>
                     <div className='sale'>
                         New
                     </div>
-                        <div className='ellipses'>
-                            <div className='ellipse-select'></div>
-                            <div className='ellipse'></div>
-                            <div className='ellipse'></div>
-                        </div>
+                        
                 </div>
                 <div className='bestseller-price'>
                     <div className='actual-price'>102,00 руб</div>
@@ -97,7 +83,7 @@ const Bestsellers = ({item}) => {
                             Артикул: SQ3787
                         </div>
                         <div className='shop-rate'>
-                            <button className='add-to-basket' onClick={handleAddClick}>
+                            <button className='add-to-basket available' onClick={handleAddClick}>
                                 <img src={Icon} alt="basket" />
                             </button>
                             <div className='rating'>

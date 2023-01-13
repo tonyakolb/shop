@@ -55,9 +55,6 @@ const Stock = () => {
                         </div>
                     </div>
 
-                </div>
-
-                <div className='sales'>
                     <div className='one-sale'>
                         <div className='time-status'>
                             <div className='time'>
@@ -99,6 +96,8 @@ const Stock = () => {
                     </div>
 
                 </div>
+
+                
 
             </div>
             

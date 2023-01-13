@@ -18,16 +18,16 @@ const Delivery = () => {
                 </div>
                 <div className='delivery-ways'>
                     <div>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={Home} alt="pickup" />
                                 Самовывоз из магазина
                             </div>
                             <p>Вы можете забрать заказ самостоятельно в нашем  магазине по адресу: г.Минск, ул.Кульман, 5Б. Павильон 195.</p>
                             <p>Срок хранения заказа в магазине 7 дней.</p>
                          </div>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={DeliveryCar} alt="courier" />
                                 Курьер
                             </div>
@@ -45,8 +45,8 @@ const Delivery = () => {
                 </div>
 
                 <div className='delivery-post'>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={PostBox} alt="post" />
                                 Белпочта
                             </div>
@@ -60,8 +60,8 @@ const Delivery = () => {
 
                         </ul>
                         </div>
-                        <div class='delivery-way'>
-                            <div class='way-caption'>
+                        <div className='delivery-way'>
+                            <div className='way-caption'>
                                 <img src={PostBox} alt="post" />
                                 Европочта
                             </div>
@@ -69,8 +69,8 @@ const Delivery = () => {
                                 <li>Сроки поставки: 1-3 дня с момента отправки посылки</li>
                             <li>Отделения &laquo;Европочта&raquo; работают 7 дней в неделю</li>
                                 <li>Время работы отделений с 9:00 до 21:00 (может меняться в зависимости от населенного пункта)</li>
-                            <li>Актуальные адреса и график работы по ссылке  <a href="https://evropochta.by/about/offices/"> https://evropochta.by/about/offices/ </a> </li>
-                            <li>Ознакомиться с тарифами можно по ссылке  <a href="https://evropochta.by/services/tariffs_ur/">https://evropochta.by/services/tariffs_ur/ </a> </li>
+                            <li>Актуальные адреса и график работы по ссылке  <a href="https://evropochta.by/about/offices/" target="_blank"> https://evropochta.by/about/offices/ </a> </li>
+                            <li>Ознакомиться с тарифами можно по ссылке  <a href="https://evropochta.by/services/tariffs_ur/" target="_blank">https://evropochta.by/services/tariffs_ur/ </a> </li>
                             </ul>
                         </div>
                 </div>
