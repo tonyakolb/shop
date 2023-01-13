@@ -1,4 +1,3 @@
-export const SEARCH = 'SEARCH';
-
-export const ADD_TO_BASKET = 'ADD_TO_BASKET';
-export const REMOVE_FROM_BASKET = 'REMOVE_FROM_BASKET';
+export const REQUESTED_PRODUCT = 'REQUESTED_PRODUCT';
+export const FILTER_PRODUCT = 'FILTER_PRODUCT';
+export const FILTER_TITLE = 'FILTER_TITLE';

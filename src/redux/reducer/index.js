@@ -1,23 +1,13 @@
-import { combineReducers } from 'redux';
-import { persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+import { combineReducers } from "redux";
 
 //reducers
 
-import searchReducer from './searchReducer';
-import basketReducer from './basketReducer';
+import apiResult from "./apiReducer";
+import filterResult from "./filterReducer";
+import filterTitle from "./filterTitleReducer";
 
-
-const persistConfig = {
-    key: 'root',
-    storage,
-};
-
-const reducers = combineReducers({
-    basket: basketReducer,
-    search: searchReducer,
+export default combineReducers({
+  apiResult,
+  filterResult,
+  filterTitle,
 });
-
-const persistedReducers = persistReducer(persistConfig, reducers);
-
-export default persistedReducers;

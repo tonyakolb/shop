@@ -5,19 +5,18 @@ const Input = ({
   className,
   placeholder,
   onChange,
-  onFocus,
-  onBlur,
+  type,
+  onClick,
 }) => {
   return (
     <input
       className={className}
       placeholder={placeholder}
       onChange={onChange}
-      onFocus={onFocus}
-      onBlur={onBlur}
-    >
-      {value}
-    </input>
+      value={value}
+      type={type}
+      onClick={onClick}
+    />
   );
 };
 

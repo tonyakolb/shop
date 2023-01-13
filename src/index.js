@@ -1,21 +1,23 @@
 import React from "react";
 import { Provider } from "react-redux";
+import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 import App from "./pages/App/App";
 import './assets/css/index.css';
-import { PersistGate } from "redux-persist/integration/react";
 
-import { store, persistor } from "./redux/stores";
 import { createRoot } from "react-dom/client";
+import reducer from './redux/reducer/index';
 
+const store = createStore(reducer, composeWithDevTools());
 const element = document.getElementById("root");
 const root = createRoot(element);
 root.render(
   <React.StrictMode>
-    <PersistGate persistor={persistor}>
+
       <Provider store={store}>
         <App />
       </Provider>
-    </PersistGate>
+
   </React.StrictMode>
 );
