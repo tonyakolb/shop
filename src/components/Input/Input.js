@@ -7,16 +7,22 @@ const Input = ({
   onChange,
   onFocus,
   onBlur,
+  type,
+  name,
+  id,
 }) => {
   return (
     <input
-      className={className}
-      placeholder={placeholder}
-      onChange={onChange}
-      onFocus={onFocus}
-      onBlur={onBlur}
+          className={className}
+          placeholder={placeholder}
+          onChange={onChange}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          value={value}
+          type={type}
+          name={name}
+          id={id}
     >
-      {value}
     </input>
   );
 };

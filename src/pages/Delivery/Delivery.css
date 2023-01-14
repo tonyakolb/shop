@@ -19,6 +19,7 @@
 
 .delivery-caption img {
     width: 17px;
+    cursor: pointer;
 }
 
 .delivery-ways {

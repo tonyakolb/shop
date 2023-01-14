@@ -4,7 +4,6 @@ import { addToBasket } from "../../redux/actions/basketAction";
 import "./Bestsellers.css";
 import Image from "../../assets/images/main-image.jpg";
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
-import Arrow from "../../assets/images/Arrow-navigation.svg";
 import Button from "../../components/Button/Button";
 
 const Bestsellers = ({ item }) => {
@@ -53,6 +52,17 @@ const Bestsellers = ({ item }) => {
                         </button>
                             <div className='rating'>
                                 Отзывы
+                                    <div class="rating-reviews">
+                                        <div class="product-rating">
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span></span>
+
+                                        </div>
+                                        <div className='reviews-number'>(2)</div>
+                                    </div>
                              </div>
                         </div>
                     </div>
@@ -87,6 +97,17 @@ const Bestsellers = ({ item }) => {
                             </button>
                             <div className='rating'>
                                 Отзывы
+                                    <div class="rating-reviews">
+                                        <div class="product-rating">
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span></span>
+
+                                        </div>
+                                        <div className='reviews-number'>(2)</div>
+                                    </div>
                             </div>
                         </div>
                     </div>

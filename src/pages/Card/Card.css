@@ -25,6 +25,7 @@ button:active {
 
 .card-caption img {
     width: 17px;
+    cursor: pointer;
 }
 
 .product-name {

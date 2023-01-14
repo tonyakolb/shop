@@ -3,14 +3,15 @@
     "",
     "\\src",
     "\\src\\assets",
-    "\\src\\assets\\images",
+    "\\src\\assets\\constants",
+    "\\src\\components",
+    "\\src\\components\\Button",
+    "\\src\\components\\Header",
+    "\\src\\components\\Input",
     "\\src\\pages",
-    "\\src\\pages\\Header",
-    "\\src\\pages\\Novelties",
-    "\\src\\pages\\OrderReady",
-    "\\src\\pages\\Stock",
-    "\\src\\redux"
+    "\\src\\pages\\Review",
+    "\\src\\pages\\ShoppingCart"
   ],
-  "SelectedNode": "\\src\\pages\\AddToCart\\AddToCart.css",
+  "SelectedNode": "\\src\\components\\Input\\Input.js",
   "PreviewInSolutionExplorer": false
 }

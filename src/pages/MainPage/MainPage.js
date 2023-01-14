@@ -19,6 +19,7 @@ const MainPage = () => {
       <Novelties />
       <AboutUs />
       <Footer />
+
     </>
   );
 };

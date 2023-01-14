@@ -54,6 +54,17 @@ const Novelties = () => {
                                 </button>
                                 <div className='rating'>
                                     Отзывы
+                                    <div class="rating-reviews">
+                                    <div class="product-rating">
+                                        <span class="active"></span>
+                                        <span class="active"></span>
+                                        <span class="active"></span>
+                                        <span class="active"></span>
+                                        <span></span>
+                                        
+                                    </div>
+                                        <div className='reviews-number'>(2)</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +99,20 @@ const Novelties = () => {
                                 </button>
                                 <div className='rating'>
                                     Отзывы
+
+                                    <div class="rating-reviews">
+                                        <div class="product-rating">
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span></span>
+
+                                        </div>
+                                        <div className='reviews-number'>(2)</div>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

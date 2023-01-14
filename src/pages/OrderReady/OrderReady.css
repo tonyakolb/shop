@@ -23,6 +23,7 @@
 
 .order-ready-caption img {
     width: 17px;
+    cursor: pointer;
 }
 
 .order-ready-info{

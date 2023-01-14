@@ -15,17 +15,19 @@ const Advantages = () => {
             </div>
             <div className='advantage'>
         <img src={SecondImage} alt="delivery" />
-        <p>Доставка по Минску и почтовыми отделениями по всей Беларуси</p>
+        <p className='desc-adv'>Доставка по Минску и почтовыми отделениями по всей Беларуси</p>
+        <p className='mobile-adv'>Доставка по всей Беларуси</p>
             </div>
-            <div className='advantage'>
+            <div className='advantage desc-adv'>
         <img src={ThirdImage} alt="price" />
         <p>Наши цены вас приятно удивят</p>
             </div>
             <div className='advantage'>
         <img src={ForthImage} alt="plumbing" />
-        <p>Специализируемся только на лучшей сантехники из Китая</p>
+        <p className='desc-adv'>Специализируемся только на лучшей сантехники из Китая</p>
+        <p className='mobile-adv'>Только лучшая сантехника из Китая</p>
             </div>
-            <div className='advantage'>
+            <div className='advantage desc-adv'>
         <img src={FifthImage} alt="location" />
         <p>Удобное расположение нашего магазина</p>
             </div>

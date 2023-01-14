@@ -15,6 +15,7 @@
 
 .add-to-cart-close img {
     width: 17px;
+    cursor: pointer;
     height: 17px;
 }
 
