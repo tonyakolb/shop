@@ -1,5 +1,4 @@
 ﻿.catalog {
-    height: 2297px;
     background-color: #F0F0F2;
     padding: 40px 0;
 }
@@ -31,6 +30,11 @@
     font-weight: 700;
     color: #292D51;
     line-height: 32.68px;
+}
+
+.products_items {
+    flex-wrap: wrap;
+    gap: 40px 25px;
 }
 
 .filter {

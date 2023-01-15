@@ -1,0 +1,20 @@
+﻿.classNameBlock {
+    font-size: 24px;
+    font-weight: 700;
+    color: #292D51;
+    line-height: 32.68px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.classNameBlockLast {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}

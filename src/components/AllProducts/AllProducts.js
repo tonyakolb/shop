@@ -2,6 +2,8 @@ import React from "react";
 import ProductCard from '../../Attempt1/ProductCard/ProductCard';
 import { useState } from 'react';
 import {apiMain} from "../../assets/constants/requests";
+import "./AllProducts.css";
+
 
 const AllProducts = () => {
     const [product, setProduct] = useState([]);
@@ -9,10 +11,8 @@ const AllProducts = () => {
 
     return (
         <>
-            <div className="products_card invisible">
-                <div className="container">
-                    <div className="products_sale">
-                        <div className="products_sale_items">
+                    <div className="all-items">
+                        <div className="products_items">
                             {product.map((item) => (
                                 <ProductCard
                                     urlImg={item.images[0]}
@@ -25,8 +25,6 @@ const AllProducts = () => {
                             ))}
                         </div>
                     </div>
-                </div>
-            </div>
         </>
     );
 };

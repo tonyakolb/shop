@@ -1,0 +1,8 @@
+﻿.all-items {
+    background-color: #F0F0F2;
+    position: relative;
+}
+
+.products_items {
+    display: flex;
+}
