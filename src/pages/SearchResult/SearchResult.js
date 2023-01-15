@@ -42,7 +42,7 @@ const SearchResult = ({ product }) => {
             ) : (
                 <>
                     <TitleBlock titleBlock="Search results" />
-                    <div className="search_fail">No beauty products found</div>
+                    <div className="search_fail">No products found</div>
                 </>
             )}
         </>

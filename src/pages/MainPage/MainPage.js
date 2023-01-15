@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 // import MainShare from "../MainShare/MainShare";
 // import Advantages from "../Advantages/Advantages";
 // import Bestsellers from "../Bestsellers/Bestsellers";
-import CatalogCategories from "../CatalogCategories/CatalogCategories";
+import Catalog from "../Catalog/Catalog";
 
 // import Novelties from "../Novelties/Novelties";
 // import AboutUs from "../AboutUs/AboutUs";
@@ -54,7 +54,7 @@ const MainPage = () => {
         //{/*    <MainShare /> )}*/}
         {/*<Advantages />*/}
         {/*<Bestsellers />*/}
-            <CatalogCategories />
+            <Catalog />
         {/*<Novelties />*/}
         {/*<AboutUs />*/}
         {/*<Footer />*/}

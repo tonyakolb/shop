@@ -26,6 +26,13 @@
     padding-left: 10px;
 }
 
+.catalog-categories-caption {
+    font-size: 24px;
+    font-weight: 700;
+    color: #292D51;
+    line-height: 32.68px;
+}
+
 .filter {
     font-weight: 700;
     font-size: 16px;
