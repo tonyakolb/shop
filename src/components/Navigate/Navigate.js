@@ -5,6 +5,8 @@ import Input from "../Input/Input";
 import { useSelector } from "react-redux";
 import Logo from "../../components/Header/Logo/Logo";
 import SearchIcon from "../../assets/images/search-icon.svg";
+import "./Navigate.css";
+
 
 // import BasketIcon from "../../assets/images/Icon-basket.svg";
 import "../../pages/Header/Header.css";

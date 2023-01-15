@@ -3,15 +3,14 @@
     "",
     "\\src",
     "\\src\\assets",
-    "\\src\\assets\\constants",
+    "\\src\\assets\\images",
     "\\src\\components",
-    "\\src\\components\\Button",
-    "\\src\\components\\Header",
-    "\\src\\components\\Input",
+    "\\src\\components\\Categories",
+    "\\src\\components\\Navigate",
     "\\src\\pages",
-    "\\src\\pages\\Review",
-    "\\src\\pages\\ShoppingCart"
+    "\\src\\pages\\Catalog",
+    "\\src\\pages\\CatalogKitchen"
   ],
-  "SelectedNode": "\\src\\components\\Input\\Input.js",
+  "SelectedNode": "\\src\\pages\\Delivery\\Delivery.css",
   "PreviewInSolutionExplorer": false
 }

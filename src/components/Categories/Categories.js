@@ -7,6 +7,7 @@ import OtherImage from "../../assets/images/other-image.png";
 import "../../pages/CatalogCategories/CatalogCategories.css";
 const Categories = () => {
     return (
+
         <div className="categories">
             <Category
                 inputValueText="Кухня"

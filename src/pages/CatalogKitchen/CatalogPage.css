@@ -1,0 +1,45 @@
+﻿.catalog-caption {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.catalog-caption p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #0F0E0E;
+}
+
+.catalog-caption img {
+    width: 17px;
+    cursor: pointer;
+}
+
+.search {
+    height: 40px;
+}
+
+.page-search {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    float: left;
+    padding-left: 40px;
+    position: relative;
+}
+
+.page-image {
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 28px;
+}
+
+.page-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+}
