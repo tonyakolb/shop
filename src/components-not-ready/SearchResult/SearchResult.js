@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchCard from '../../components/SearchCard/SearchCard';
+import SearchCard from '../SearchCard/SearchCard';
 import { useState } from 'react';
 import Button from '../../components/Button/Button';
 import TitleBlock from "../../components/TitleBlock/TitleBlock";

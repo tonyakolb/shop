@@ -1,13 +1,13 @@
 import React from "react";
-import ProductCard from '../../Attempt1/ProductCard/ProductCard';
-import { useState } from 'react';
-import {apiMain} from "../../assets/constants/requests";
+import ProductCard from "../ProductCard/ProductCard";
+import { useState } from "react";
+import { apiMain } from "../../assets/constants/requests";
 import "./AllProducts.css";
 
 
 const AllProducts = () => {
-    const [product, setProduct] = useState([]);
-    apiMain(setProduct);
+  const [product, setProduct] = useState([]);
+  apiMain(setProduct);
 
     return (
         <>

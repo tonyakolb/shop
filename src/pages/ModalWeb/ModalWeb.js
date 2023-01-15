@@ -1,7 +1,12 @@
 import React from "react";
+
 import Input from "../../components/Input/Input";
-import SearchResult from "../SearchResult/SearchResult";
+import SearchResult from "../../components-not-ready/SearchResult/SearchResult";
+import Image from "../../components/Image/Image";
+
 import CloseIcon from "../../assets/images/close-icon.svg";
+
+import Header from '../Header/Header';
 
 const ModalWeb = ({
   searchModalClose,
@@ -17,6 +22,7 @@ const ModalWeb = ({
 
   return (
     <>
+      <Header/>
       <div className="modal_web">
         <div className="container">
           <div className="modal_wrapper">
@@ -26,7 +32,7 @@ const ModalWeb = ({
                 search(e);
               }}
             >
-              <img
+              <Image
                 src={CloseIcon}
                 onClick={searchModalClose}
                 alt="close-icon"

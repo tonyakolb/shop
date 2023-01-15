@@ -9,7 +9,7 @@ import AllProducts from "../../components/AllProducts/AllProducts";
 
 
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 const Catalog = () => {
@@ -42,8 +42,8 @@ const Catalog = () => {
 
             </div>
 
-            
-            
+
+
         </>
     );
 };

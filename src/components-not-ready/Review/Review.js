@@ -14,7 +14,7 @@ const Review = () => {
                 </div>
                 <form action="/">
                 <div className='review-form'>
-                    
+
                     <label className="required">Имя</label>
                     <Input className="review-info" required />
 
@@ -50,7 +50,7 @@ const Review = () => {
                     <div className="send-review">
                         <Input className="review-button" type="submit" value="Отправить" />
                     </div>
-                    
+
                 </div>
                 </form>
             </div>

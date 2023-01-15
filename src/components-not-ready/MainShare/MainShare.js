@@ -1,7 +1,7 @@
 import React from "react";
 import MainImage from "../../assets/images/main-image.jpg";
 import "./MainShare.css";
-// import Slider from "../../components/MainShare-Slider-WARNING/Slider";
+// import Slider from "../../components-not-ready/MainShare-Slider-WARNING/Slider";
 
 const MainShare = () => {
     return (

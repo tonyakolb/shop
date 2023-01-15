@@ -5,8 +5,8 @@ const Input = ({
   className,
   placeholder,
   onChange,
-  onClick,
   type,
+  onClick,
   name,
   id,
 }) => {
@@ -17,9 +17,9 @@ const Input = ({
       onChange={onChange}
       value={value}
       type={type}
-          onClick={onClick}
-          name={name}
-          id={id}
+      onClick={onClick}
+      name={name}
+      id={id}
     />
   );
 };
