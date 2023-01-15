@@ -43,7 +43,7 @@ const ProductCard = ({ urlImg, valuePrice, catalogSearch }) => {
           <div className="shop-rate">
                       <div className="add-to-basket">
                           {!disabled ? (
-                              <Button buttonText="<img src={Icon} />" onClick={addToBag} />
+                              <Button onClick={addToBag} > <Icon/> </Button>
                           ) : (
                               <Button className="not-available" buttonText="ADDED" disabled={true} />
                           )}

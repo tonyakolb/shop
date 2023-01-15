@@ -95,17 +95,6 @@
     line-height: 19px;
 }
 
-.add-to-basket button {
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    width: 77px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: #292D51;
-}
 
 button:active {
     background-color: #A7A7A8;

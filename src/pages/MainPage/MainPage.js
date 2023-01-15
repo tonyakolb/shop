@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import ModalWeb from "../ModalWeb/ModalWeb";
 import Header from "../Header/Header";
-// import MainShare from "../MainShare/MainShare";
+import MainShare from "../../components-not-ready/MainShare/MainShare";
 import Advantages from "../../components/Advantages/Advantages";
 import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../components-not-ready/Novelties/Novelties";
-// import AboutUs from "../../components/AboutUs/AboutUs";
+import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
 // import OrderReady from "../OrderReady/OrderReady";
 // import AddToCart from "../AddToCart/AddToCart";
@@ -51,12 +51,12 @@ const MainPage = () => {
       ) : (
         <Header searchModal={searchModal} />
       )}
-      {/*<MainShare />*/}
+      <MainShare />
       <Advantages />
       <Bestsellers />
       <CatalogCategories />
       <Novelties />
-      {/*<AboutUs />*/}
+      <AboutUs />
       <Footer />
       {/*<OrderReady />*/}
       {/*<AddToCart />*/}
