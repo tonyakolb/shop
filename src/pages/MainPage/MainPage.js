@@ -5,15 +5,13 @@ import { useSelector } from "react-redux";
 // import MainShare from "../MainShare/MainShare";
 // import Advantages from "../Advantages/Advantages";
 // import Bestsellers from "../Bestsellers/Bestsellers";
-import CatalogCategories from "../../components-not-ready/CatalogCategories/CatalogCategories";
 // import Novelties from "../Novelties/Novelties";
-// import AboutUs from "../AboutUs/AboutUs";
-// import Footer from "../Footer/Footer";
-// import Delivery from "../Delivery/Delivery";
-// import PaymentMethods from "../PaymentMethods/PaymentMethods";
+import AboutUs from "../../components/AboutUs/AboutUs";
+import Footer from "../../components/Footer/Footer";
 // import OrderReady from "../OrderReady/OrderReady";
 // import Stock from "../Stock/Stock";
 // import AddToCart from "../AddToCart/AddToCart";
+import CatalogCategories from "../../components-not-ready/CatalogCategories/CatalogCategories";
 
 const MainPage = () => {
   // const [searchModalWeb, setSearchModal] = useState(false);
@@ -59,10 +57,8 @@ const MainPage = () => {
       {/*<Bestsellers />*/}
       <CatalogCategories />
       {/*<Novelties />*/}
-      {/*<AboutUs />*/}
-      {/*<Footer />*/}
-      {/*<Delivery />*/}
-      {/*<PaymentMethods />*/}
+      <AboutUs />
+      <Footer />
       {/*<OrderReady />*/}
       {/*<Stock />*/}
       {/*<AddToCart />*/}

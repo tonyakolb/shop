@@ -1,175 +1,176 @@
 ﻿.novelties {
-    height: 603px;
-    background-color: #F0F0F2;
-    position: relative;
+  height: 603px;
+  background-color: #f0f0f2;
+  position: relative;
 }
 
 .novelties-caption {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-.novelties-caption p, a {
-    font-size: 24px;
-    font-weight: 700;
-    color: #292D51;
-    line-height: 32.68px; 
-
+.novelties-caption p,
+a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #292d51;
+  line-height: 32.68px;
 }
 
 .novelties-caption a {
-    text-decoration: underline 1px;
+  text-decoration: underline 1px;
 }
 
 .novelties-items {
-    display: flex;
+  display: flex;
 }
 
 .novelties-item {
-    display: flex;
-    flex-direction: column;
-    width: 252px;
-    height: 450px;
-    margin-left: 40px;
-    background-color: #ffffff;
-    border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 252px;
+  height: 450px;
+  margin-left: 40px;
+  background-color: #ffffff;
+  border-radius: 16px 16px 0px 0px;
 }
 
 .noveltie-img {
-    height: 284px;
-    position: relative;
+  height: 284px;
+  position: relative;
 }
 
 .noveltie-img img {
-    height: 284px;
-    width: 252px;
-    position: relative;
-    border-radius: 16px 16px 0px 0px;
+  height: 284px;
+  width: 252px;
+  position: relative;
+  border-radius: 16px 16px 0px 0px;
 }
 
 .noveltie-price {
-    display: flex;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 400;
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
 }
 
-
-.actual-price, .old-price {
-    width: 126px;
-    height: 27px;
-    padding-top: 4px;
+.actual-price,
+.old-price {
+  width: 126px;
+  height: 27px;
+  padding-top: 4px;
 }
 
 .actual-price {
-    background-color: #292D51;
-    border-radius: 0px 0px 8px 8px;
+  background-color: #292d51;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .old-price {
-    color: #3E3E44;
-    text-decoration-line: line-through;
-    text-decoration-thickness: 1px;
+  color: #3e3e44;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1px;
 }
 
 .noveltie-about {
-    padding: 3.5px 16px 0 16px
+  padding: 3.5px 16px 0 16px;
 }
 
 .item-name {
-    color: #292D51;
-    font-weight: 700;
-    line-height: 22px;
+  color: #292d51;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 .item-number {
-    color: #292D51;
-    padding: 8px 0 18.5px 0;
-    font-size: 14px;
-    line-height: 19px;
+  color: #292d51;
+  padding: 8px 0 18.5px 0;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .add-to-basket {
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    width: 77px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 77px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 button:active {
-    background-color: #A7A7A8;
+  background-color: #a7a7a8;
 }
 
 .shop-rate {
-    display: flex;
+  display: flex;
 }
 
 .rating {
-    padding-left: 20px;
-    font-size: 14px;
-    line-height: 19px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .presence {
-    width: 105px;
-    left: 20px;
+  width: 105px;
+  left: 20px;
 }
 
 .not-available {
-    background-color: #A7A7A8;
+  background-color: #a7a7a8;
 }
 
 .available {
-    background-color: #292D51;
+  background-color: #292d51;
 }
 
-.sale, .presence {
-    position: absolute;
-    height: 27px;
-    top: 20px;
-    border-radius: 8px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    padding-top: 4px;
-    color: #FFFFFF;
+.sale,
+.presence {
+  position: absolute;
+  height: 27px;
+  top: 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  padding-top: 4px;
+  color: #ffffff;
 }
 
 .sale {
-    width: 49px;
-    background-color: #292D51;
-    right: 20px;
+  width: 49px;
+  background-color: #292d51;
+  right: 20px;
 }
 
 .rating-reviews {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .product-rating span {
-    padding-right: 4px;
-    font-size: 20px;
-    line-height: 1;
-    color: #A7A7A8;
+  padding-right: 4px;
+  font-size: 20px;
+  line-height: 1;
+  color: #a7a7a8;
 }
 .product-rating > span:before {
-	content: '★';
+  content: "★";
 }
 .product-rating > span.active {
-	color: #292D51;
+  color: #292d51;
 }
 
 .reviews-number {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #292D51;
-    padding-left: 2px;
-    margin-top: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #292d51;
+  padding-left: 2px;
+  margin-top: 2px;
 }

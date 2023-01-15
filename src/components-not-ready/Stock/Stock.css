@@ -1,80 +1,80 @@
 ﻿.stock {
-    margin: 0 auto;
-    width: 1360px;
+  margin: 0 auto;
+  width: 1360px;
 }
 
 .stock-caption {
-    padding: 40px 0 30px;
-    display: flex;
-    justify-content: space-between;
+  padding: 40px 0 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .stock-caption p {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    color: #0F0E0E;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #0f0e0e;
 }
 
 .stock-caption img {
-    width: 17px;
-    cursor: pointer;
+  width: 17px;
+  cursor: pointer;
 }
 
 .time-status {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .time {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .sales {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-    flex-wrap: wrap
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .one-sale {
-    width: 560px;
-    padding-bottom: 30px;
+  width: 560px;
+  padding-bottom: 30px;
 }
 
 .status {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #A7A7A8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #a7a7a8;
 }
 
 .not-finished {
-    color: #01922A;
+  color: #01922a;
 }
 
 .sale-img {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
 .sale-img img {
-    height: 400px;
+  height: 400px;
 }
 
 .sale-name {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    color: #0F0E0E;
-    padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #0f0e0e;
+  padding-bottom: 8px;
 }
 
 .sale-about {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
