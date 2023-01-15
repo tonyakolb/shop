@@ -1,0 +1,85 @@
+﻿.footer {
+  padding: 58px 0 88px 0;
+  height: 991px;
+  background: #3e3e44;
+  color: #ffffff;
+}
+
+.footer-info {
+  width: 1287px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-name {
+  padding-bottom: 2px;
+  border-bottom: 0.5px solid;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.column-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 20px;
+}
+
+.column-info a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.column-info img {
+  width: 20px;
+  margin-right: 13px;
+  margin-bottom: -3px;
+}
+
+.column-info ul {
+  list-style-type: none;
+}
+
+.column-info li {
+  line-height: 2;
+}
+
+.social-nets {
+  display: flex;
+  align-content: center;
+}
+
+.map {
+  width: 1122px;
+  height: 406px;
+}
+
+.location {
+  display: flex;
+  padding: 40px 0 30px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.shop-photos img {
+  height: 188px;
+}
+
+.shop-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shop-about p {
+  line-height: 22px;
+  padding-bottom: 8px;
+  padding-right: 80px;
+}

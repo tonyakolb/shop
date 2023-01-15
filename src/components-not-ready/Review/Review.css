@@ -1,120 +1,120 @@
 ﻿.make-review {
-    width: 800px;
-    height: 816px;
-    margin: 5% auto 0;
-    border-radius: 28px;
-    background-color: #ffffff;
+  width: 800px;
+  height: 816px;
+  margin: 5% auto 0;
+  border-radius: 28px;
+  background-color: #ffffff;
 }
 
 .review-close {
-    padding: 33px 33px 0 0;
-    display: flex;
-    justify-content: flex-end;
+  padding: 33px 33px 0 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .review img {
-    width: 17px;
-    cursor: pointer;
-    height: 17px;
+  width: 17px;
+  cursor: pointer;
+  height: 17px;
 }
 
 .review-form {
-    padding-bottom: 40px;
-    margin: 0 auto;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .review-info {
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-    outline: none;
-    border: 1px solid #292D51;
-    padding-left: 20px;
-    margin: 8px 0 20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #292d51;
+  padding-left: 20px;
+  margin: 8px 0 20px;
 }
 
 .required:before {
-    content: " * ";
-    color: #D51E1E;
+  content: " * ";
+  color: #d51e1e;
 }
 
 ::placeholder {
-    color: #A7A7A8;
+  color: #a7a7a8;
 }
 
 #text {
-    width: 100%;
-    border-radius: 8px;
-    outline: none;
-    border: 1px solid #292D51;
-    padding: 5px 0 0 20px;
-    margin: 8px 0 20px;
-    height: 120px;
-    resize: none
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #292d51;
+  padding: 5px 0 0 20px;
+  margin: 8px 0 20px;
+  height: 120px;
+  resize: none;
 }
 
 .stars-rating {
-    display: flex;
-    align-items: center;
-    padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 .stars-rating label {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .your-rating {
-    overflow: hidden;
+  overflow: hidden;
 }
 .your-rating:not(:checked) > input {
-	display: none;
+  display: none;
 }
-    .your-rating:not(:checked) > label {
-        float: right;
-        width: 4px;
-        padding: 0;
-        cursor: pointer;
-        font-size: 18px;
-        color: #FFFFFF;
-        -webkit-text-stroke-color: #292D51;
-        -webkit-text-stroke-width: 1px;
-    }
+.your-rating:not(:checked) > label {
+  float: right;
+  width: 4px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-text-stroke-color: #292d51;
+  -webkit-text-stroke-width: 1px;
+}
 .your-rating:not(:checked) > label:before {
-	content: '★';
+  content: "★";
 }
 .your-rating > input:checked ~ label {
-	color: #292D51;
+  color: #292d51;
 }
 .your-rating:not(:checked) > label:hover,
 .your-rating:not(:checked) > label:hover ~ label {
-	color: #292D51;;
+  color: #292d51;
 }
 .your-rating > input:checked + label:hover,
 .your-rating > input:checked + label:hover ~ label,
 .your-rating > input:checked ~ label:hover,
 .your-rating > input:checked ~ label:hover ~ label,
 .your-rating > label:hover ~ input:checked ~ label {
-	color: #292D51;
+  color: #292d51;
 }
 .your-rating > label:active {
-	position: relative;
+  position: relative;
 }
 
 .review-button {
-    background: #292D51;
-    border: 1px solid #FFFFFF;
-    border-radius: 16px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 16px 0;
-    text-align: center;
-    width: 125px;
-    height: 54px;
-    cursor: pointer;
+  background: #292d51;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 16px 0;
+  text-align: center;
+  width: 125px;
+  height: 54px;
+  cursor: pointer;
 }
 
 .send-review {
-    text-align: center;
+  text-align: center;
 }

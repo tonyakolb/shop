@@ -1,0 +1,17 @@
+.more {
+    position: absolute;
+    cursor: pointer;
+    left: 97%;
+    width: 3%;
+    margin-top: 12%;
+}
+.less {
+    position: absolute;
+    cursor: pointer;
+    width: 3%;
+    right: 100%;
+    margin-top: 12%;
+    transform: rotate(180deg);
+}
+
+
