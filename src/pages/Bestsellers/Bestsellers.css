@@ -23,11 +23,12 @@
 }
 
 .bestsellers-caption a{
-    text-decoration: underline 1px; 
+    text-decoration: underline 1px;
 }
 
 .bestsellers-items {
     display: flex;
+    justify-content: space-around;
     gap: 40px;
     padding: 0 40px;
 }
@@ -181,3 +182,25 @@ button:active {
     padding-left: 2px;
     margin-top: 2px;
 }
+
+.more {
+    position: absolute;
+    cursor: pointer;
+    left: 97%;
+    width: 3%;
+    margin-top: 12%;
+}
+.less {
+    position: absolute;
+    cursor: pointer;
+    width: 3%;
+    right: 100%;
+    margin-top: 12%;
+    transform: rotate(180deg);
+}
+
+.arrow{
+    position: relative;
+    padding-top: 50%;
+}
+
