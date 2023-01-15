@@ -1,77 +1,98 @@
 ﻿.catalog {
-    background-color: #F0F0F2;
-    padding: 40px 0;
+  background-color: #f0f0f2;
+  padding: 40px 0;
 }
 
 .catalog-search {
-    width: 1137px;
-    height: 40px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    float: left;
-    padding-left: 40px;
-    position: relative;
+  width: 1137px;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  float: left;
+  padding-left: 40px;
+  position: relative;
 }
 
 .catalog-search::placeholder {
-    color: #A7A7A8;
+  color: #a7a7a8;
 }
 
 .search img {
-    position: absolute;
-    z-index: 1;
-    padding-top: 10px;
-    padding-left: 10px;
+  position: absolute;
+  z-index: 1;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .catalog-categories-caption {
-    font-size: 24px;
-    font-weight: 700;
-    color: #292D51;
-    line-height: 32.68px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #292d51;
+  line-height: 32.68px;
 }
 
 .products_items {
-    flex-wrap: wrap;
-    gap: 40px 25px;
+  flex-wrap: wrap;
+  gap: 40px 25px;
 }
 
 .filter {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-decoration-line: underline;
-    color: #000000;
-    border: none;
-    cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #000000;
+  border: none;
+  cursor: pointer;
 }
 
 .filter-catalog {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    position: absolute;
-    width: 255px;
-    background: #F0F0F2;
-    z-index: 1;
-    border: 1px solid #A7A7A8;
-    border-radius: 28px;
-    padding: 26px 0 0 36px;
-    top: 70px;
-    right: 5px;
+  position: absolute;
+  width: 255px;
+  background: #f0f0f2;
+  z-index: 1;
+  border: 1px solid #a7a7a8;
+  border-radius: 28px;
+  padding: 26px 0 0 36px;
+  top: 70px;
+  right: 5px;
 }
 
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-        color: #292D51;
-        padding-bottom: 28px;
-        text-decoration: none;
-        display: block;
-    }
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #292d51;
+  padding-bottom: 28px;
+  text-decoration: none;
+  display: block;
+}
+
+.classNameBlock {
+  font-size: 24px;
+  font-weight: 700;
+  color: #292D51;
+  line-height: 32.68px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.classNameBlockLast {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}

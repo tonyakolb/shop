@@ -5,8 +5,7 @@ import { useSelector } from "react-redux";
 // import MainShare from "../MainShare/MainShare";
 // import Advantages from "../Advantages/Advantages";
 // import Bestsellers from "../Bestsellers/Bestsellers";
-// import CatalogCategories from "../../components-not-ready/CatalogCategories/CatalogCategories";
-import ProductCard from "../../components-not-ready/ProductCard/ProductCard";
+import CatalogCategories from "../../components-not-ready/CatalogCategories/CatalogCategories";
 // import Novelties from "../Novelties/Novelties";
 // import AboutUs from "../AboutUs/AboutUs";
 // import Footer from "../Footer/Footer";
@@ -58,7 +57,7 @@ const MainPage = () => {
       {/*<MainShare />*/}
       {/*<Advantages />*/}
       {/*<Bestsellers />*/}
-      {/*<CatalogCategories />*/}
+      <CatalogCategories />
       {/*<Novelties />*/}
       {/*<AboutUs />*/}
       {/*<Footer />*/}
@@ -67,7 +66,7 @@ const MainPage = () => {
       {/*<OrderReady />*/}
       {/*<Stock />*/}
       {/*<AddToCart />*/}
-      <ProductCard/>
+
     </>
   );
 };
