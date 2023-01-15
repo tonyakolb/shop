@@ -4,6 +4,7 @@ import Input from "../../components/Input/Input";
 import TitleBlock from "../../components/TitleBlock/TitleBlock";
 import AllProducts from "../../components/AllProducts/AllProducts";
 import SearchIcon from "../../assets/images/search-icon.svg";
+
 import "./Catalog.css";
 
 const Catalog = () => {

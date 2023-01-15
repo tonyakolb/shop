@@ -1,18 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router";
-
+import { apiMain } from "../../assets/constants/requests";
 import Image from "../Image/Image";
+import { useState } from "react";
 
 import Cross from "../../assets/images/Cross.svg";
-import SaleImage1 from "../../assets/images/Black-Friday.png";
+import Promotion from "../../components/Promotion/Promotion";
 import "./Stock.css";
 
 const Stock = () => {
   const navigate = useNavigate();
 
   const close = () => {
-    navigate("/");
-  };
+      navigate("/");
+    };
+  const [product, setProduct] = useState([]);
+  apiMain(setProduct);
+
+  
 
   return (
     <div>
@@ -20,72 +25,18 @@ const Stock = () => {
         <div className="stock-caption">
           <p>Главная/Акции</p>
           <Image src={Cross} alt="close" onClick={close} />
-        </div>
-        <div className="sales">
-          <div className="one-sale">
-            <div className="time-status">
-              <div className="time">
-                Период проведения: 20.10.2022 - 31.10.2022
               </div>
-              <div className="status not-finished">Действует</div>
-            </div>
-            <div className="sale-img">
-              <img src={SaleImage1} alt="sale" />
-            </div>
-            <div className="sale-name">АКЦИЯ: 7 черных пятниц на неделе</div>
-            <div className="sale-about">
-              Более 50 товаров на скидке от 20 до 50%
-            </div>
-          </div>
-
-          <div className="one-sale">
-            <div className="time-status">
-              <div className="time">
-                Период проведения: 20.10.2022 - 31.10.2022
+              <div className='promotions'>
+                  {product.map((item) => (
+                  <Promotion
+                      urlImg={item.images[0]}
+                      key={item.id}
+                      currency="$"
+                      valuePrice={item.price.value}
+                      productId={item.id}
+                  />
+                  ))}
               </div>
-              <div className="status">Закончилась</div>
-            </div>
-            <div className="sale-img">
-              <img src={SaleImage1} alt="sale" />
-            </div>
-            <div className="sale-name">АКЦИЯ: 7 черных пятниц на неделе</div>
-            <div className="sale-about">
-              Более 50 товаров на скидке от 20 до 50%
-            </div>
-          </div>
-
-          <div className="one-sale">
-            <div className="time-status">
-              <div className="time">
-                Период проведения: 20.10.2022 - 31.10.2022
-              </div>
-              <div className="status not-finished">Действует</div>
-            </div>
-            <div className="sale-img">
-              <img src={SaleImage1} alt="sale" />
-            </div>
-            <div className="sale-name">АКЦИЯ: 7 черных пятниц на неделе</div>
-            <div className="sale-about">
-              Более 50 товаров на скидке от 20 до 50%
-            </div>
-          </div>
-
-          <div className="one-sale">
-            <div className="time-status">
-              <div className="time">
-                Период проведения: 20.10.2022 - 31.10.2022
-              </div>
-              <div className="status">Закончилась</div>
-            </div>
-            <div className="sale-img">
-              <img src={SaleImage1} alt="sale" />
-            </div>
-            <div className="sale-name">АКЦИЯ: 7 черных пятниц на неделе</div>
-            <div className="sale-about">
-              Более 50 товаров на скидке от 20 до 50%
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

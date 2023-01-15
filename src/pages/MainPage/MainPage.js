@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 import MainShare from "../../components-not-ready/MainShare/MainShare";
 import Advantages from "../../components/Advantages/Advantages";
 import Bestsellers from "../Bestsellers/Bestsellers";
-import Novelties from "../Novelties/Novelties";
+import Novelties from "../../pages/Novelties/Novelties";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
 // import OrderReady from "../OrderReady/OrderReady";

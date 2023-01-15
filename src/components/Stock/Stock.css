@@ -21,60 +21,8 @@
   cursor: pointer;
 }
 
-.time-status {
-  display: flex;
-  justify-content: space-between;
-}
-
-.time {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.sales {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.one-sale {
-  width: 560px;
-  padding-bottom: 30px;
-}
-
-.status {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #a7a7a8;
-}
-
-.not-finished {
-  color: #01922a;
-}
-
-.sale-img {
-  padding: 8px 0;
-}
-
-.sale-img img {
-  height: 400px;
-}
-
-.sale-name {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  color: #0f0e0e;
-  padding-bottom: 8px;
-}
-
-.sale-about {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

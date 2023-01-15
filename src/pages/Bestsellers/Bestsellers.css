@@ -37,14 +37,14 @@
     position: absolute;
     cursor: pointer;
     left: 93%;
-    width: 3%;
+    width: auto;
     margin-top: 12%;
 }
 .less {
     position: absolute;
     cursor: pointer;
-    width: 7%;
-    right: 100%;
+    left: 7%;
+    width: auto;
     margin-top: 12%;
     transform: rotate(180deg);
     z-index: 1;
@@ -55,3 +55,36 @@
     padding-top: 50%;
 }
 
+@media screen and (max-width: 450px) {
+    .bestsellers-info {
+        width: 343px;
+    }
+
+    .bestsellers-items {
+        gap: 19px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .more {
+        left: 85%;
+    }
+
+    .less {
+        left: 5%;
+    }
+
+    .bestsellers-caption {
+        padding: 16px 0;
+    }
+
+        .bestsellers-caption p, a {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .bestsellers-caption a {
+            font-size: 12px;
+            line-height: 22px;
+        }
+}

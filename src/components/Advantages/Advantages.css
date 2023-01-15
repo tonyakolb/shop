@@ -27,7 +27,7 @@
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .mobile-adv {
     display: block;
   }
