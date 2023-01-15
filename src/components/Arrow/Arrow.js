@@ -1,12 +1,21 @@
-import React from 'react';
+import React from "react";
 
 import Image from "../Image/Image";
-import './Arrow.css';
+import "./Arrow.css";
 
-const Arrow = ({ src, onClick, sliderMin, sliderMax, arrayLength }) => {
-    if (!(sliderMin === 0 || sliderMax >= arrayLength)) {
-        return <Image src={src} onClick={onClick} />;
-    }
+const Arrow = ({
+  src,
+  onClick,
+  sliderMin,
+  sliderMax,
+  arrayLength,
+  className,
+}) => {
+  if (!(sliderMin === 0 || sliderMax >= arrayLength)) {
+    return (
+        <Image src={src} onClick={onClick} className={className}/>
+    );
+  }
 };
 
 export default Arrow;
