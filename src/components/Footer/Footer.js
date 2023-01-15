@@ -76,8 +76,8 @@ const Footer = () => {
           <div className="footer-column">
             <p className="column-name">Мы в соц. сетях</p>
             <div className="column-info">
-              <div className="social-nets">
-                <a href="/">
+                          <div className="social-nets">
+                              <a href="https://www.instagram.com/santexnika.by/" target='_blank'>
                   <img src={Instagram} alt="instagram" />
                 </a>
                 <a href="/">
