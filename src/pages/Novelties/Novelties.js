@@ -1,16 +1,15 @@
 import React, { useState } from "react";
+// import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-
 import { apiMain } from "../../assets/constants/requests";
 import ArrowIcon from "../../assets/images/arrow-icon.svg";
 // import Image from "../../assets/images/main-image.jpg";
 // import Button from "../../components/Button/Button";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Arrow from "../../components/Arrow/Arrow";
-// import { useDispatch } from "react-redux";
-import "./Bestsellers.css";
+import "./Novelties.css";
 
-const Bestsellers = ({ productId }) => {
+const Novelties = () => {
   // const dispatch = useDispatch();
 
   // const [disabled, setDisabled] = useState(false);
@@ -18,16 +17,6 @@ const Bestsellers = ({ productId }) => {
   const [arrowMin, setArrowMin] = useState(0);
   const [arrowMax, setArrowMax] = useState(4);
   apiMain(setProduct);
-
-  // const addToBag = (e) => {
-  //   e.target.value;
-  //   setDisabled(!disabled);
-  //   dispatch(CountAction.increment());
-  //   const resultAdd = apiResult.filter((item) =>
-  //     Object.values(item).includes(productId)
-  //   );
-  //   dispatch(BagAction.addToBagAction(resultAdd));
-  // };
 
   const arrowMore = () => {
     setArrowMax(arrowMax + 1);
@@ -40,14 +29,13 @@ const Bestsellers = ({ productId }) => {
   };
 
   return (
-    <div className="bestsellers">
-      <div className="bestsellers-info">
-        <div className="bestsellers-caption">
-          <p>Хиты продаж</p>
+    <div className="novelties">
+      <div className="novelties-info">
+        <div className="novelties-caption">
+          <p>Новинки</p>
           <Link to="/Каталог">Перейти в каталог</Link>
         </div>
-
-        <div className="bestsellers-items">
+        <div className="novelties-items">
           <Arrow
             onClick={arrowLess}
             className="less"
@@ -65,8 +53,8 @@ const Bestsellers = ({ productId }) => {
             />
           ))}
           <Arrow
-            onClick={arrowMore}
             className="more"
+            onClick={arrowMore}
             src={ArrowIcon}
             sliderMax={arrowMax}
             arrayLength={product.length}
@@ -77,4 +65,4 @@ const Bestsellers = ({ productId }) => {
   );
 };
 
-export default Bestsellers;
+export default Novelties;
