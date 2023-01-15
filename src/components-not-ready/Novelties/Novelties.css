@@ -30,7 +30,7 @@ a {
 .novelties-items {
     display: flex;
     gap: 40px;
-    padding: 0 40px;
+    justify-content: space-around;
 }
 
 .more {

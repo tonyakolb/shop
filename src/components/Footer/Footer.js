@@ -13,7 +13,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="bookmark-contacts">
       <div className="footer-info">
         <div className="footer-contacts">
           <div className="footer-column">
@@ -22,7 +22,7 @@ const Footer = () => {
               <ul>
                 <li>
                   {" "}
-                  <a href="/"> О нас </a>{" "}
+                  <a href="#bookmark-about"> О нас </a>{" "}
                 </li>
                 <li>
                   {" "}

@@ -27,8 +27,10 @@ const Category = ({ inputValueText, src, alt, text }) => {
       to={`/Каталог/${inputValueText}`}
       className="category"
       onClick={filterProduct}
-    >
-      <Image src={src} alt={alt} />
+      >
+          <div className='category-img'>
+              <Image src={src} alt={alt} />
+          </div>
       <div className="category-name">{text}</div>
     </Link>
   );

@@ -12,7 +12,7 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="about-us">
+    <div className="about-us" id="bookmark-about">
       <div className="about-us-info">
         <p>О компании SOQO</p>
         <div className="about-company">

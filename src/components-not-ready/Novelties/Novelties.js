@@ -40,24 +40,30 @@ const Novelties = () => {
 
             <div className='novelties-items'>
                 
-                <Arrow onClick={arrowLess} src={ArrowIcon} sliderMin={arrowMin} />
-                {product.slice(arrowMin, arrowMax).map((item) => (
-                    <ProductCard
-                        urlImg={item.images[0]}
-                        key={item.id}
-                        currency="$"
-                        valuePrice={item.price.value}
-                        catalogSearch={item.id}
-                        productId={item.id}
+                    <Arrow
+                        onClick={arrowLess}
+                        className="less"
+                        src={ArrowIcon}
+                        sliderMin={arrowMin}
                     />
+                    {product.slice(arrowMin, arrowMax).map((item) => (
+                        <ProductCard
+                            urlImg={item.images[0]}
+                            key={item.id}
+                            currency="$"
+                            valuePrice={item.price.value}
+                            catalogSearch={item.id}
+                            productId={item.id}
+                        />
+                    ))}
+                    <Arrow
+                        onClick={arrowMore}
+                        className="more"
+                        src={ArrowIcon}
+                        sliderMax={arrowMax}
+                        arrayLength={product.length}
 
-                ))}
-                <Arrow
-                    onClick={arrowMore}
-                    src={ArrowIcon}
-                    sliderMax={arrowMax}
-                    arrayLength={product.length}
-                />
+                    />
 
                 </div>
             </div>

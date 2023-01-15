@@ -44,11 +44,8 @@ const Header = ({ searchModal }) => {
         navigate_context="Доставка"
         navigate_elem="navigate_elem"
         to="/Доставка"
-      />
-      <NavigateElement
-        navigate_context="Контакты"
-        navigate_elem="navigate_elem"
-      />
+          />
+      <a className='navigate_elem' href="#bookmark-contacts"> Контакты </a>{" "}
       <div className="basket">
         <Link to="/Каталог/Корзина">
           <Image src={BasketIcon} alt="basket" />
