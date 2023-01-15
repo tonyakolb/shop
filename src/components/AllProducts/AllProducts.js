@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "../../components-not-ready/ProductCard/ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
 import { useState } from "react";
 import { apiMain } from "../../assets/constants/requests";
 import "./AllProducts.css";

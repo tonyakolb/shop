@@ -1,10 +1,10 @@
 ﻿.product-item {
-    display: flex;
-    flex-direction: column;
-    width: 252px;
-    height: 450px;
-    background-color: #ffffff;
-    border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 252px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 16px 16px 0 0;
 }
 
 .product-img {
@@ -16,7 +16,7 @@
   height: 284px;
   width: 252px;
   position: relative;
-  border-radius: 16px 16px 0px 0px;
+  border-radius: 16px 16px 0 0;
 }
 
 .product-price {
@@ -35,7 +35,7 @@
 
 .actual-price {
   background-color: #292d51;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0 0 8px 8px;
 }
 
 .old-price {
@@ -61,17 +61,15 @@
   line-height: 19px;
 }
 
-.add-to-basket button {
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    width: 77px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: #292D51;
-    background-image: url("../../assets/images/Icon-basket-no-frame.svg");
+.add-to-basket {
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 77px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 button:active {
