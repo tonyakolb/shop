@@ -1,8 +1,8 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import "./CatalogCategories.css";
 import Categories from "../../components/Categories/Categories";
+import "./CatalogCategories.css";
 
 const CatalogCategories = () => {
   return (
@@ -12,8 +12,7 @@ const CatalogCategories = () => {
           <p>Категории каталога</p>
           <Link to="/Каталог">Перейти в каталог</Link>
         </div>
-
-       <Categories/>
+        <Categories />
       </div>
     </div>
   );

@@ -90,7 +90,7 @@
     line-height: 19px;
 }
 
-.add-to-basket {
+.add-to-basket button{
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
