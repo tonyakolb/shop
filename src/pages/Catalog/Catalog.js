@@ -7,8 +7,6 @@ import SearchIcon from "../../assets/images/search-icon.svg";
 import TitleBlock from "../../components/TitleBlock/TitleBlock";
 import AllProducts from "../../components/AllProducts/AllProducts";
 
-
-
 import { Link } from "react-router-dom";
 
 
@@ -29,12 +27,11 @@ const Catalog = () => {
                             /></div>
                     </div>
                     <Categories />
+                    <TitleBlock
+                        titleBlock='Все товары'
+                        titleBlockLast='Фильтр' />
 
-            <TitleBlock
-                titleBlock='Все товары'
-                titleBlockLast='Фильтр' />
-
-            <AllProducts/>
+                    <AllProducts/>
                 </div>
 
 
