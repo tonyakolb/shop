@@ -2,7 +2,7 @@
 import "./AddToCart.css";
 import Cross from "../../assets/images/Cross.svg";
 import Item from "../../assets/images/Item.png";
-// import Button from '../../components/Button/Button';
+// import Button from '../../components-not-ready/Button/Button';
 
 
 const AddToCart = () => {

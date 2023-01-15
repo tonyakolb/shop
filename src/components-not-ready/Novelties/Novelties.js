@@ -24,7 +24,7 @@ const Novelties = () => {
                 <p>Новинки</p>
                 <a href='/'>Перейти в каталог</a>
             </div>
-            
+
             <div className='novelties-items'>
                 <div className='novelties-item'>
                     <div className='noveltie-img'>
@@ -35,7 +35,7 @@ const Novelties = () => {
                         <div className='sale'>
                             New
                         </div>
-                        
+
                     </div>
                     <div className='noveltie-price'>
                         <div className='actual-price'>102,00 руб</div>
@@ -61,7 +61,7 @@ const Novelties = () => {
                                         <span class="active"></span>
                                         <span class="active"></span>
                                         <span></span>
-                                        
+
                                     </div>
                                         <div className='reviews-number'>(2)</div>
                                     </div>
@@ -80,7 +80,7 @@ const Novelties = () => {
                         <div className='sale'>
                             New
                         </div>
-                        
+
                     </div>
                     <div className='noveltie-price'>
                         <div className='actual-price'>102,00 руб</div>

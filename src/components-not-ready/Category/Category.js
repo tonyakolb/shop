@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import ApiAction from "../../redux/actions/ApiAction";
+import ApiAction from "../../redux/actions/apiAction";
 import { Link } from "react-router-dom";
 
 import "../CatalogCategories/CatalogCategories.css";

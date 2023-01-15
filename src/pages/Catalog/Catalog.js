@@ -5,9 +5,11 @@ import "./Catalog.css";
 import Input from "../../components/Input/Input";
 import SearchIcon from "../../assets/images/search-icon.svg";
 import TitleBlock from "../../components/TitleBlock/TitleBlock";
-import AllProducts from "../../components/AllProducts/AllProducts";
+import AllProducts from "../../components-not-ready/AllProducts/AllProducts";
 
-import { Link } from "react-router-dom";
+
+
+// import { Link } from "react-router-dom";
 
 
 const Catalog = () => {
@@ -39,8 +41,8 @@ const Catalog = () => {
 
             </div>
 
-            
-            
+
+
         </>
     );
 };

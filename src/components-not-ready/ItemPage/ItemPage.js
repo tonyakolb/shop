@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ItemPage.scss";
-import Header from "../Header/Header";
+import Header from "../../pages/Header/Header";
 import { useParams } from "react-router";
 
 import { http } from "../../assets/constants/api";

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint --debug src/components/**/*.js",
+    "lint": "eslint --debug src/components-not-ready/**/*.js",
     "lint:fix": "eslint ./src && ./tests --fix",
     "start": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --mode production",

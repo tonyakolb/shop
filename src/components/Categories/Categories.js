@@ -1,10 +1,10 @@
 import React from 'react';
-import Category from "../../pages/Category/Category";
+import Category from "../../components-not-ready/Category/Category";
 import KitchenImage from "../../assets/images/kitchen.png";
 import BathroomImage from "../../assets/images/bathroom.png";
 import ToiletImage from "../../assets/images/toilet.png";
 import OtherImage from "../../assets/images/other-image.png";
-import "../../pages/CatalogCategories/CatalogCategories.css";
+import "../../components-not-ready/CatalogCategories/CatalogCategories.css";
 const Categories = () => {
     return (
 

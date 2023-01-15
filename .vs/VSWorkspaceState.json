@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\assets",
-    "\\src\\assets\\images",
+    "\\src\\assets\\css",
     "\\src\\components",
-    "\\src\\components\\Categories",
-    "\\src\\components\\Navigate",
+    "\\src\\components\\AllProducts",
+    "\\src\\components\\Input",
+    "\\src\\components\\TitleBlock",
     "\\src\\pages",
-    "\\src\\pages\\Catalog",
-    "\\src\\pages\\CatalogKitchen"
+    "\\src\\pages\\Catalog"
   ],
-  "SelectedNode": "\\src\\pages\\Delivery\\Delivery.css",
+  "SelectedNode": "\\src\\pages\\Catalog\\Catalog.js",
   "PreviewInSolutionExplorer": false
 }

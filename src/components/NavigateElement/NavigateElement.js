@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const NavigateElement = ({ navigate_context, navPage, navigate_elem }) => {
-    return (
-        <a href="#" className={navigate_elem} onClick={navPage}>
-            {navigate_context}
-        </a>
-    );
+const NavigateElement = ({ navigate_context, navigate_elem, link }) => {
+  return (
+    <Link to={link} className={navigate_elem}>
+      {navigate_context}
+    </Link>
+  );
 };
 
 export default NavigateElement;
