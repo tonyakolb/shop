@@ -1,9 +1,11 @@
 import React from "react";
+
 import FirstImage from "../../assets/images/advantage-first.jpg";
 import SecondImage from "../../assets/images/advantage-second.png";
 import ThirdImage from "../../assets/images/advantage-third.png";
 import ForthImage from "../../assets/images/advantage-forth.png";
 import FifthImage from "../../assets/images/advantage-fifth.png";
+
 import "./Advantages.css";
 
 const Advantages = () => {

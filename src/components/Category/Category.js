@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import ApiAction from "../../redux/actions/apiAction";
 import { Link } from "react-router-dom";
 
+import Image from "../Image/Image";
 import "../CatalogCategories/CatalogCategories.css";
 
 const Category = ({ inputValueText, src, alt, text }) => {
@@ -27,7 +28,7 @@ const Category = ({ inputValueText, src, alt, text }) => {
       className="category"
       onClick={filterProduct}
     >
-      <img src={src} alt={alt} />
+      <Image src={src} alt={alt} />
       <div className="category-name">{text}</div>
     </Link>
   );

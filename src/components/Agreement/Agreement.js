@@ -1,7 +1,7 @@
 ﻿import React from "react";
-import "./Agreement.css";
-import OrderDone from "../../assets/images/OrderDone.svg";
+
 import Cross from "../../assets/images/Cross.svg";
+import "./Agreement.css";
 
 const OrderReady = () => {
   return (

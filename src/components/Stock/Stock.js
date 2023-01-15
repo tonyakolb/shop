@@ -1,15 +1,25 @@
 import React from "react";
-import "./Stock.css";
+import { useNavigate } from "react-router";
+
+import Image from "../Image/Image";
+
 import Cross from "../../assets/images/Cross.svg";
 import SaleImage1 from "../../assets/images/Black-Friday.png";
+import "./Stock.css";
 
 const Stock = () => {
+  const navigate = useNavigate();
+
+  const close = () => {
+    navigate("/");
+  };
+
   return (
     <div>
       <div className="stock">
         <div className="stock-caption">
           <p>Главная/Акции</p>
-          <img src={Cross} alt="close" />
+          <Image src={Cross} alt="close" onClick={close} />
         </div>
         <div className="sales">
           <div className="one-sale">

@@ -33,12 +33,17 @@ const Header = ({ searchModal }) => {
       <NavigateElement
         navigate_context="Каталог"
         navigate_elem="navigate_elem"
-        link="/Каталог"
+        to="Каталог"
       />
-      <NavigateElement navigate_context="Акции" navigate_elem="navigate_elem" />
+      <NavigateElement
+        navigate_context="Акции"
+        navigate_elem="navigate_elem"
+        to="/Акции"
+      />
       <NavigateElement
         navigate_context="Доставка"
         navigate_elem="navigate_elem"
+        to="/Доставка"
       />
       <NavigateElement
         navigate_context="Контакты"
@@ -48,8 +53,7 @@ const Header = ({ searchModal }) => {
         <Link to="/Каталог/Корзина">
           <Image src={BasketIcon} alt="basket" />
           <div className="basket-counter">
-            <TextBlock className="counter"
-            textValue={count}/>
+            <TextBlock className="counter" textValue={count} />
           </div>
         </Link>
       </div>
@@ -62,5 +66,4 @@ const Header = ({ searchModal }) => {
   );
 };
 
-export default Header
-;
+export default Header;
