@@ -9,10 +9,10 @@ import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../pages/Novelties/Novelties";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
+//import Menu from "../../components/Menu/Menu";
 
-// import Card from "../../components-not-ready/Card/Card";
-// import OrderReady from "../OrderReady/OrderReady";
-// import AddToCart from "../AddToCart/AddToCart";
+//import OrderReady from "../../components-not-ready/OrderReady/OrderReady";
+//import AddToCart from "../../components-not-ready/AddToCart/AddToCart";
 
 const MainPage = () => {
   const [searchModalWeb, setSearchModal] = useState(false);
@@ -62,9 +62,8 @@ const MainPage = () => {
       <Novelties />
       <AboutUs />
       <Footer />
-      {/*<OrderReady />*/}
-      {/*<AddToCart />*/}
-      {/*  <Card/>*/}
+          {/*<OrderReady />*/}
+          {/*<AddToCart />*/}
 
     </>
   );

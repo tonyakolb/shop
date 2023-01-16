@@ -43,7 +43,7 @@ const Card = ({
           <div className="product-name">{productName}</div>
           <div className="about">
             <div className="first-column">
-              <div className="product-img">
+              <div className="full-product-img">
                 <div className="other-img">
                   <img src={detailImagesSecond} alt="product image" />
                   <img src={detailImagesSecond} alt="product image" />

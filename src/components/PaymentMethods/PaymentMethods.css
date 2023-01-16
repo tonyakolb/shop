@@ -1,4 +1,8 @@
-﻿.payment-methods {
+﻿body {
+    background-color: #FFFFFF
+}
+
+.payment-methods {
   margin: 0 auto;
   width: 1360px;
 }
@@ -44,4 +48,39 @@
 
 .method li {
   line-height: 2;
+}
+
+
+@media screen and (max-width: 450px) {
+    .payment-methods {
+        width: 343px;
+    }
+
+    .payment-methods-caption {
+        padding: 20px 0 17px;
+    }
+
+        .payment-methods-caption p, .method-name {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+    .method, .method-name{
+        padding-bottom: 16px;
+    }
+
+    .method p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .method ul {
+        margin-left: 20px;
+    }
+
+    .method li {
+        line-height: 1.5;
+        font-size: 14px;
+        line-height: 19px;
+    }
 }

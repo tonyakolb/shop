@@ -1,43 +1,71 @@
-﻿.agreement {
-  background-color: #f0f0f2;
-  padding: 40px 0;
+﻿.agreement-container {
+    background-color: #f0f0f2;
+    padding: 40px 0;
 }
 
-.agreement-info {
-  width: 1360px;
-  margin: 0 auto;
+.agreement {
+    width: 1360px;
+    margin: 0 auto;
 }
 
 .agreement-caption {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
 
-.agreement-caption p {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  color: #0f0e0e;
-}
+    .agreement-caption p {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #0f0e0e;
+    }
 
-.agreement-caption img {
-  width: 17px;
-  cursor: pointer;
-}
+    .agreement-caption img {
+        width: 17px;
+        cursor: pointer;
+    }
 
 .agreement-text h1 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-  color: #000000;
-  padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    padding-bottom: 30px;
 }
 
 .agreement-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 33px;
-  color: #000000;
-  padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+    color: #000000;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .agreement-container {
+        padding: 20px 0;
+    }
+
+    .agreement {
+        width: 343px;
+    }
+
+    .agreement-caption {
+        padding-bottom: 15px;
+    }
+
+        .agreement-caption p, .agreement-text h1 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+    .agreement-text h1 {
+        padding-bottom: 15px;
+    }
+
+    .agreement-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }

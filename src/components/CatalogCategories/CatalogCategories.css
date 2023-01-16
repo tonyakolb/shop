@@ -45,7 +45,7 @@ a {
 }
 
 .category-name {
-    width: 290px;
+    width: 100%;
     height: 82px;
     background: #292d51;
     text-align: center;
@@ -54,4 +54,53 @@ a {
     font-size: 24px;
     line-height: 33px;
     padding-top: 24.5px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .catalog-categories {
+        height: 542px;
+        padding: 0;
+    }
+
+    .catalog-categories-info {
+        width: 343px;
+    }
+
+
+    .catalog-categories-caption {
+        padding: 16px 0;
+    }
+
+     .catalog-categories-caption p, a {
+        font-size: 16px;
+        line-height: 22px;
+     }
+
+     .catalog-categories-caption a {
+        font-size: 12px;
+        line-height: 22px;
+     }
+
+    .categories {
+        flex-wrap: wrap;
+        gap: 16px 19px;
+    }
+
+    .category-img {
+        width: 162px;
+        height: 164px;
+    }
+
+    .category-img img{
+        width: 162px;
+        height: 164px;
+    }
+
+    .category-name {
+        height: 59px;
+        font-size: 14px;
+        line-height: 19px;
+        padding-top: 20px;
+    }
 }

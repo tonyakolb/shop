@@ -48,3 +48,39 @@
     font-size: 16px;
     line-height: 22px;
 }
+
+@media screen and (max-width: 450px) {
+
+    .time-status {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .time, .status, .sale-about {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+
+    .prom-item {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+
+    .sale-img {
+        padding: 4px 0;
+    }
+
+        .sale-img img {
+            width: 343px;
+            height: 225px;
+        }
+
+    .sale-name {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 4px;
+    }
+}

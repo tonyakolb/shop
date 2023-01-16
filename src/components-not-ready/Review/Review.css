@@ -12,7 +12,7 @@
   justify-content: flex-end;
 }
 
-.review img {
+.review-close img {
   width: 17px;
   cursor: pointer;
   height: 17px;
@@ -42,7 +42,7 @@
   color: #a7a7a8;
 }
 
-#text {
+#text-review {
   width: 100%;
   border-radius: 8px;
   outline: none;
@@ -51,7 +51,9 @@
   margin: 8px 0 20px;
   height: 120px;
   resize: none;
+  background-color: #ffffff
 }
+
 
 .stars-rating {
   display: flex;
@@ -117,4 +119,47 @@
 
 .send-review {
   text-align: center;
+}
+
+
+@media screen and (max-width: 450px) {
+    .make-review {
+        width: 343px;
+        height: 663px;
+        margin-top: 0
+    }
+
+    .review-close {
+        padding: 19px 19px 0 0;
+    }
+
+    .review-form {
+        padding-bottom: 0;
+        margin: -17px auto;
+    }
+
+    .review-info {
+        padding-left: 10px;
+        margin: 11px 0 8px;
+    }
+
+    #text-review {
+        padding: 5px 0 0 10px;
+        margin: 11px 0 8px;
+    }
+
+
+    .stars-rating {
+        padding-bottom: 11px;
+    }
+
+
+    .review-button {
+        padding: 11px 0;
+    }
+
+    .review-form label {
+        font-size: 14px;
+        line-height: 19px;
+    }
 }

@@ -26,7 +26,7 @@ const Review = () => {
             <Input className="review-info" type="email" />
 
             <label className="required">Отзыв</label>
-            <textarea className="review-text" id="text" required />
+            <textarea className="review-text" id="text-review" required />
 
             <label>Плюсы</label>
             <Input className="review-info" type="text" />

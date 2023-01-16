@@ -56,22 +56,33 @@
 }
 
 @media screen and (max-width: 450px) {
+    .bestsellers {
+        height: 700px;
+    }
+
     .bestsellers-info {
         width: 343px;
     }
 
     .bestsellers-items {
-        gap: 19px;
+        gap: 30px 19px;
         justify-content: space-between;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .more {
-        left: 85%;
+        left: 90%;
+        margin-top: 312px
     }
 
+        .more img, .less img {
+            width: 24px;
+            height: 24px;
+        }
+
     .less {
-        left: 5%;
+        left: 3%;
+        margin-top: 308px;
     }
 
     .bestsellers-caption {

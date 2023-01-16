@@ -19,20 +19,27 @@ const Catalog = () => {
 
               <Input
                 type="text"
-                placeholder="Поиск по товарам, категориям, артикулу"
+                placeholder="Поиск"
                 className="catalog-search"
               />
             </div>
           </div>
-          <Categories />
-
+                  <Categories />
+                  <div className='filter'>
           <TitleBlock
             titleBlock="Все товары"
             titleBlockLast="Фильтр"
             classNameBlock="classNameBlock"
             classNameBlockLast="classNameBlockLast"
           />
-
+                  <div id="myDropdown" className="dropdown-content">
+                      <a href="/">Цена по возрастанию</a>
+                      <a href="/">Цена по убыванию</a>
+                      <a href="/">В наличии</a>
+                      <a href="/">Уцененные</a>
+                      <a href="/">Акционные товары</a>
+                      </div>
+                  </div>
           <AllProducts />
         </div>
       </div>

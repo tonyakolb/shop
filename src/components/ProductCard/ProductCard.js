@@ -59,7 +59,7 @@ const ProductCard = ({ urlImg, valuePrice, catalogSearch,productId }) => {
             <div className="rating">
               Отзывы
               <div className="rating-reviews">
-                <div className="product-rating">
+                <div className="saved-product-rating">
                   <span className="active" />
                   <span className="active" />
                   <span className="active" />
