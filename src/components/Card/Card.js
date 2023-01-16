@@ -1,38 +1,56 @@
-﻿import React from "react";
-import { useDispatch } from "react-redux";
-import { addToBasket } from "../../redux/actions/basketAction";
+﻿import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import bagAction from "../../redux/actions/bagAction";
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
 import Cross from "../../assets/images/Cross.svg";
-import ProductImage from "../../assets/images/Item.png";
 import "./Card.css";
+import countBagAction from "../../redux/actions/countBagAction";
+import { useNavigate } from "react-router";
 
-const Card = ({ item }) => {
+const Card = ({
+  detailImages,
+  detailImagesSecond,
+  productName,
+  valuePrice,
+  productId,
+  currency,
+}) => {
+  const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
-
-  const handleAddClick = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    dispatch(addToBasket(item));
+  const apiResult = useSelector((state) => state.apiResult.response);
+  const navigate = useNavigate();
+  const close = () => {
+    navigate("/");
   };
+  const addToBag = (e) => {
+    e.target.value;
+    setDisabled(!disabled);
+    dispatch(countBagAction.increment());
+    const resultAdd = apiResult.filter((item) =>
+      Object.values(item).includes(productId)
+    );
+    dispatch(bagAction.addToBagAction(resultAdd));
+  };
+
   return (
     <div>
       <div className="card">
         <div className="card-caption">
           <p> Каталог/Кухня/Смесители </p>
-          <img src={Cross} alt="close" />
+          <img src={Cross} onClick={close} alt="close" />
         </div>
         <div className="product-card">
-          <div className="product-name">Смеситель для кухни SQ3790</div>
+          <div className="product-name">{productName}</div>
           <div className="about">
             <div className="first-column">
-              <div className="product-img">
+              <div className="full-product-img">
                 <div className="other-img">
-                  <img src={ProductImage} alt="product image" />
-                  <img src={ProductImage} alt="product image" />
-                  <img src={ProductImage} alt="product image" />
+                  <img src={detailImagesSecond} alt="product image" />
+                  <img src={detailImagesSecond} alt="product image" />
+                  <img src={detailImagesSecond} alt="product image" />
                 </div>
                 <div className="main-img">
-                  <img src={ProductImage} alt="product image" />
+                  <img src={detailImages} alt="product image" />
                 </div>
               </div>
 
@@ -40,24 +58,24 @@ const Card = ({ item }) => {
                 <div className="review-rating">
                   <p>Отзывы</p>
 
-                  <div class="product-rating">
-                    <span class="active"></span>
-                    <span class="active"></span>
-                    <span class="active"></span>
-                    <span class="active"></span>
-                    <span></span>
+                  <div className="product-rating">
+                    <span className="active" />
+                    <span className="active" />
+                    <span className="active" />
+                    <span className="active" />
+                    <span />
                   </div>
                 </div>
 
                 <div className="review">
                   <div className="author-rating">
                     <p>Юлия</p>
-                    <div class="reviewer-rating">
-                      <span class="active"></span>
-                      <span class="active"></span>
-                      <span class="active"></span>
-                      <span class="active"></span>
-                      <span class="active"></span>
+                    <div className="reviewer-rating">
+                      <span className="active" />
+                      <span className="active" />
+                      <span className="active" />
+                      <span className="active" />
+                      <span className="active" />
                     </div>
                   </div>
                   <div className="review-text">
@@ -85,10 +103,12 @@ const Card = ({ item }) => {
                     <div className="product-sale">-30%</div>
                   </div>
                   <div className="price">
-                    <div className="price-new">102,00 руб</div>
-                    <div className="price-old">158,00 руб</div>
+                    <div className="price-new">
+                      {currency} {valuePrice}
+                    </div>
+                    <div className="price-old">{valuePrice}</div>
                   </div>
-                  <button className="add" onClick={handleAddClick}>
+                  <button className="add" onClick={addToBag}>
                     Добавить в корзину
                     <img src={Icon} alt="basket" />
                   </button>

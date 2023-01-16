@@ -10,6 +10,7 @@
 .product-img {
   height: 284px;
   position: relative;
+  width: 252px;
 }
 
 .product-img img {
@@ -118,6 +119,7 @@ button:active {
   width: 49px;
   background-color: #292d51;
   right: 20px;
+  z-index: 1;
 }
 
 .rating-reviews {
@@ -125,19 +127,19 @@ button:active {
   align-items: center;
 }
 
-.product-rating span {
-  padding-right: 4px;
-  font-size: 20px;
-  line-height: 1;
-  color: #a7a7a8;
+.saved-product-rating span {
+    padding-right: 4px;
+    font-size: 20px;
+    line-height: 1;
+    color: #a7a7a8;
 }
 
-.product-rating > span:before {
-  content: "★";
+.saved-product-rating > span:before {
+    content: "★";
 }
 
-.product-rating > span.active {
-  color: #292d51;
+.saved-product-rating > span.active {
+    color: #292d51;
 }
 
 .reviews-number {
@@ -214,7 +216,7 @@ button:active {
         height: 24px;
     }
 
-    .product-rating span {
+    .saved-product-rating span {
         padding-right: 0;
         font-size: 12px;
     }

@@ -13,3 +13,5 @@ export const CLEAR_TO_BAG = 'CLEAR_TO_BAG';
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const NULL = 'NULL';
+
+export const TOTAL_QUANTITY = 'TOTAL_QUANTITY';

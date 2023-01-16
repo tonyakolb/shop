@@ -41,7 +41,7 @@ button:active {
   justify-content: space-between;
 }
 
-.product-img {
+.full-product-img {
   display: flex;
   justify-content: space-between;
   width: 620px;

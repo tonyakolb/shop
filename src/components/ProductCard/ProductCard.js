@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 import BagButton from "../BagButton/BagButton";
 import CountAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
-import apiResult from "../../redux/reducer/apiReducer";
+// import apiResult from "../../redux/reducer/apiReducer";
 
 import "./ProductCard.css";
 
-const ProductCard = ({ urlImg, valuePrice, catalogSearch }) => {
+const ProductCard = ({ urlImg, valuePrice, catalogSearch,productId }) => {
   const dispatch = useDispatch();
 
   const [disabled, setDisabled] = useState(false);
+  const apiResult = useSelector((state) => state.apiResult.response);
 
   const addToBag = (e) => {
     e.target.value;
@@ -27,7 +28,7 @@ const ProductCard = ({ urlImg, valuePrice, catalogSearch }) => {
   return (
     <div className="product-item">
       <div className="product-img">
-        <Link to={`/catalog/${catalogSearch}`}>
+        <Link to={`/Каталог/${catalogSearch}`}>
           <img src={urlImg} alt="none" className="product_photo" />
         </Link>
         <div className="presence available">$ {valuePrice}</div>
@@ -58,7 +59,7 @@ const ProductCard = ({ urlImg, valuePrice, catalogSearch }) => {
             <div className="rating">
               Отзывы
               <div className="rating-reviews">
-                <div className="product-rating">
+                <div className="saved-product-rating">
                   <span className="active" />
                   <span className="active" />
                   <span className="active" />

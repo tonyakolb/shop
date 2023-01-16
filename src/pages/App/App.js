@@ -10,6 +10,7 @@ import PaymentMethods from "../../components/PaymentMethods/PaymentMethods";
 import Menu from "../../components/Menu/Menu";
 
 import Stock from "../../components/Stock/Stock";
+import ProductPage from '../ProductPage/ProductPage';
 
 const App = () => {
   return (
@@ -22,8 +23,7 @@ const App = () => {
           <Route path="/Доставка" element={<Delivery />} />
           <Route path="/Оплата" element={<PaymentMethods />} />
           <Route path="/Акции" element={<Stock />} />
-          <Route path="/О нас" element={<AboutUs />} />
-          <Route path="/Контакты" element={<Footer />} />
+          <Route path='/Каталог/:id' element={<ProductPage/>}/>\
                   <Route path="/Меню" element={<Menu />} />
         </Routes>
       </BrowserRouter>
