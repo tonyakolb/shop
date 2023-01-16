@@ -7,6 +7,7 @@ import filterResult from "./filterReducer";
 import filterTitle from "./filterTitleReducer";
 import bagReducer from "./bagReducer";
 import counter from "./countBagReducer";
+import quantityById from './TotalQuantityReducer';
 
 export default combineReducers({
   apiResult,
@@ -14,4 +15,5 @@ export default combineReducers({
   filterTitle,
   bagReducer,
   counter,
+  quantityById,
 });

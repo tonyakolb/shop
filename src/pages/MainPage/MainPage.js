@@ -9,6 +9,7 @@ import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../pages/Novelties/Novelties";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
+
 // import Card from "../../components-not-ready/Card/Card";
 // import OrderReady from "../OrderReady/OrderReady";
 // import AddToCart from "../AddToCart/AddToCart";
@@ -52,6 +53,8 @@ const MainPage = () => {
       ) : (
         <Header searchModal={searchModal} />
       )}
+
+
       <MainShare />
       <Advantages />
       <Bestsellers />
