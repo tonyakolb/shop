@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import ModalWeb from "../ModalWeb/ModalWeb";
 import Header from "../Header/Header";
-import MainShare from "../../components-not-ready/MainShare/MainShare";
+import MainShare from "../../components/MainShare/MainShare";
 import Advantages from "../../components/Advantages/Advantages";
+import CatalogCategories from "../../components/CatalogCategories/CatalogCategories";
 import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../pages/Novelties/Novelties";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
+// import Card from "../../components-not-ready/Card/Card";
 // import OrderReady from "../OrderReady/OrderReady";
 // import AddToCart from "../AddToCart/AddToCart";
-import CatalogCategories from "../../components/CatalogCategories/CatalogCategories";
 
 const MainPage = () => {
   const [searchModalWeb, setSearchModal] = useState(false);
@@ -60,6 +61,7 @@ const MainPage = () => {
       <Footer />
       {/*<OrderReady />*/}
       {/*<AddToCart />*/}
+      {/*  <Card/>*/}
 
     </>
   );

@@ -1,93 +1,102 @@
 import React, { useEffect, useState } from "react";
-import Cross from "../../assets/images/Cross.svg";
-// import ProductImage from "../../assets/images/Item.png";
-import "./Bag.css";
-import Input from "../../components/Input/Input";
-import BagCard from "../../components/BagCard/BagCard";
+import {useNavigate} from "react-router";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+
+import Input from "../../components/Input/Input";
+import BagCard from "../../components/BagCard/BagCard";
+
 import BagAction from "../../redux/actions/bagAction";
 import CountBagAction from "../../redux/actions/countBagAction";
 import { sendProduct } from "../../assets/constants/requests";
 
+import Cross from "../../assets/images/Cross.svg";
+
+import "./Bag.css";
+
+
 const Bag = () => {
-  const [productSend, setProductSend] = useState("");
-  const [valueSelect, setValueSelect] = useState("1");
-  const [disabled, setDisabled] = useState(false);
-  const bagProducts = useSelector((state) => state.bagReducer.bagProducts);
-  const dispatch = useDispatch();
-  const apiResult = useSelector((state) => state.apiResult.response);
-  const count = useSelector((state) => state.counter);
-  const productDetailsFilter = apiResult.filter((item) =>
-    Object.values(item).includes(id)
-  );
-  const { id } = useParams();
-
-  const bagItem = bagProducts.map((item) => item.id);
-
-  const selectChange = (valueSelect) => {
-    setValueSelect(valueSelect);
-  };
-
-  const [total, setTotal] = useState(
-    bagProducts.reduce(
-      (previousValue, currentItem) =>
-        previousValue + currentItem.price.value * valueSelect,
-      0
-    )
-  );
-
-  useEffect(() => {
-    setTotal(
-      bagProducts.reduce(
-        (previousValue, currentItem) =>
-          previousValue + currentItem.price.value * valueSelect,
-        0
-      )
-    );
-  }, [valueSelect]);
-
-  const clearBag = (e) => {
-    e.preventDefault();
-    e.target.value;
-    setDisabled(!disabled);
-    sendProduct(bagItem, setProductSend);
-    dispatch(BagAction.clearToBagAction());
-    dispatch(CountBagAction.nullCounter());
-  };
+    const navigate=useNavigate();
+    const close=()=>{
+        navigate('/')
+    };
+  // const [productSend, setProductSend] = useState("");
+  // const [valueSelect, setValueSelect] = useState("1");
+  // const [disabled, setDisabled] = useState(false);
+  // const bagProducts = useSelector((state) => state.bagReducer.bagProducts);
+  // const dispatch = useDispatch();
+  // const apiResult = useSelector((state) => state.apiResult.response);
+  // const count = useSelector((state) => state.counter);
+  // const productDetailsFilter = apiResult.filter((item) =>
+  //   Object.values(item).includes(id)
+  // );
+  // const { id } = useParams();
+  //
+  // const bagItem = bagProducts.map((item) => item.id);
+  //
+  // const selectChange = (valueSelect) => {
+  //   setValueSelect(valueSelect);
+  // };
+  //
+  // const [total, setTotal] = useState(
+  //   bagProducts.reduce(
+  //     (previousValue, currentItem) =>
+  //       previousValue + currentItem.price.value * valueSelect,
+  //     0
+  //   )
+  // );
+  //
+  // useEffect(() => {
+  //   setTotal(
+  //     bagProducts.reduce(
+  //       (previousValue, currentItem) =>
+  //         previousValue + currentItem.price.value * valueSelect,
+  //       0
+  //     )
+  //   );
+  // }, [valueSelect]);
+  //
+  // const clearBag = (e) => {
+  //   e.preventDefault();
+  //   e.target.value;
+  //   setDisabled(!disabled);
+  //   sendProduct(bagItem, setProductSend);
+  //   dispatch(BagAction.clearToBagAction());
+  //   dispatch(CountBagAction.nullCounter());
+  // };
 
   return (
     <div>
       <div className="shopping-cart">
         <div className="cart-caption">
           <p> Главная/Корзина </p>
-          <img src={Cross} alt="close" />
+          <img src={Cross} onClick={close} alt="close" />
         </div>
 
-        {!!productDetailsFilter && (
-          <>
-            {productSend ? (
-              <div className="products_message">{productSend.message}</div>
-            ) : (
-              <>
-                {bagProducts.map((item) => (
-                  <BagCard
-                    key={item.id}
-                    bagImg={item.images[0]}
-                    nameCardBag={item.name}
-                    valuePrice={item.price.value}
-                    deleteProduct={item.id}
-                    onChange={selectChange}
-                    id={item.id}
-                    valueSelect={valueSelect}
-                    bagProducts={bagProducts}
-                    setTotal={setTotal}
-                  />
-                ))}
-              </>
-            )}
-          </>
-        )}
+        {/*{!!productDetailsFilter && (*/}
+        {/*  <>*/}
+        {/*    {productSend ? (*/}
+        {/*      <div className="products_message">{productSend.message}</div>*/}
+        {/*    ) : (*/}
+        {/*      <>*/}
+        {/*        {bagProducts.map((item) => (*/}
+        {/*          <BagCard*/}
+        {/*            key={item.id}*/}
+        {/*            bagImg={item.images[0]}*/}
+        {/*            nameCardBag={item.name}*/}
+        {/*            valuePrice={item.price.value}*/}
+        {/*            deleteProduct={item.id}*/}
+        {/*            onChange={selectChange}*/}
+        {/*            id={item.id}*/}
+        {/*            valueSelect={valueSelect}*/}
+        {/*            bagProducts={bagProducts}*/}
+        {/*            setTotal={setTotal}*/}
+        {/*          />*/}
+        {/*        ))}*/}
+        {/*      </>*/}
+        {/*    )}*/}
+        {/*  </>*/}
+        {/*)}*/}
         <div className='order-details'>Контактные данные</div>
 
         <form action="/">
@@ -139,7 +148,7 @@ const Bag = () => {
             </div>
             <div className='your-order-details'>
                     <div className='details-value'>
-                        <p>{item.name}</p>
+                        <p>Кран</p>
                         <p>Артикул: SQ3790</p>
                     </div>
                     <div className='details-number'>
@@ -185,7 +194,7 @@ const Bag = () => {
                     <label htmlFor="agree">Я прочитал(-а)&nbsp;<a href="/">  Договор публичной оферты  </a>&nbsp;и согласен(-на) с условиями</label>
                 </div>
                 <div className='order-submit'>
-                    <Input className="order-button" type="submit" value='Подтвердить заказ' onClick={clearBag} />
+                    <Input className="order-button" type="submit" value='Подтвердить заказ'/>
                 </div>
             </div>
         </form>

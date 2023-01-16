@@ -1,15 +1,13 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import Image from "../Image/Image";
 // import Icon from '../Icon/Icon';
 import BagAction from '../../redux/actions/bagAction';
-import { useDispatch } from 'react-redux';
 import CountAction from '../../redux/actions/countBagAction';
 // import { totalQuantity } from '../../redux/actions/TotalQuantity';
 // import { useEffect } from 'react';
 
 import Cross from "../../assets/images/Cross.svg";
-import Image from "../Image/Image";
-
-
 
 const BagCard = ({
                      bagImg,
