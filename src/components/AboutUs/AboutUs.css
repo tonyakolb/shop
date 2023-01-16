@@ -16,21 +16,39 @@
   padding: 40px 0;
 }
 
+p.about-us-mobile{
+    color: #292d51;
+    padding: 16px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: none;
+}
+
 .about-company {
   display: flex;
   justify-content: space-between;
   gap: 50px;
 }
 
+.company-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-company-image {
+    display: none
+}
+
 .about-company-text {
-  height: 446px;
-  background: #3e3e44;
-  border-radius: 28px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-between;
-  width: 655px;
+    height: 446px;
+    background: #3e3e44;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 655px;
 }
 
 .about-company-text img {
@@ -83,4 +101,60 @@
 .award img {
   width: 200px;
   height: 135px;
+}
+
+@media screen and (max-width: 450px) {
+    .about-us {
+        height: 471px;
+    }
+
+    p.about-us-mobile{
+        display: inline-block;
+    }
+    
+    .company-awards {
+        display: none;
+    }
+
+
+    p.full-about-us {
+        display: none;
+    }
+    .company-images {
+        height: 65px;
+    }
+
+    .about-us-info {
+        width: 343px;
+    }
+
+    .about-company-text img {
+        width: 160px;
+        height: 50px;
+        margin-top: 16px;
+    }
+
+    img.mobile-company-image {
+        display: block;
+        width: 113px;
+        height: 65px;
+    }
+
+
+    .about-company-text p {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0 16px;
+        padding-top: 30px;
+    }
+
+    .about-company-text {
+        height: 401px;
+        width: 100%;
+    }
+
+    .about-company-image {
+        display: none;
+    }
+
 }

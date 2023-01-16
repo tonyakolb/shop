@@ -10,15 +10,22 @@ import Input from "../../components/Input/Input";
 import SearchIcon from "../../assets/images/search-icon.svg";
 import BasketIcon from "../../assets/images/Icon-basket.svg";
 import Logotype from "../../assets/images/Logo.svg";
+import Menu from "../../assets/images/Icon_Menu.svg";
+import { useNavigate } from "react-router";
 
 import "./Header.css";
 
 const Header = ({ searchModal }) => {
-  const count = useSelector((state) => state.counter);
+    const count = useSelector((state) => state.counter);
+    const navigate = useNavigate();
+    const menu = () => {
+        navigate("/Меню");
+    };
 
   return (
-    <div className="header">
-      <Image src={Logotype} alt="logotype" />
+      <div className="header">
+          <Image src={Menu} alt="menu" className='menu-icon' onClick={menu}/>
+      <Image src={Logotype} alt="logotype" className='logo'/>
       <div>
         <div className="search-icon">
           <Image src={SearchIcon} alt="search-icon" />
@@ -45,6 +52,7 @@ const Header = ({ searchModal }) => {
         navigate_elem="navigate_elem"
         to="/Доставка"
           />
+
       <a className='navigate_elem' href="#bookmark-contacts"> Контакты </a>{" "}
       <div className="basket">
         <Link to="/Каталог/Корзина">
@@ -59,6 +67,7 @@ const Header = ({ searchModal }) => {
         <TextBlock textValue="Вт-Вс: 10:00 - 20:00" />
         <TextBlock textValue="Пн: выходной" />
       </div>
+        
     </div>
   );
 };

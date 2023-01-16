@@ -49,3 +49,70 @@
   font-size: 24px;
   line-height: 33px;
 }
+
+.order-pay {
+    padding-top: 30px;
+}
+
+.pay {
+    padding: 16px;
+    background: #292d51;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+button {
+    cursor: pointer;
+}
+
+    button:active {
+        background-color: #a7a7a8;
+    }
+
+@media screen and (max-width: 450px) {
+    .order-background {
+        padding: 17px 0;
+    }
+
+    .order-ready {
+        width: 343px;
+    }
+
+    .order-ready-caption {
+        padding-bottom: 41px;
+    }
+
+    .order-ready-caption span{
+        display: none
+    }
+
+        .order-ready-caption p, .order-ready-info p, .order-ready-info h2 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+    .order-ready-info h1 {
+        font-size: 24px;
+        line-height: 33px;
+        padding: 16px 0;
+        font-weight: 700;
+    }
+
+    .order-ready-info img {
+        width: 300px;
+        height: 300px;
+    }
+
+        .order-ready-info p {
+            padding-bottom: 16px;
+        }
+
+    .order-pay {
+        padding-top: 20px;
+    }
+
+}

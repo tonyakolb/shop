@@ -73,3 +73,62 @@
   color: #000000;
   text-decoration: underline 1px;
 }
+
+@media screen and (max-width: 450px) {
+    .delivery {
+        width: 343px;
+        margin: 0 auto;
+    }
+
+    .delivery-caption {
+        padding-bottom: 20px;
+    }
+
+        .delivery-caption p, .way-caption {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+    .delivery-ways {
+        flex-direction: column-reverse;
+    }
+
+
+    .delivery-way {
+        width: 100%;
+        padding-bottom: 29px;
+    }
+
+        .delivery-way p {
+            padding-bottom: 16px;
+        }
+
+        .delivery-way li {
+            line-height: 1;
+            padding-bottom: 16px;
+        }
+
+
+    .way-caption {
+        padding-bottom: 20px;
+    }
+
+        .way-caption img {
+            margin-bottom: -12px;
+            margin-right: 21px;
+            width: 40px;
+            height: 40px;
+        }
+
+    .delivery-img img {
+        height: 354px;
+    }
+
+    .delivery-img {
+        padding-bottom: 20px;
+    }
+
+    .delivery-post {
+        flex-direction: column
+    }
+}

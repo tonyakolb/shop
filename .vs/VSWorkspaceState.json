@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\assets",
-    "\\src\\assets\\css",
     "\\src\\components",
-    "\\src\\components\\AllProducts",
-    "\\src\\components\\Input",
-    "\\src\\components\\TitleBlock",
+    "\\src\\components-not-ready",
+    "\\src\\components\\Arrow",
+    "\\src\\components\\ProductCard",
+    "\\src\\components\\Promotion",
+    "\\src\\components\\Stock",
     "\\src\\pages",
-    "\\src\\pages\\Catalog"
+    "\\src\\pages\\ModalWeb"
   ],
-  "SelectedNode": "\\src\\pages\\Catalog\\Catalog.js",
+  "SelectedNode": "\\src\\components\\Arrow\\Arrow.css",
   "PreviewInSolutionExplorer": false
 }

@@ -8,8 +8,10 @@ import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../pages/Novelties/Novelties";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
-// import OrderReady from "../OrderReady/OrderReady";
-// import AddToCart from "../AddToCart/AddToCart";
+//import Menu from "../../components/Menu/Menu";
+
+//import OrderReady from "../../components-not-ready/OrderReady/OrderReady";
+//import AddToCart from "../../components-not-ready/AddToCart/AddToCart";
 import CatalogCategories from "../../components/CatalogCategories/CatalogCategories";
 
 const MainPage = () => {
@@ -58,8 +60,8 @@ const MainPage = () => {
       <Novelties />
       <AboutUs />
       <Footer />
-      {/*<OrderReady />*/}
-      {/*<AddToCart />*/}
+          {/*<OrderReady />*/}
+          {/*<AddToCart />*/}
 
     </>
   );

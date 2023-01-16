@@ -14,10 +14,15 @@ const AboutUs = () => {
   return (
     <div className="about-us" id="bookmark-about">
       <div className="about-us-info">
-        <p>О компании SOQO</p>
+        <p className='full-about-us'>О компании SOQO</p>
+        <p className='about-us-mobile'>О нас</p>
         <div className="about-company">
           <div className="about-company-text">
-            <img src={Logo} alt="logo" />
+            <div className="company-images">
+                          <img src={Logo} alt="logo" />
+                          <img src={Company} alt="company" className='mobile-company-image' />
+          </div>
+            
             <p>
               Компания SOQO основана в 1997 г., головной офис находится в Китае,
               пров. Фуцзянь. Это транснациональное предприятие сантехники

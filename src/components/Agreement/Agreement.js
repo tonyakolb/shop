@@ -5,8 +5,8 @@ import "./Agreement.css";
 
 const OrderReady = () => {
   return (
-    <div className="agreement">
-      <div className="agreement-info">
+    <div className="agreement-container">
+      <div className="agreement">
         <div className="agreement-caption">
           <p>Договор публичной оферты</p>
           <img src={Cross} alt="close" />
