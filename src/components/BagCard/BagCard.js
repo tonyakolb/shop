@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Image from "../Image/Image";
 
@@ -14,19 +14,19 @@ const BagCard = ({
   valuePrice,
   id,
   deleteProduct,
+  onChange,
+  valueSelect,
   bagProducts,
   setTotal,
-  onChange,
 }) => {
   const dispatch = useDispatch();
-  const [amount, setAmount] = useState(1);
-    const selectValue = (e) => {
-        onChange(e.target.value);
-    };
+  const selectValue = (e) => {
+    onChange(e.target.value);
+  };
 
   useEffect(() => {
-    dispatch(totalQuantity(id, amount));
-  }, [amount]);
+    dispatch(totalQuantity(id, valueSelect));
+  }, [valueSelect]);
 
   const removeProduct = () => {
     dispatch(BagAction.removeBagAction(deleteProduct));
@@ -34,13 +34,11 @@ const BagCard = ({
 
     setTotal(
       bagProducts.reduce(
-        (previousValue, currentItem) => currentItem.price.value * amount,
+        (previousValue, currentItem) => currentItem.price.value * valueSelect,
         0
       )
     );
   };
-
-
 
   return (
     <div className="cart-item">
@@ -58,29 +56,33 @@ const BagCard = ({
       </div>
       <div className="item-number">
         <p className="number-label"> Количество </p>
-        <div className="number" onChange={selectValue}>
-          <button className="less" onClick={() => setAmount(amount - 1)}>
-            {" "}
-            -{" "}
-          </button>
-          <p> {amount} </p>
-          <button className="more" onClick={() => setAmount(amount + 1)}>
-            {" "}
-            +{" "}
-          </button>
-        </div>
+        {/*<div className="number" >*/}
+        <select className="number" onChange={selectValue}>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        {/*<button className="less" onClick={() => setCount(count - 1)}>*/}
+        {/*  {" "}*/}
+        {/*  -{" "}*/}
+        {/*</button>*/}
+        {/*<p> {count} </p>*/}
+        {/*<button className="more" onClick={() => setCount(count + 1)}>*/}
+        {/*  {" "}*/}
+        {/*  +{" "}*/}
+        {/*</button>*/}
+        {/*</div>*/}
       </div>
       <div className="item-sale">
         <p className="sale-label"> Скидка </p>
         <p> 56,00 руб </p>
       </div>
-      <div className="full-price">
-        <p className="full-price-label"> Итого </p>
-        <p>
-          {" "}
-            {setTotal}{" "}
-        </p>
-      </div>
+      {/*<div className="full-price">*/}
+      {/*  <p className="full-price-label"> Итого </p>*/}
+      {/*  <p> {valueSelect*valuePrice} </p>*/}
+      {/*</div>*/}
       <div className="line" />
     </div>
   );

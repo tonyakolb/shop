@@ -7,7 +7,6 @@ import Input from "../../components/Input/Input";
 import BagCard from "../../components/BagCard/BagCard";
 
 import BagAction from "../../redux/actions/bagAction";
-import CountBagAction from "../../redux/actions/countBagAction";
 import { sendProduct } from "../../assets/constants/requests";
 
 import Cross from "../../assets/images/Cross.svg";
@@ -19,28 +18,28 @@ const Bag = () => {
   const close = () => {
     navigate("/");
   };
-  const [amount, setAmount] = useState('1');
-
   const [productSend, setProductSend] = useState("");
+  const [valueSelect, setValueSelect] = useState("1");
   const [disabled, setDisabled] = useState(false);
   const bagProducts = useSelector((state) => state.bagReducer.bagProducts);
   const dispatch = useDispatch();
   const apiResult = useSelector((state) => state.apiResult.response);
-  // const count = useSelector((state) => state.counter);
+
   const productDetailsFilter = apiResult.filter((item) =>
     Object.values(item).includes(id)
   );
   const { id } = useParams();
 
   const bagItem = bagProducts.map((item) => item.id);
-  const selectChange = (amount) => {
-    setAmount(amount);
+
+  const selectChange = (valueSelect) => {
+    setValueSelect(valueSelect);
   };
 
   const [total, setTotal] = useState(
     bagProducts.reduce(
       (previousValue, currentItem) =>
-        previousValue + currentItem.price.value * amount,
+        previousValue + currentItem.price.value * valueSelect,
       0
     )
   );
@@ -49,11 +48,11 @@ const Bag = () => {
     setTotal(
       bagProducts.reduce(
         (previousValue, currentItem) =>
-          previousValue + currentItem.price.value * amount,
+          previousValue + currentItem.price.value * valueSelect,
         0
       )
     );
-  }, [amount]);
+  }, [valueSelect]);
 
   const clearBag = (e) => {
     e.preventDefault();
@@ -61,7 +60,6 @@ const Bag = () => {
     setDisabled(!disabled);
     sendProduct(bagItem, setProductSend);
     dispatch(BagAction.clearToBagAction());
-    dispatch(CountBagAction.nullCounter());
   };
 
   return (
@@ -85,8 +83,9 @@ const Bag = () => {
                       nameCardBag={item.name}
                       valuePrice={item.price.value}
                       deleteProduct={item.id}
-                      id={item.id}
                       onChange={selectChange}
+                      id={item.id}
+                      valueSelect={valueSelect}
                       bagProducts={bagProducts}
                       setTotal={setTotal}
                     />
