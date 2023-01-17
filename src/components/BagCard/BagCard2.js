@@ -16,7 +16,6 @@ const BagCard2 = ({
   id,
   deleteProduct,
   bagProducts,
-
   // onChange,
 }) => {
   // const dispatch = useDispatch();

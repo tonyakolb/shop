@@ -1,6 +1,9 @@
 ﻿import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import bagAction from "../../redux/actions/bagAction";
+import SavedReviews from "../SavedReviews/SavedReviews";
+import { apiMain } from "../../assets/constants/requests";
+
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
 import Cross from "../../assets/images/Cross.svg";
 import "./Card.css";
@@ -15,6 +18,10 @@ const Card = ({
   productId,
   currency,
 }) => {
+
+    const [product, setProduct] = useState([]);
+    apiMain(setProduct);
+
   const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
   const apiResult = useSelector((state) => state.apiResult.response);
@@ -54,47 +61,27 @@ const Card = ({
                 </div>
                           </div>
                           <div className='full-reviews'>
-              <div className="product-reviews">
-                <div className="review-rating">
-                  <p>Отзывы</p>
+                              <div className="review-rating">
+                                  <p>Отзывы</p>
 
-                  <div className="product-rating">
-                    <span className="active" />
-                    <span className="active" />
-                    <span className="active" />
-                    <span className="active" />
-                    <span />
-                  </div>
-                </div>
-
-                <div className="review">
-                  <div className="author-rating">
-                    <p>Юлия</p>
-                    <div className="reviewer-rating">
-                      <span className="active" />
-                      <span className="active" />
-                      <span className="active" />
-                      <span className="active" />
-                      <span className="active" />
-                    </div>
-                  </div>
-                  <div className="review-text">
-                    <p>27 октября 2022</p> {/*Дата*/}
-                    <p>
-                      Смеситель нормальный, пока все работает, не течёт. Муж
-                      оценил как хороший)
-                    </p>{" "}
-                    {/*Отзыв*/}
-                    <p>Плюсы: </p>
-                    <p>Минусы: </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="add-button">
-                <button className="add-review">Добавить отзыв</button>
+                                  <div className="product-rating">
+                                      <span className="active" />
+                                      <span className="active" />
+                                      <span className="active" />
+                                      <span className="active" />
+                                      <span />
+                                  </div>
                               </div>
+                              {product.map((item) => (
+                              <SavedReviews
+                                  valuePrice={item.price.value}
+                                      productId={item.id} />
+                              ))}
+                              <div className="add-button">
+                                  <button className="add-review">Добавить отзыв</button>
                               </div>
+                                  </div>
+                              
             </div>
             <div className="sec-column">
               <div className="product-about">
@@ -134,47 +121,27 @@ const Card = ({
               </div>
             </div>
                       <div className='mobile-reviews'>
-                          <div className="product-reviews">
-                              <div className="review-rating">
-                                  <p>Отзывы</p>
+                          <div className="review-rating">
+                              <p>Отзывы</p>
 
-                                  <div className="product-rating">
-                                      <span className="active" />
-                                      <span className="active" />
-                                      <span className="active" />
-                                      <span className="active" />
-                                      <span />
-                                  </div>
-                              </div>
-
-                              <div className="review">
-                                  <div className="author-rating">
-                                      <p>Юлия</p>
-                                      <div className="reviewer-rating">
-                                          <span className="active" />
-                                          <span className="active" />
-                                          <span className="active" />
-                                          <span className="active" />
-                                          <span className="active" />
-                                      </div>
-                                  </div>
-                                  <div className="review-text">
-                                      <p>27 октября 2022</p> {/*Дата*/}
-                                      <p>
-                                          Смеситель нормальный, пока все работает, не течёт. Муж
-                                          оценил как хороший)
-                                      </p>{" "}
-                                      {/*Отзыв*/}
-                                      <p>Плюсы: </p>
-                                      <p>Минусы: </p>
-                                  </div>
+                              <div className="product-rating">
+                                  <span className="active" />
+                                  <span className="active" />
+                                  <span className="active" />
+                                  <span className="active" />
+                                  <span />
                               </div>
                           </div>
-
+                          {product.map((item) => (
+                          <SavedReviews
+                              valuePrice={item.price.value}
+                              productId={item.id} />
+                          ))}
                           <div className="add-button">
                               <button className="add-review">Добавить отзыв</button>
                           </div>
-                      </div>
+                              </div>
+                          
           </div>
         </div>
       </div>
