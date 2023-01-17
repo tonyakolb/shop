@@ -7,6 +7,7 @@ import ToiletImage from "../../assets/images/toiletcatalog.png";
 import Cross from "../../assets/images/Cross.svg";
 import TitleBlock from "../../components/TitleBlock/TitleBlock";
 import AllProducts from "../../components/AllProducts/AllProducts";
+import Search from "../../components/Search/Search";
 
 import "../../components/CatalogCategories/CatalogCategories.css";
 import "./CatalogPage.css";
@@ -28,15 +29,7 @@ const CatalogKitchen = () => {
             <p>Каталог/Туалетная комната</p>
             <Image src={Cross} alt="close" onClick={close} />
           </div>
-          <div className="search">
-            <img src={SearchIcon} alt="search-icon" />
-
-            <Input
-              type="text"
-              placeholder="Поиск по товарам, категориям, артикулу"
-              className="page-search"
-            />
-          </div>
+          <Search/>
           <div className="page-image">
             <Image src={ToiletImage} alt="toilet" />
                   </div>
