@@ -6,16 +6,15 @@ import { useNavigate } from "react-router";
 import TextBlock from "../../components/TextBlock/TextBlock";
 import Image from "../../components/Image/Image";
 import NavigateElement from "../../components/NavigateElement/NavigateElement";
-import Input from "../../components/Input/Input";
 
-import SearchIcon from "../../assets/images/search-icon.svg";
 import BasketIcon from "../../assets/images/Icon-basket.svg";
 import Logotype from "../../assets/images/Logo.svg";
 import Menu from "../../assets/images/Icon_Menu.svg";
 
 import "./Header.css";
+import Search from "../../components-not-ready/Search/Search";
 
-const Header = ({ searchModal }) => {
+const Header = () => {
   const count = useSelector((state) => state.counter);
   const navigate = useNavigate();
   const menu = () => {
@@ -26,17 +25,7 @@ const Header = ({ searchModal }) => {
     <div className="header">
       <Image src={Menu} alt="menu" className="menu-icon" onClick={menu} />
       <Image src={Logotype} alt="logotype" className="logo" />
-      <div>
-        <div className="search-icon">
-          <Image src={SearchIcon} alt="search-icon" />
-        </div>
-        <Input
-          type="text"
-          placeholder="Поиск"
-          className="header-search"
-          onClick={searchModal}
-        />
-      </div>
+      <Search />
       <NavigateElement
         navigate_context="Каталог"
         navigate_elem="navigate_elem"

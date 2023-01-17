@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 
 import Categories from "../../components/Categories/Categories";
 import Input from "../../components/Input/Input";
+import Filter from "../../components/Filter/Filter";
 import TitleBlock from "../../components/TitleBlock/TitleBlock";
 import AllProducts from "../../components/AllProducts/AllProducts";
 import Image from "../../components/Image/Image";
@@ -44,13 +45,7 @@ const Catalog = () => {
               classNameBlock="classNameBlock"
               classNameBlockLast="classNameBlockLast"
             />
-            <div id="myDropdown" className="dropdown-content">
-              <a href="/">Цена по возрастанию</a>
-              <a href="/">Цена по убыванию</a>
-              <a href="/">В наличии</a>
-              <a href="/">Уцененные</a>
-              <a href="/">Акционные товары</a>
-            </div>
+            <Filter />
           </div>
           <AllProducts />
         </div>

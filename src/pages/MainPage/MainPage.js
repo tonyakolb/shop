@@ -51,7 +51,7 @@ const MainPage = () => {
       ) : (
         <Header searchModal={searchModal} />
       )}
-        <Slider/>
+        {/*<Slider/>*/}
       {/*<MainShare />*/}
       {/*<Advantages />*/}
       {/*<Bestsellers />*/}
