@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
-
+import Image from "../Image/Image";
 import Cross from "../../assets/images/Cross.svg";
 
 import "./AddToCart.css";

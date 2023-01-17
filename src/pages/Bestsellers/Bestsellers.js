@@ -44,7 +44,6 @@ const Bestsellers = () => {
             <ProductCard
               urlImg={item.images[0]}
               key={item.id}
-              currency="$"
               valuePrice={item.price.value}
               catalogSearch={item.id}
               productId={item.id}
