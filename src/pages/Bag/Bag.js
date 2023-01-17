@@ -45,7 +45,8 @@ const Bag = () => {
     e.target.value;
     setDisabled(!disabled);
     sendProduct(bagItem, setProductSend);
-    dispatch(BagAction.clearToBagAction());
+      dispatch(BagAction.clearToBagAction());
+      navigate("/Оформление заказа");
   };
 
   return (
@@ -84,191 +85,194 @@ const Bag = () => {
         </div>
         <div className="order-details">Контактные данные</div>
 
-        <form action="/">
-          <div className="order">
-            <div className="order-form imp">
-              <label className="required">Имя</label>
-              <Input className="order-info" required />
+        
 
-              <label className="required">Контактный телефон</label>
-              <Input
-                className="order-info"
-                required
-                placeholder="+375 (00) 000-00-00"
-              />
 
-              <label>Адрес доставки</label>
-              <Input
-                className="order-info"
-                placeholder="220020, г.Минск, ул.Берута, дом 0, корпус 0 , квартира 0"
-              />
+              <form action="/">
+                  <div className="order">
+                      <div className="order-form imp">
+                          <label className="required">Имя</label>
+                          <Input className="review-info" required />
 
-              <label>Комментарий к заказу</label>
-              <textarea className="order-comment" id="text" />
-            </div>
+                          <label className="required">Контактный телефон</label>
+                          <Input
+                              className="review-info"
+                              required
+                              placeholder="+375 (00) 000-00-00"
+                          />
 
-            <div className="delivery-form imp">
-              <p>Способы доставки</p>
-              <div className="delivery-type">
-                <Input
-                  className="delivery-info"
-                  type="radio"
-                  name="delivery"
-                  id="delivery-choice1"
-                  required
-                />
-                <label htmlFor="delivery-choice1">
-                  <span>Самовывоз</span> из магазина
-                </label>
-              </div>
-              <div className="delivery-type">
-                <Input
-                  className="delivery-info"
-                  type="radio"
-                  name="delivery"
-                  id="delivery-choice2"
-                />
-                <label htmlFor="delivery-choice2">
-                  <span>Курьером</span> в пределах МКАД <span>(5,00 руб)</span>
-                </label>
-              </div>
-              <div className="delivery-type">
-                <Input
-                  className="delivery-info"
-                  type="radio"
-                  name="delivery"
-                  id="delivery-choice3"
-                />
-                <label htmlFor="delivery-choice3">
-                  <span>Курьером</span> до 2 МКАД <span>(15,00 руб)</span>
-                </label>
-              </div>
-              <div className="delivery-type">
-                <Input
-                  className="delivery-info"
-                  type="radio"
-                  name="delivery"
-                  id="delivery-choice4"
-                />
-                <label htmlFor="delivery-choice4">
-                  <span>Белпочта</span> (Стоимость доставки <br /> оплачивает
-                  покупатель согласно <br />
-                  тарифам РУП "Белпочта")
-                </label>
-              </div>
-              <div className="delivery-type">
-                <Input
-                  className="delivery-info"
-                  type="radio"
-                  name="delivery"
-                  id="delivery-choice5"
-                />
-                <label htmlFor="delivery-choice5">
-                  <span>Европочта</span> (Стоимость доставки <br /> оплачивает
-                  покупатель согласно <br />
-                  тарифам "Европочта")
-                </label>
-              </div>
-            </div>
+                          <label>Адрес доставки</label>
+                          <Input
+                              className="order-info"
+                              placeholder="220020, г.Минск, ул.Берута, дом 0, корпус 0 , квартира 0"
+                          />
 
-            <div className="your-order">
-              <div className="your-order-caption">Ваш заказ:</div>
-              <div className="your-order-details">
-                <div className="details-label">Товар</div>
-                <div className="details-label">Сумма</div>
-              </div>
-              {bagProducts.map((item) => (
-                <Order
-                  key={item.id}
-                  nameProduct={item.name}
-                  price={item.price.value}
-                />
-              ))}
-              <div className="your-order-details">
-                <div className="details-label">Доставка </div>
-              </div>
-              <div className="your-order-details">
-                <div className="details-value">
-                  По г.Минску в пределах МКАД{" "}
-                </div>
-                <div className="details-price">5,00 руб</div>
-              </div>
+                          <label>Комментарий к заказу</label>
+                          <textarea className="order-comment" id="text" />
+                      </div>
 
-              <div className="line" />
-              <div className="your-order-price">
-                <p> Итого к оплате: </p>
-                <p> {total} руб </p>
-              </div>
-            </div>
+                      <div className="delivery-form imp">
+                          <p>Способы доставки</p>
+                          <div className="delivery-type">
+                              <Input
+                                  className="delivery-info"
+                                  type="radio"
+                                  name="delivery"
+                                  id="delivery-choice1"
+                                  required
+                              />
+                              <label htmlFor="delivery-choice1">
+                                  <span>Самовывоз</span> из магазина
+                              </label>
+                          </div>
+                          <div className="delivery-type">
+                              <Input
+                                  className="delivery-info"
+                                  type="radio"
+                                  name="delivery"
+                                  id="delivery-choice2"
+                              />
+                              <label htmlFor="delivery-choice2">
+                                  <span>Курьером</span> в пределах МКАД <span>(5,00 руб)</span>
+                              </label>
+                          </div>
+                          <div className="delivery-type">
+                              <Input
+                                  className="delivery-info"
+                                  type="radio"
+                                  name="delivery"
+                                  id="delivery-choice3"
+                              />
+                              <label htmlFor="delivery-choice3">
+                                  <span>Курьером</span> до 2 МКАД <span>(15,00 руб)</span>
+                              </label>
+                          </div>
+                          <div className="delivery-type">
+                              <Input
+                                  className="delivery-info"
+                                  type="radio"
+                                  name="delivery"
+                                  id="delivery-choice4"
+                              />
+                              <label htmlFor="delivery-choice4">
+                                  <span>Белпочта</span> (Стоимость доставки <br /> оплачивает
+                                  покупатель согласно <br />
+                                  тарифам РУП "Белпочта")
+                              </label>
+                          </div>
+                          <div className="delivery-type">
+                              <Input
+                                  className="delivery-info"
+                                  type="radio"
+                                  name="delivery"
+                                  id="delivery-choice5"
+                              />
+                              <label htmlFor="delivery-choice5">
+                                  <span>Европочта</span> (Стоимость доставки <br /> оплачивает
+                                  покупатель согласно <br />
+                                  тарифам "Европочта")
+                              </label>
+                          </div>
+                      </div>
 
-            <div className="payment-form imp">
-              <p>Способы оплаты</p>
+                      <div className="your-order">
+                          <div className="your-order-caption">Ваш заказ:</div>
+                          <div className="your-order-details">
+                              <div className="details-label">Товар</div>
+                              <div className="details-label">Сумма</div>
+                          </div>
+                          {bagProducts.map((item) => (
+                              <Order
+                                  key={item.id}
+                                  nameProduct={item.name}
+                                  price={item.price.value}
+                              />
+                          ))}
+                          <div className="your-order-details">
+                              <div className="details-label">Доставка </div>
+                          </div>
+                          <div className="your-order-details">
+                              <div className="details-value">
+                                  По г.Минску в пределах МКАД{" "}
+                              </div>
+                              <div className="details-price">5,00 руб</div>
+                          </div>
 
-              <div className="payment-type">
-                <Input
-                  className="payment-info"
-                  type="radio"
-                  name="payment"
-                  id="payment-choice1"
-                  required
-                />
-                <label htmlFor="payment-choice1">Наличными при получении</label>
-              </div>
-              <div className="payment-type">
-                <Input
-                  className="payment-info"
-                  type="radio"
-                  name="payment"
-                  id="payment-choice2"
-                />
-                <label htmlFor="payment-choice2">
-                  Банковской картой при получении
-                </label>
-              </div>
-              <div className="payment-type">
-                <Input
-                  className="payment-info"
-                  type="radio"
-                  name="payment"
-                  id="payment-choice3"
-                />
-                <label htmlFor="payment-choice3">Оплата картой онлайн</label>
-              </div>
-              <div className="payment-type">
-                <Input
-                  className="payment-info"
-                  type="radio"
-                  name="payment"
-                  id="payment-choice4"
-                />
-                <label htmlFor="payment-choice4">Оплата через ЕРИП</label>
-              </div>
-            </div>
+                          <div className="line" />
+                          <div className="your-order-price">
+                              <p> Итого к оплате: </p>
+                              <p> {total} руб </p>
+                          </div>
+                      </div>
 
-            <div className="agreement-check">
-              <Input
-                className="agreement-info"
-                type="checkbox"
-                id="agree"
-                required
-              />
-              <label htmlFor="agree">
-                <span>
-                  Я прочитал(-а)&nbsp;<a href="/"> Договор публичной оферты </a>
-                  &nbsp;и согласен(-на) с условиями
-                </span>
-              </label>
-            </div>
-            <div className="order-submit">
-              <Input
-                className="order-button"
-                type="submit"
-                value="Подтвердить заказ"
-                onClick={clearBag}
-              />
-            </div>
-          </div>
-        </form>
+                      <div className="payment-form imp">
+                          <p>Способы оплаты</p>
+
+                          <div className="payment-type">
+                              <Input
+                                  className="payment-info"
+                                  type="radio"
+                                  name="payment"
+                                  id="payment-choice1"
+                                  required
+                              />
+                              <label htmlFor="payment-choice1">Наличными при получении</label>
+                          </div>
+                          <div className="payment-type">
+                              <Input
+                                  className="payment-info"
+                                  type="radio"
+                                  name="payment"
+                                  id="payment-choice2"
+                              />
+                              <label htmlFor="payment-choice2">
+                                  Банковской картой при получении
+                              </label>
+                          </div>
+                          <div className="payment-type">
+                              <Input
+                                  className="payment-info"
+                                  type="radio"
+                                  name="payment"
+                                  id="payment-choice3"
+                              />
+                              <label htmlFor="payment-choice3">Оплата картой онлайн</label>
+                          </div>
+                          <div className="payment-type">
+                              <Input
+                                  className="payment-info"
+                                  type="radio"
+                                  name="payment"
+                                  id="payment-choice4"
+                              />
+                              <label htmlFor="payment-choice4">Оплата через ЕРИП</label>
+                          </div>
+                      </div>
+
+                      <div className="agreement-check">
+                          <Input
+                              className="agreement-info"
+                              type="checkbox"
+                              id="agree"
+                              required
+                          />
+                          <label htmlFor="agree">
+                              <span>
+                                  Я прочитал(-а)&nbsp;<a href="/"> Договор публичной оферты </a>
+                                  &nbsp;и согласен(-на) с условиями
+                              </span>
+                          </label>
+                      </div>
+                      <div className="order-submit">
+                          <Input
+                              className="order-button"
+                              type="submit"
+                              value="Подтвердить заказ"
+                              onSubmit={clearBag}
+                          />
+                      </div>
+                  </div>
+              </form>
       </div>
     </div>
   );

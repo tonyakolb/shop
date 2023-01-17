@@ -101,6 +101,7 @@ button:active {
   background-color: #292d51;
 }
 
+
 .sale,
 .presence {
   position: absolute;
@@ -157,9 +158,10 @@ button:active {
     height: 308px;
   }
 
-  .product-img {
-    height: 190px;
-  }
+    .product-img {
+        height: 190px;
+        width: 162px;
+    }
 
   .product-img img {
     width: 162px;

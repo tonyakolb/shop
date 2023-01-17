@@ -201,6 +201,10 @@ p.order-price-label {
   width: 720px;
 }
 
+    .order-form input {
+        background-color: #F0F0F2
+    }
+
 .required:before {
   content: " * ";
   color: #d51e1e;

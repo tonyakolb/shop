@@ -2,14 +2,23 @@
 import "./OrderReady.css";
 import OrderDone from "../../assets/images/OrderDone.svg";
 import Cross from "../../assets/images/Cross.svg";
+import Image from "../../components/Image/Image";
+import { useNavigate } from "react-router";
 
 const OrderReady = () => {
+
+    const navigate = useNavigate();
+
+    const close = () => {
+        navigate("/");
+    };
+
   return (
     <div className="order-background">
       <div className="order-ready">
         <div className="order-ready-caption">
-          <p>Главная/Корзина<span>/Оформление заказа</span></p>
-          <img src={Cross} alt="close" />
+          <p>Главная/Корзина/Оформление заказа</p>
+          <Image src={Cross} alt="close" onClick={close}/>
         </div>
         <div className="order-ready-info">
           <img src={OrderDone} alt="your order is done" />

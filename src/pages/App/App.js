@@ -14,6 +14,7 @@ import Stock from "../../components/Stock/Stock";
 import ProductPage from "../ProductPage/ProductPage";
 import Review from "../../components-not-ready/Review/Review";
 import AddToCart from "../../components/AddToCart/AddToCart";
+import OrderReady from "../../components-not-ready/OrderReady/OrderReady";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/Меню" element={<Menu />} />
           <Route path="/Каталог/Кухня" element={<CatalogKitchen />} />
           <Route path="/Каталог/Ванная комната" element={<CatalogBath />} />
+                  <Route path="/Оформление заказа" element={<OrderReady />} />
           <Route
             path="/Каталог/Туалетная комната"
             element={<CatalogToilet />}

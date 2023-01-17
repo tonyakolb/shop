@@ -34,6 +34,7 @@
 
 .add-to-item-img img {
   height: 180px;
+  width: 130px;
 }
 
 .add-to-cart-caption,
@@ -75,6 +76,10 @@ button:active {
   background-color: #a7a7a8;
 }
 
+.buttons a{
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 450px) {
   .add-to-cart {
     width: 324px;
@@ -112,4 +117,9 @@ button:active {
     line-height: 22px;
     height: 54px;
   }
+
+    .add-to-cart {
+        top: 10%;
+        left: 10%;
+    }
 }

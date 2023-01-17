@@ -9,17 +9,19 @@ const Input = ({
   onClick,
   name,
   id,
+  required
 }) => {
   return (
     <input
-      className={className}
-      placeholder={placeholder}
-      onChange={onChange}
-      value={value}
-      type={type}
-      onClick={onClick}
-      name={name}
-      id={id}
+          className={className}
+          placeholder={placeholder}
+          onChange={onChange}
+          value={value}
+          type={type}
+          onClick={onClick}
+          name={name}
+          id={id}
+          required={required}
     />
   );
 };
