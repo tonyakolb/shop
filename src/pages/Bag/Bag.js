@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-
+import Order from "../../components/Order/Order";
 import Input from "../../components/Input/Input";
 import BagCard from "../../components/BagCard/BagCard";
-
+import countBagAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
 import { sendProduct } from "../../assets/constants/requests";
 
 import Cross from "../../assets/images/Cross.svg";
 
 import "./Bag.css";
-import Order from "../../components/Order/Order";
 
 const Bag = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const close = () => {
     navigate("/");
   };
   const [productSend, setProductSend] = useState("");
   const [disabled, setDisabled] = useState(false);
   const bagProducts = useSelector((state) => state.bagReducer.bagProducts);
-  const dispatch = useDispatch();
+
   const apiResult = useSelector((state) => state.apiResult.response);
 
   const productDetailsFilter = apiResult.filter((item) =>
@@ -46,6 +46,7 @@ const Bag = () => {
     setDisabled(!disabled);
     sendProduct(bagItem, setProductSend);
     dispatch(BagAction.clearToBagAction());
+    dispatch(countBagAction.nullCounter());
   };
 
   return (
@@ -84,16 +85,19 @@ const Bag = () => {
         </div>
         <div className="order-details">Контактные данные</div>
 
-        <form action="/">
+        <form >
           <div className="order">
             <div className="order-form imp">
               <label className="required">Имя</label>
-              <Input className="order-info" required />
+              <Input className="order-info" required={true} />
 
-              <label className="required">Контактный телефон</label>
+              <label className="required" htmlFor="phone-number">
+                Контактный телефон
+              </label>
               <Input
+                id="phone-number"
                 className="order-info"
-                required
+                required={true}
                 placeholder="+375 (00) 000-00-00"
               />
 
@@ -260,7 +264,7 @@ const Bag = () => {
               </label>
             </div>
             <div className="order-submit">
-              <Input
+              <input
                 className="order-button"
                 type="submit"
                 value="Подтвердить заказ"
