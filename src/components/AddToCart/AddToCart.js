@@ -3,14 +3,13 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 
 import Cross from "../../assets/images/Cross.svg";
-import Item from "../../assets/images/Item.png";
 
 import "./AddToCart.css";
 
-const AddToCart = () => {
+const AddToCart = ({src,name}) => {
   const navigate = useNavigate();
   const close = () => {
-    navigate("/");
+
   };
 
   return (
@@ -21,9 +20,9 @@ const AddToCart = () => {
         </div>
         <div className="add-to-cart-caption">Товар добавлен в корзину</div>
         <div className="add-to-item-img">
-          <img src={Item} alt="photo of product" />
+          <img src={src} alt="photo of product" />
         </div>
-        <div className="add-to-item-name">Смеситель для кухни SQ3790</div>
+        <div className="add-to-item-name">{name}</div>
         <div className="buttons">
           <Link to="/Каталог/Корзина">
             <button className="next-page">Перейти в корзину</button>

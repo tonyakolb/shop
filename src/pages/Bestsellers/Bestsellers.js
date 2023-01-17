@@ -48,6 +48,7 @@ const Bestsellers = () => {
               valuePrice={item.price.value}
               catalogSearch={item.id}
               productId={item.id}
+              name={item.name}
             />
           ))}
           <Arrow
