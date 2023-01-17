@@ -29,7 +29,9 @@ const CatalogKitchen = () => {
             <p>Каталог/Кухня</p>
             <Image src={Cross} alt="close" onClick={close} />
           </div>
-          <Search/>
+                  <div className='page-search'>
+                      <Search />
+                  </div>
           <div className="page-image">
             <Image src={KitchenImage} alt="kitchen" />
                   </div>

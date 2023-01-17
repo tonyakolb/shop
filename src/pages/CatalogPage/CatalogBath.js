@@ -1,8 +1,6 @@
 import React from "react";
 import { useNavigate} from "react-router";
-import Input from "../../components/Input/Input";
 import Image from "../../components/Image/Image";
-import SearchIcon from "../../assets/images/search-icon.svg";
 import BathImage from "../../assets/images/bathcatalog.png";
 import Cross from "../../assets/images/Cross.svg";
 import TitleBlock from "../../components/TitleBlock/TitleBlock";
@@ -29,7 +27,9 @@ const CatalogKitchen = () => {
             <p>Каталог/Ванная комната</p>
             <Image src={Cross} alt="close" onClick={close} />
           </div>
-         <Search/>
+                  <div className='page-search'>
+                      <Search />
+                  </div>
           <div className="page-image">
             <Image src={BathImage} alt="bathroom" />
                   </div>

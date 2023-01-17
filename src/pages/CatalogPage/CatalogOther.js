@@ -29,7 +29,9 @@ const CatalogKitchen = () => {
             <p>Каталог/Прочее</p>
             <Image src={Cross} alt="close" onClick={close} />
           </div>
-          <Search/>
+                  <div className='page-search'>
+                      <Search />
+                  </div>
           <div className="page-image">
             <Image src={OtherImage} alt="other" />
                   </div>

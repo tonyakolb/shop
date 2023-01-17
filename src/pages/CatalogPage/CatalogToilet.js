@@ -28,8 +28,10 @@ const CatalogKitchen = () => {
           <div className="catalog-caption">
             <p>Каталог/Туалетная комната</p>
             <Image src={Cross} alt="close" onClick={close} />
-          </div>
-          <Search/>
+                  </div>
+                  <div className='page-search'>
+                      <Search />
+                  </div>
           <div className="page-image">
             <Image src={ToiletImage} alt="toilet" />
                   </div>

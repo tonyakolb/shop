@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SearchCard from "../SearchCard/SearchCard";
 import Image from "../Image/Image";
 
-import {apiMain} from "../../assets/constants/requests";
+import { apiMain } from "../../assets/constants/requests";
 import SearchIcon from "../../assets/images/search-icon.svg";
 // import './Search.css';
 
@@ -30,7 +30,7 @@ const Search = () => {
             </div>
             <input
                 className="search-input"
-                placeholder="Search"
+                placeholder="Поиск"
                 value={search}
                 onChange={searchChange}
                 onFocus={() => setFocused(true)}

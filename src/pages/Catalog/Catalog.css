@@ -16,15 +16,24 @@
   padding: 40px 0;
 }
 
-.catalog-search {
-  width: 1137px;
-  height: 40px;
-  border-radius: 8px;
-  outline: none;
-  border: none;
-  float: left;
-  padding-left: 40px;
-  position: relative;
+.catalog-search .search-icon {
+    position: absolute;
+    z-index: 1;
+    padding-top: 6px;
+    padding-left: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.catalog-search input {
+    width: 1137px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    float: left;
+    padding-left: 40px;
+    position: relative;
 }
 
 .catalog-search::placeholder {
@@ -75,7 +84,7 @@
     padding: 20px 0;
   }
 
-  .catalog-search {
+  .catalog-search input{
     height: 35px;
     width: 256px;
   }
@@ -89,4 +98,8 @@
   .classNameBlock {
     padding-bottom: 27px;
   }
+
+    .catalog-search .search-icon {
+        padding-top: 4px;
+    }
 }
