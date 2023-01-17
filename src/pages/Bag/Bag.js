@@ -39,7 +39,7 @@ const Bag = () => {
   const [total, setTotal] = useState(
     bagProducts.reduce(
       (previousValue, currentItem) =>
-        previousValue + currentItem.price.value * valueSelect,
+            previousValue + currentItem.price.value * valueSelect,
       0
     )
   );
@@ -48,7 +48,7 @@ const Bag = () => {
     setTotal(
       bagProducts.reduce(
         (previousValue, currentItem) =>
-          previousValue + currentItem.price.value * valueSelect,
+              previousValue + currentItem.price.value * valueSelect,
         0
       )
     );

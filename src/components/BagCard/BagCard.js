@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Image from "../Image/Image";
-
 import BagAction from "../../redux/actions/bagAction";
 import CountAction from "../../redux/actions/countBagAction";
 import { totalQuantity } from "../../redux/actions/TotalQuantity";

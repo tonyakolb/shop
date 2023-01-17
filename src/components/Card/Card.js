@@ -1,8 +1,9 @@
 ﻿import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
+import CountAction from "../../redux/actions/countBagAction";
 
-import bagAction from "../../redux/actions/bagAction";
+import BagAction from "../../redux/actions/bagAction";
 import SavedReviews from "../SavedReviews/SavedReviews";
 import { apiMain } from "../../assets/constants/requests";
 
@@ -34,16 +35,16 @@ const Card = ({
         navigate("/Отзыв");
 
     };
-  const addToBag = (e) => {
-    e.target.value;
-    setDisabled(!disabled);
-    dispatch(countBagAction.increment());
-    const resultAdd = apiResult.filter((item) =>
-      Object.values(item).includes(productId)
-    );
-    dispatch(bagAction.addToBagAction(resultAdd));
-    navigate("/Каталог/:id/Добавленный-товар");
-  };
+    const addToBag = (e) => {
+        e.target.value;
+        navigate("/Каталог/:id/Добавленный-товар");
+        setDisabled(!disabled);
+        dispatch(CountAction.increment());
+        const resultAdd = apiResult.filter((item) =>
+            Object.values(item).includes(productId)
+        );
+        dispatch(BagAction.addToBagAction(resultAdd));
+    };
 
   return (
     <div>
