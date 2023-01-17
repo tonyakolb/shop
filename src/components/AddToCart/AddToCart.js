@@ -1,20 +1,17 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
-
+import Image from "../Image/Image";
 import Cross from "../../assets/images/Cross.svg";
 
 import "./AddToCart.css";
-import Image from "../Image/Image";
-import {useNavigate} from "react-router";
 
-
-const AddToCart = ({ src, name, className,id,onClick }) => {
+const AddToCart = ({ src, name, className }) => {
 
   return (
     <div className={className}>
       <div className="add-to-cart">
         <div className="add-to-cart-close">
-            <Image src={Cross} alt="close" id={id} onClick={onClick}/>
+            <Image src={Cross} alt="close"/>
         </div>
         <div className="add-to-cart-caption">Товар добавлен в корзину</div>
         <div className="add-to-item-img">

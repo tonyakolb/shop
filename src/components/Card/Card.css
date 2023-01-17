@@ -326,12 +326,12 @@ button:active {
   color: #292d51;
 }
 
-.available{
+.card-available{
   display: flex;
   z-index: 2;
 }
 
-.not-available{
+.card-not-available{
   display: none;
 }
 

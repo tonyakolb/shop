@@ -26,10 +26,6 @@ const Card = ({
     navigate("/");
   };
 
-  const closeAdd = () => {
-    document.getElementById("cross").classList.add("not-available");
-  };
-
   const AddReview = () => {
     navigate("/Отзыв");
   };
@@ -115,17 +111,9 @@ const Card = ({
                         disabled={true}
                         value="Добавить в корзину"
                       />
-                      {/*<AddToCart src={detailImages} name={productName} className='back'/>}*/}
                     </div>
                   )}
-                  <AddToCart
-                    src={detailImages}
-                    name={productName}
-                    className=" "
-                    // className={`${disabled ? "not-available" : " "}`}
-                    onClick={closeAdd}
-                    id="cross"
-                  />
+
                   }
                 </div>
                 <div className="product-description">
