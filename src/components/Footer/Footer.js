@@ -92,10 +92,16 @@ const Footer = () => {
                 >
                   <img src={Instagram} alt="instagram" />
                 </a>
-                <a href="/">
+                <a
+                                  href="https://t.me/+375445842068"
+                  target="_blank"
+                >
                   <img src={Telegram} alt="telegram" />
                 </a>
-                <a href="/">
+                <a
+                                  href="viber://chat?number=%2B375445842068"
+                  target="_blank"
+                >
                   <img src={Viber} alt="viber" />
                 </a>
               </div>

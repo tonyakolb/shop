@@ -4,7 +4,6 @@
   color: #ffffff;
   padding: 3px 35px 3px;
   justify-content: space-between;
-  align-items: center;
 }
 
 
@@ -17,21 +16,27 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  padding-top: 16px;
 }
 
 .header-phone {
   font-weight: 700;
+  padding-top: 16px;
+}
+
+.search-menu {
+    padding-top: 12px;
 }
 
 .search-input {
-  width: 245px;
-  height: 30px;
-  border-radius: 8px;
-  outline: none;
-  border: none;
-  float: left;
-  padding-left: 40px;
-  position: relative;
+    width: 245px;
+    height: 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    float: left;
+    padding-left: 40px;
+    position: relative;
 }
 
 ::placeholder {
@@ -53,11 +58,12 @@
   height: 42px;
   justify-content: space-between;
   text-align: center;
+  padding-top: 6px;
 }
 
 .basket {
   position: relative;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .basket-counter {

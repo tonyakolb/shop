@@ -25,7 +25,7 @@ const Header = () => {
     <div className="header">
       <Image src={Menu} alt="menu" className="menu-icon" onClick={menu} />
           <Image src={Logotype} alt="logotype" className="logo" />
-          <div>
+          <div className='search-menu'>
               <Search />
               </div>
       <NavigateElement

@@ -56,7 +56,7 @@ const BagCard = ({
       <div className="items-number">
         <p className="number-label"> Количество </p>
         {/*<div className="number" >*/}
-        <select className="number" onChange={selectValue}>
+              <select className="number" onChange={selectValue} value={valueSelect}>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -81,7 +81,7 @@ const BagCard = ({
       </div>
       <div className="item-sale">
         <p className="sale-label"> Скидка </p>
-        <p> 56,00 руб </p>
+        <p> {valuePrice} руб </p>
       </div>
       {/*<div className="full-price">*/}
       {/*  <p className="full-price-label"> Итого </p>*/}
