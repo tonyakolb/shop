@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,6 +12,7 @@ import { sendProduct } from "../../assets/constants/requests";
 import Cross from "../../assets/images/Cross.svg";
 
 import "./Bag.css";
+import Order from "../../components/Order/Order";
 
 const Bag = () => {
   const navigate = useNavigate();
@@ -19,7 +20,6 @@ const Bag = () => {
     navigate("/");
   };
   const [productSend, setProductSend] = useState("");
-  const [valueSelect, setValueSelect] = useState("1");
   const [disabled, setDisabled] = useState(false);
   const bagProducts = useSelector((state) => state.bagReducer.bagProducts);
   const dispatch = useDispatch();
@@ -32,27 +32,13 @@ const Bag = () => {
 
   const bagItem = bagProducts.map((item) => item.id);
 
-  const selectChange = (valueSelect) => {
-    setValueSelect(valueSelect);
-  };
-
   const [total, setTotal] = useState(
     bagProducts.reduce(
       (previousValue, currentItem) =>
-            previousValue + currentItem.price.value * valueSelect,
+        previousValue + currentItem.price.value * 1,
       0
     )
   );
-
-  useEffect(() => {
-    setTotal(
-      bagProducts.reduce(
-        (previousValue, currentItem) =>
-              previousValue + currentItem.price.value * valueSelect,
-        0
-      )
-    );
-  }, [valueSelect]);
 
   const clearBag = (e) => {
     e.preventDefault();
@@ -83,9 +69,6 @@ const Bag = () => {
                       nameCardBag={item.name}
                       valuePrice={item.price.value}
                       deleteProduct={item.id}
-                      onChange={selectChange}
-                      id={item.id}
-                      valueSelect={valueSelect}
                       bagProducts={bagProducts}
                       setTotal={setTotal}
                     />
@@ -126,7 +109,6 @@ const Bag = () => {
 
             <div className="delivery-form imp">
               <p>Способы доставки</p>
-
               <div className="delivery-type">
                 <Input
                   className="delivery-info"
@@ -195,14 +177,13 @@ const Bag = () => {
                 <div className="details-label">Товар</div>
                 <div className="details-label">Сумма</div>
               </div>
-              <div className="your-order-details">
-                <div className="details-value">
-                  <p>Кран</p>
-                  <p>Артикул: SQ3790</p>
-                </div>
-                <div className="details-number">х1</div>
-                <div className="details-price">102,00 руб</div>
-              </div>
+              {bagProducts.map((item) => (
+                <Order
+                  key={item.id}
+                  nameProduct={item.name}
+                  price={item.price.value}
+                />
+              ))}
               <div className="your-order-details">
                 <div className="details-label">Доставка </div>
               </div>
@@ -216,7 +197,7 @@ const Bag = () => {
               <div className="line" />
               <div className="your-order-price">
                 <p> Итого к оплате: </p>
-                <p> 107,00 руб </p>
+                <p> {total} руб </p>
               </div>
             </div>
 
