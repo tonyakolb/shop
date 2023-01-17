@@ -1,0 +1,15 @@
+﻿.product_offer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #292D51;
+    background-color: #f0f0f2;
+    color: #292D51;
+}
+
+img.s_product_photo {
+    width: 162px;
+    height: 190px;
+    border-radius: 28px;
+}

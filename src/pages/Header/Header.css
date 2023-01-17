@@ -1,9 +1,8 @@
 .header {
   display: flex;
   background-color: #3e3e44;
-  height: 60px;
   color: #ffffff;
-  padding: 0 35px;
+  padding: 3px 35px 3px;
   justify-content: space-between;
   align-items: center;
 }
