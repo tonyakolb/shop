@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutUs from "../../components/AboutUs/AboutUs";
 import CatalogKitchen from "../../pages/CatalogPage/CatalogKitchen";
 import CatalogBath from "../../pages/CatalogPage/CatalogBath";
 import CatalogToilet from "../../pages/CatalogPage/CatalogToilet";
@@ -11,9 +10,9 @@ import Bag from "../Bag/Bag";
 import Delivery from "../../components/Delivery/Delivery";
 import PaymentMethods from "../../components/PaymentMethods/PaymentMethods";
 import Menu from "../../components/Menu/Menu";
-
 import Stock from "../../components/Stock/Stock";
-import ProductPage from '../ProductPage/ProductPage';
+import ProductPage from "../ProductPage/ProductPage";
+import AddToCart from "../../components/AddToCart/AddToCart";
 
 const App = () => {
   return (
@@ -26,11 +25,18 @@ const App = () => {
           <Route path="/Доставка" element={<Delivery />} />
           <Route path="/Оплата" element={<PaymentMethods />} />
           <Route path="/Акции" element={<Stock />} />
-          <Route path='/Каталог/:id' element={<ProductPage/>}/>\
+          <Route path="/Каталог/:id" element={<ProductPage />} />\
           <Route path="/Меню" element={<Menu />} />
+          <Route
+            path="/Каталог/:id/Добавленный-товар"
+            element={<AddToCart />}
+          />
           <Route path="/Каталог/Кухня" element={<CatalogKitchen />} />
           <Route path="/Каталог/Ванная комната" element={<CatalogBath />} />
-          <Route path="/Каталог/Туалетная комната" element={<CatalogToilet />} />
+          <Route
+            path="/Каталог/Туалетная комната"
+            element={<CatalogToilet />}
+          />
           <Route path="/Каталог/Прочее" element={<CatalogOther />} />
         </Routes>
       </BrowserRouter>

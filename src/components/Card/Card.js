@@ -1,5 +1,7 @@
 ﻿import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router";
+
 import bagAction from "../../redux/actions/bagAction";
 import SavedReviews from "../SavedReviews/SavedReviews";
 import { apiMain } from "../../assets/constants/requests";
@@ -7,8 +9,6 @@ import { apiMain } from "../../assets/constants/requests";
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
 import Cross from "../../assets/images/Cross.svg";
 import "./Card.css";
-import countBagAction from "../../redux/actions/countBagAction";
-import { useNavigate } from "react-router";
 
 const Card = ({
   detailImages,
@@ -37,6 +37,7 @@ const Card = ({
       Object.values(item).includes(productId)
     );
     dispatch(bagAction.addToBagAction(resultAdd));
+    navigate("/Каталог/:id/Добавленный-товар");
   };
 
   return (

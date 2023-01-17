@@ -1,86 +1,84 @@
 ﻿.time-status {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .time {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-
 .prom-item {
-    width: 560px;
-    padding-bottom: 30px;
+  width: 560px;
+  padding-bottom: 30px;
 }
 
 .status {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #a7a7a8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #a7a7a8;
 }
 
 .not-finished {
-    color: #01922a;
+  color: #01922a;
 }
 
 .sale-img {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
-    .sale-img img {
-        height: 400px;
-        width: 560px;
-    }
+.sale-img img {
+  height: 400px;
+  width: 560px;
+}
 
 .sale-name {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    color: #0f0e0e;
-    padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #0f0e0e;
+  padding-bottom: 8px;
 }
 
 .sale-about {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 @media screen and (max-width: 450px) {
+  .time-status {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .time-status {
-        display: flex;
-        justify-content: space-between;
-    }
+  .time,
+  .status,
+  .sale-about {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
 
-    .time, .status, .sale-about {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-    }
+  .prom-item {
+    width: 100%;
+    padding-bottom: 16px;
+  }
 
+  .sale-img {
+    padding: 4px 0;
+  }
 
-    .prom-item {
-        width: 100%;
-        padding-bottom: 16px;
-    }
+  .sale-img img {
+    width: 343px;
+    height: 225px;
+  }
 
-
-    .sale-img {
-        padding: 4px 0;
-    }
-
-        .sale-img img {
-            width: 343px;
-            height: 225px;
-        }
-
-    .sale-name {
-        font-size: 16px;
-        line-height: 22px;
-        padding-bottom: 4px;
-    }
+  .sale-name {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 4px;
+  }
 }

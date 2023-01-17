@@ -2,7 +2,6 @@
 import "./OrderReady.css";
 import OrderDone from "../../assets/images/OrderDone.svg";
 import Cross from "../../assets/images/Cross.svg";
-import Button from '../../components/Button/Button';
 
 const OrderReady = () => {
   return (
@@ -19,7 +18,7 @@ const OrderReady = () => {
           <p> Наш менеджер в ближайшее время свяжется с вами. </p>
           <h2> Спасибо, что доверяете нам! </h2>
                   <div className="order-pay">
-                      <button className="pay" buttonText="">Оплатить счет</button>
+                      <button className="pay" >Оплатить счет</button>
                   </div>
         </div>
       </div>

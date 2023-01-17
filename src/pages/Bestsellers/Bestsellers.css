@@ -1,101 +1,103 @@
 ﻿.bestsellers {
-    height: 603px;
-    background-color: #F0F0F2;
-    position: relative;
+  height: 603px;
+  background-color: #f0f0f2;
+  position: relative;
 }
 
 .bestsellers-info {
-    margin: 0 auto;
-    width: 1420px;
+  margin: 0 auto;
+  width: 1420px;
 }
 
-.bestsellers-caption{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
+.bestsellers-caption {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-.bestsellers-caption p, a {
-    font-size: 24px;
-    font-weight: 700;
-    color: #292D51;
-    line-height: 32.68px;
+.bestsellers-caption p,
+a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #292d51;
+  line-height: 32.68px;
 }
 
-.bestsellers-caption a{
-    text-decoration: underline 1px;
+.bestsellers-caption a {
+  text-decoration: underline 1px;
 }
 
 .bestsellers-items {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
 }
-
 
 .more {
-    position: absolute;
-    cursor: pointer;
-    left: 93%;
-    width: auto;
-    margin-top: 12%;
+  position: absolute;
+  cursor: pointer;
+  left: 93%;
+  width: auto;
+  margin-top: 12%;
 }
 .less {
-    position: absolute;
-    cursor: pointer;
-    left: 7%;
-    width: auto;
-    margin-top: 12%;
-    transform: rotate(180deg);
-    z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  left: 7%;
+  width: auto;
+  margin-top: 12%;
+  transform: rotate(180deg);
+  z-index: 1;
 }
 
-.arrow{
-    position: relative;
-    padding-top: 50%;
+.arrow {
+  position: relative;
+  padding-top: 50%;
 }
 
 @media screen and (max-width: 450px) {
-    .bestsellers {
-        height: 700px;
-    }
+  .bestsellers {
+    height: 700px;
+  }
 
-    .bestsellers-info {
-        width: 343px;
-    }
+  .bestsellers-info {
+    width: 343px;
+  }
 
-    .bestsellers-items {
-        gap: 30px 19px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  .bestsellers-items {
+    gap: 30px 19px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .more {
-        left: 90%;
-        margin-top: 312px
-    }
+  .more {
+    left: 90%;
+    margin-top: 312px;
+  }
 
-        .more img, .less img {
-            width: 24px;
-            height: 24px;
-        }
+  .more img,
+  .less img {
+    width: 24px;
+    height: 24px;
+  }
 
-    .less {
-        left: 3%;
-        margin-top: 308px;
-    }
+  .less {
+    left: 3%;
+    margin-top: 308px;
+  }
 
-    .bestsellers-caption {
-        padding: 16px 0;
-    }
+  .bestsellers-caption {
+    padding: 16px 0;
+  }
 
-        .bestsellers-caption p, a {
-            font-size: 16px;
-            line-height: 22px;
-        }
+  .bestsellers-caption p,
+  a {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
-        .bestsellers-caption a {
-            font-size: 12px;
-            line-height: 22px;
-        }
+  .bestsellers-caption a {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }

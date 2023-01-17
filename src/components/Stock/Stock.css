@@ -22,28 +22,26 @@
 }
 
 .promotions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 450px) {
+  .stock {
+    width: 343px;
+  }
 
-    .stock {
-        width: 343px;
-    }
+  .stock-caption {
+    padding: 40px 0 30px;
+  }
 
-    .stock-caption {
-        padding: 40px 0 30px;
-        
-    }
+  .stock-caption p {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
-        .stock-caption p {
-            font-size: 16px;
-            line-height: 22px;
-        }
-
-    .promotions {
-        flex-direction: column;
-    }
+  .promotions {
+    flex-direction: column;
+  }
 }

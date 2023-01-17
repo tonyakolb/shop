@@ -1,11 +1,16 @@
 import React from "react";
 
-const TitleBlock = ({ titleBlock, titleBlockLast,classNameBlock,classNameBlockLast}) => {
-    return (
+const TitleBlock = ({
+  titleBlock,
+  titleBlockLast,
+  classNameBlock,
+  classNameBlockLast,
+}) => {
+  return (
     <div className={classNameBlock}>
       {titleBlock}
       <span className={classNameBlockLast}>{titleBlockLast}</span>
-      </div>
+    </div>
   );
 };
 

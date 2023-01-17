@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router";
 import BagButton from "../BagButton/BagButton";
 import CountAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
-// import apiResult from "../../redux/reducer/apiReducer";
 
 import "./ProductCard.css";
 
-const ProductCard = ({ urlImg, valuePrice, catalogSearch,productId }) => {
+const ProductCard = ({ urlImg, valuePrice, catalogSearch, productId }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [disabled, setDisabled] = useState(false);
   const apiResult = useSelector((state) => state.apiResult.response);
 
   const addToBag = (e) => {
     e.target.value;
+    navigate("/Каталог/:id/Добавленный-товар");
     setDisabled(!disabled);
     dispatch(CountAction.increment());
     const resultAdd = apiResult.filter((item) =>

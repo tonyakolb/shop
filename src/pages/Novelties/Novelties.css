@@ -5,8 +5,8 @@
 }
 
 .novelties-info {
-    margin: 0 auto;
-    width: 1420px;
+  margin: 0 auto;
+  width: 1420px;
 }
 
 .novelties-caption {
@@ -28,76 +28,77 @@ a {
 }
 
 .novelties-items {
-    display: flex;
+  display: flex;
   justify-content: space-around;
-    gap: 40px;
-    justify-content: space-around;
+  gap: 40px;
 }
 
 .more {
-    position: absolute;
-    cursor: pointer;
-    left: 93%;
-    width: auto;
-    margin-top: 12%;
+  position: absolute;
+  cursor: pointer;
+  left: 93%;
+  width: auto;
+  margin-top: 12%;
 }
 
 .less {
-    position: absolute;
-    cursor: pointer;
-    left: 7%;
-    width: auto;
-    margin-top: 12%;
-    transform: rotate(180deg);
-    z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  left: 7%;
+  width: auto;
+  margin-top: 12%;
+  transform: rotate(180deg);
+  z-index: 1;
 }
 
 .arrow {
-    position: relative;
-    padding-top: 50%;
+  position: relative;
+  padding-top: 50%;
 }
 
 @media screen and (max-width: 450px) {
-    .novelties {
-        height: 700px;
-    }
-    
-    .novelties-info {
-        width: 343px;
-    }
+  .novelties {
+    height: 700px;
+  }
 
-    .novelties-items {
-        gap: 30px 19px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  .novelties-info {
+    width: 343px;
+  }
 
-    .more {
-        left: 90%;
-        margin-top: 312px
-    }
+  .novelties-items {
+    gap: 30px 19px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .more img, .less img{
-        width: 24px;
-        height: 24px;
-    }
+  .more {
+    left: 90%;
+    margin-top: 312px;
+  }
 
-    .less {
-        left: 3%;
-        margin-top: 308px;
-    }
+  .more img,
+  .less img {
+    width: 24px;
+    height: 24px;
+  }
 
-    .novelties-caption {
-        padding: 16px 0;
-    }
+  .less {
+    left: 3%;
+    margin-top: 308px;
+  }
 
-        .novelties-caption p, a {
-            font-size: 16px;
-            line-height: 22px;
-        }
+  .novelties-caption {
+    padding: 16px 0;
+  }
 
-        .novelties-caption a {
-            font-size: 12px;
-            line-height: 22px;
-        }
+  .novelties-caption p,
+  a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .novelties-caption a {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }

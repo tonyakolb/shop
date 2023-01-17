@@ -9,15 +9,15 @@
 }
 
 .menu-icon {
-    display: none;
-}
-.navigate_elem {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+  display: none;
 }
 
+.navigate_elem {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
 
 .header-phone {
   font-weight: 700;
@@ -71,88 +71,85 @@
 }
 
 .counter {
-    color: #292D51;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 22px;
+  color: #292d51;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 22px;
 }
 
 @media screen and (max-width: 450px) {
-    .header {
-        height: 46px;
-        padding: 0 11px;
-    }
+  .header {
+    height: 46px;
+    padding: 0 11px;
+  }
 
-    .menu-icon {
-        display: inline-block;
-        cursor: pointer;
-    }
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
 
-    .logo img{
-        width: 70px;
-        height: 22px;
-    }
+  .logo img {
+    width: 70px;
+    height: 22px;
+  }
 
-    .navigate_elem {
-        display: none;
-    }
+  .navigate_elem {
+    display: none;
+  }
 
+  .header-phone {
+    display: none;
+  }
 
-    .header-phone {
-        display: none;
-    }
+  .header-search {
+    width: 201px;
+    height: 20px;
+    padding-left: 32px;
+  }
 
-    .header-search {
-        width: 201px;
-        height: 20px;
-        padding-left: 32px;
-    }
+  ::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
 
-    ::placeholder {
-        font-size: 12px;
-        line-height: 16px;
-    }
+  .search-icon {
+    padding-top: 3px;
+    width: 12px;
+    height: 12px;
+  }
 
-    .search-icon {
-        padding-top: 3px;
-        width: 12px;
-        height: 12px;
-    }
+  .search-icon img {
+    width: 16px;
+    height: 16px;
+  }
 
-    .search-icon img{
-        width: 16px;
-        height: 16px;
-    }
+  .header-schedule {
+    display: none;
+  }
 
-    .header-schedule {
-        display: none
-    }
+  .basket {
+    position: relative;
+    padding-top: 5px;
+  }
 
-    .basket {
-        position: relative;
-        padding-top: 5px;
-    }
+  .basket img {
+    width: 24px;
+    height: 24px;
+  }
 
-    .basket img{
-        width: 24px;
-        height: 24px;
-    }
+  .basket-counter {
+    width: 13px;
+    height: 13px;
+    top: -1px;
+    right: -5px;
+  }
 
-    .basket-counter {
-        width: 13px;
-        height: 13px;
-        top: -1px;
-        right: -5px;
-    }
-
-    .counter {
-        color: #292D51;
-        font-size: 8px;
-        align-items: center;
-        height: 13px;
-    }
-    
-
+  .counter {
+    color: #292d51;
+    font-size: 8px;
+    align-items: center;
+    height: 13px;
+  }
 }

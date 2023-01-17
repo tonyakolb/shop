@@ -82,7 +82,10 @@ const Delivery = () => {
               </li>
               <li>
                 Ознакомиться с тарифами можно по ссылке{" "}
-                <a href="https://belpost.by/" target="_blank"> https://belpost.by/ </a>{" "}
+                <a href="https://belpost.by/" target="_blank">
+                  {" "}
+                  https://belpost.by/{" "}
+                </a>{" "}
               </li>
               <li>
                 Ответственность за сроки доставки товаров и сохранность

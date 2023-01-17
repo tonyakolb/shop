@@ -1,7 +1,8 @@
 import React from "react";
-import ProductCard from "../ProductCard/ProductCard";
 import { useState } from "react";
 import { apiMain } from "../../assets/constants/requests";
+
+import ProductCard from "../ProductCard/ProductCard";
 import "./AllProducts.css";
 
 const AllProducts = () => {

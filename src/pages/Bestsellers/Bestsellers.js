@@ -3,31 +3,17 @@ import { Link } from "react-router-dom";
 
 import { apiMain } from "../../assets/constants/requests";
 import ArrowIcon from "../../assets/images/arrow-icon.svg";
-// import Image from "../../assets/images/main-image.jpg";
-// import Button from "../../components/Button/Button";
+
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Arrow from "../../components/Arrow/Arrow";
-// import { useDispatch } from "react-redux";
+
 import "./Bestsellers.css";
 
-const Bestsellers = ({ productId }) => {
-  // const dispatch = useDispatch();
-
-  // const [disabled, setDisabled] = useState(false);
+const Bestsellers = () => {
   const [product, setProduct] = useState([]);
   const [arrowMin, setArrowMin] = useState(0);
   const [arrowMax, setArrowMax] = useState(4);
   apiMain(setProduct);
-
-  // const addToBag = (e) => {
-  //   e.target.value;
-  //   setDisabled(!disabled);
-  //   dispatch(CountAction.increment());
-  //   const resultAdd = apiResult.filter((item) =>
-  //     Object.values(item).includes(productId)
-  //   );
-  //   dispatch(BagAction.addToBagAction(resultAdd));
-  // };
 
   const arrowMore = () => {
     setArrowMax(arrowMax + 1);

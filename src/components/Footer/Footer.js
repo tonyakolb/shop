@@ -40,36 +40,39 @@ const Footer = () => {
                   {" "}
                   <Link to="/Оплата"> Способы оплаты </Link>{" "}
                 </li>
-                <li className='contacts-link'>
+                <li className="contacts-link">
                   {" "}
-                  <a href="#bookmark-contacts" className='mobile-cont'> Контакты </a>{" "}
+                  <a href="#bookmark-contacts" className="mobile-cont">
+                    {" "}
+                    Контакты{" "}
+                  </a>{" "}
                 </li>
               </ul>
             </div>
           </div>
-                  <div className="contacts">
-          <div className="footer-column">
-            <p className="column-name">Контакты</p>
-            <div className="column-info contacts-list">
-              <ul>
-                <li>
-                  <img src={Phone} alt="phone number" />
-                  +375 (44) 584 20 68
-                </li>
-                <li>
-                  <img src={Mail} alt="e-mail" />
-                  soqo.by@gmail.com
-                </li>
-              </ul>
+          <div className="contacts">
+            <div className="footer-column">
+              <p className="column-name">Контакты</p>
+              <div className="column-info contacts-list">
+                <ul>
+                  <li>
+                    <img src={Phone} alt="phone number" />
+                    +375 (44) 584 20 68
+                  </li>
+                  <li>
+                    <img src={Mail} alt="e-mail" />
+                    soqo.by@gmail.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="footer-column">
+              <p className="column-name">Адрес</p>
+              <div className="column-info address">
+                Магазин: г.Минск, ул. Кульман, 5Б. Павильон 195
+              </div>
             </div>
           </div>
-          <div className="footer-column">
-            <p className="column-name">Адрес</p>
-            <div className="column-info address">
-              Магазин: г.Минск, ул. Кульман, 5Б. Павильон 195
-            </div>
-          </div>
-            </div>
           <div className="footer-column">
             <p className="column-name">График работы</p>
             <div className="column-info">
@@ -82,8 +85,11 @@ const Footer = () => {
           <div className="footer-column">
             <p className="column-name">Мы в соц. сетях</p>
             <div className="column-info">
-                          <div className="social-nets">
-                              <a href="https://www.instagram.com/santexnika.by/" target='_blank'>
+              <div className="social-nets">
+                <a
+                  href="https://www.instagram.com/santexnika.by/"
+                  target="_blank"
+                >
                   <img src={Instagram} alt="instagram" />
                 </a>
                 <a href="/">
@@ -97,8 +103,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="location">
-                  <div className="map">
-                      <iframe className='full-map'
+          <div className="map">
+            <iframe
+              className="full-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.6677709773035!2d27.57918821582911!3d53.91987938010323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfa1a5285889%3A0x4a433bc5dbf42019!2z0YPQuy4g0JrRg9C70YzQvNCw0L0gNdCxLCDQnNC40L3RgdC6IDIyMDA4OQ!5e0!3m2!1sru!2sby!4v1670769098273!5m2!1sru!2sby"
               style={{ border: 0, width: 1122, height: 406 }}
               allowFullScreen=""
@@ -106,7 +113,8 @@ const Footer = () => {
               referrerPolicy="no-referrer-when-downgrade"
             />
 
-            <iframe className='mobile-map'
+            <iframe
+              className="mobile-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.6677709773035!2d27.57918821582911!3d53.91987938010323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfa1a5285889%3A0x4a433bc5dbf42019!2z0YPQuy4g0JrRg9C70YzQvNCw0L0gNdCxLCDQnNC40L3RgdC6IDIyMDA4OQ!5e0!3m2!1sru!2sby!4v1670769098273!5m2!1sru!2sby"
               style={{ border: 0, width: 227, height: 123 }}
               allowFullScreen=""
@@ -116,7 +124,7 @@ const Footer = () => {
           </div>
           <div className="shop-photos">
             <img src={ShopPhoto1} alt="shop" />
-            <img className='second-img' src={ShopPhoto2} alt="shop" />
+            <img className="second-img" src={ShopPhoto2} alt="shop" />
           </div>
         </div>
         <div className="shop-about">

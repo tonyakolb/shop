@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import ApiAction from "../../redux/actions/apiAction";
 import { Link } from "react-router-dom";
+import ApiAction from "../../redux/actions/apiAction";
 
 import Image from "../Image/Image";
 import "../CatalogCategories/CatalogCategories.css";
@@ -27,10 +27,10 @@ const Category = ({ inputValueText, src, alt, text }) => {
       to={`/Каталог/${inputValueText}`}
       className="category"
       onClick={filterProduct}
-      >
-          <div className='category-img'>
-              <Image src={src} alt={alt} />
-          </div>
+    >
+      <div className="category-img">
+        <Image src={src} alt={alt} />
+      </div>
       <div className="category-name">{text}</div>
     </Link>
   );

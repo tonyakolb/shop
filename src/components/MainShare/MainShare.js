@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React,{useState} from "react";
 import MainImage from "../../assets/images/main-image.jpg";
-import "./MainShare.css";
-import Arrow from "../../components/Arrow/Arrow";
-import { apiMain } from "../../assets/constants/requests";
 import ArrowIcon from "../../assets/images/arrow-icon.svg";
+import Arrow from "../Arrow/Arrow";
+import "./MainShare.css";
+import { apiMain } from "../../assets/constants/requests";
 import MainPhoto from "../../components/MainPhoto/MainPhoto";
 
 
