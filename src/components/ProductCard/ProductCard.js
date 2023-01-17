@@ -20,16 +20,16 @@ const ProductCard = ({
   const [disabled, setDisabled] = useState(false);
   const apiResult = useSelector((state) => state.apiResult.response);
 
-  const addToBag = (e) => {
-    e.target.value;
-    setDisabled(!disabled);
-    dispatch(CountAction.increment());
-      setModal(true)
-    const resultAdd = apiResult.filter((item) =>
-      Object.values(item).includes(productId)
-    );
-    dispatch(BagAction.addToBagAction(resultAdd));
-  };
+    const addToBag = (e) => {
+        e.target.value;
+        setDisabled(!disabled);
+        dispatch(CountAction.increment());
+        setModal(true);
+        const resultAdd = apiResult.filter((item) =>
+            Object.values(item).includes(productId)
+        );
+        dispatch(BagAction.addToBagAction(resultAdd));
+    };
 
 
     const [isModal, setModal] = React.useState(false)

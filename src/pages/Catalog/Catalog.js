@@ -13,6 +13,7 @@ import "./Catalog.css";
 const Catalog = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
+  const toggleFilter = () => setOpen(!open);
   const close = () => {
     navigate("/");
   };
@@ -27,25 +28,24 @@ const Catalog = () => {
           <div className="catalog-categories-caption">
             <p>Каталог</p>
             <div className="catalog-search">
-               <Search />
+              <Search />
             </div>
           </div>
           <Categories />
           <div className="classNameBlock">
             Все товары
             <button
-              onClick={() => setOpen(true)}
+                onClick={toggleFilter}
               className="classNameBlockLast"
             >
               Фильтр
             </button>
-
           </div>
-                  {open && (
-                      <div className="filter ">
-                          <Filter className='dropdown-content' />
-                      </div>
-                  )}
+          {open && (
+            <div className="filter ">
+              <Filter className="dropdown-content" />
+            </div>
+          )}
           <AllProducts />
         </div>
       </div>

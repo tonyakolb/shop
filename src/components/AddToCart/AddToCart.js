@@ -1,6 +1,4 @@
-﻿import React, { ReactElement } from "react";
-import ReactDOM from 'react-dom'
-import { useNavigate } from "react-router";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 
 import Cross from "../../assets/images/Cross.svg";
@@ -14,7 +12,6 @@ const AddToCart = ({
     onClose,
 }) => {
 
-    // создаем обработчик нажатия клавиши Esc
     const onKeydown = ({ key }) => {
         switch (key) {
             case 'Escape':
@@ -27,6 +24,8 @@ const AddToCart = ({
         document.addEventListener('keydown', onKeydown)
         return () => document.removeEventListener('keydown', onKeydown)
     })
+
+
 
     if (!visible) return null;
 

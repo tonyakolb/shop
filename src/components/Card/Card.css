@@ -326,6 +326,15 @@ button:active {
   color: #292d51;
 }
 
+.available{
+  display: flex;
+  z-index: 2;
+}
+
+.not-available{
+  display: none;
+}
+
 @media screen and (max-width: 450px) {
   .card {
     width: 343px;

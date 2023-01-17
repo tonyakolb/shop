@@ -2,14 +2,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import CountAction from "../../redux/actions/countBagAction";
-
 import BagAction from "../../redux/actions/bagAction";
 import SavedReviews from "../SavedReviews/SavedReviews";
-import { apiMain } from "../../assets/constants/requests";
-
-import Icon from "../../assets/images/Icon-basket-no-frame.svg";
+import BagButton from "../BagButton/BagButton";
+// import AddToCart from "../AddToCart/AddToCart";
 import Cross from "../../assets/images/Cross.svg";
 import "./Card.css";
+import AddToCart from "../AddToCart/AddToCart";
 
 const Card = ({
   detailImages,
@@ -20,8 +19,6 @@ const Card = ({
   currency,
 }) => {
 
-    const [product, setProduct] = useState([]);
-    apiMain(setProduct);
 
   const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
@@ -31,20 +28,24 @@ const Card = ({
     navigate("/");
     };
 
-    const AddReview = () => {
-        navigate("/Отзыв");
 
-    };
-    const addToBag = (e) => {
-        e.target.value;
-        navigate("/Каталог/:id/Добавленный-товар");
-        setDisabled(!disabled);
-        dispatch(CountAction.increment());
-        const resultAdd = apiResult.filter((item) =>
-            Object.values(item).includes(productId)
-        );
-        dispatch(BagAction.addToBagAction(resultAdd));
-    };
+  const AddReview = () => {
+    navigate("/Отзыв");
+  };
+
+  const addToBag = (e) => {
+    e.target.value;
+    setDisabled(!disabled);
+      dispatch(CountAction.increment());
+      setModal(true);
+    const resultAdd = apiResult.filter((item) =>
+      Object.values(item).includes(productId)
+    );
+    dispatch(BagAction.addToBagAction(resultAdd));
+  };
+
+    const [isModal, setModal] = React.useState(false)
+    const onClose = () => setModal(false)
 
   return (
     <div>
@@ -66,29 +67,29 @@ const Card = ({
                 <div className="main-img">
                   <img src={detailImages} alt="product image" />
                 </div>
-                          </div>
-                          <div className='full-reviews'>
-                              <div className="review-rating">
-                                  <p>Отзывы</p>
-
-                                  <div className="product-rating">
-                                      <span className="active" />
-                                      <span className="active" />
-                                      <span className="active" />
-                                      <span className="active" />
-                                      <span />
-                                  </div>
-                              </div>
-                              {product.map((item) => (
-                              <SavedReviews
-                                  valuePrice={item.price.value}
-                                      productId={item.id} />
-                              ))}
-                              <div className="add-button">
-                                  <button className="add-review" onClick={AddReview}>Добавить отзыв</button>
-                              </div>
-                                  </div>
-                              
+              </div>
+              <div className="full-reviews">
+                <div className="review-rating">
+                  <p>Отзывы</p>
+                  <div className="product-rating">
+                    <span className="active" />
+                    <span className="active" />
+                    <span className="active" />
+                    <span className="active" />
+                    <span />
+                  </div>
+                </div>
+                <SavedReviews
+                  valuePrice={valuePrice}
+                  productId={productId}
+                  key={productId}
+                />
+                <div className="add-button">
+                  <button className="add-review" onClick={AddReview}>
+                    Добавить отзыв
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="sec-column">
               <div className="product-about">
@@ -103,10 +104,23 @@ const Card = ({
                     </div>
                     <div className="price-old">{valuePrice}</div>
                   </div>
-                  <button className="add" onClick={addToBag}>
-                    Добавить в корзину
-                    <img src={Icon} alt="basket" />
-                  </button>
+                  {!disabled ? (
+                    <BagButton
+                      className="add"
+                      onClick={addToBag}
+                      value="Добавить в корзину"
+                    />
+                  ) : (
+                    <div>
+                      <BagButton
+                        className="add "
+                        disabled={true}
+                        value="Добавить в корзину"
+                      />
+                                              <AddToCart visible={isModal} src={detailImages} name={productName} onClose={onClose} />
+                    </div>
+                  )}
+                  
                 </div>
                 <div className="product-description">
                   <p>Описание</p>
@@ -117,7 +131,6 @@ const Card = ({
               </div>
               <div className="product-details">
                 <div className="product-details-caption">Характеристика</div>
-
                 <div className="product-detail-group">Общие</div>
                 <div className="product-detail-item">
                   <div className="product-detail-label">Исполнение излива</div>
@@ -127,28 +140,26 @@ const Card = ({
                 </div>
               </div>
             </div>
-                      <div className='mobile-reviews'>
-                          <div className="review-rating">
-                              <p>Отзывы</p>
-
-                              <div className="product-rating">
-                                  <span className="active" />
-                                  <span className="active" />
-                                  <span className="active" />
-                                  <span className="active" />
-                                  <span />
-                              </div>
-                          </div>
-                          {product.map((item) => (
-                          <SavedReviews
-                              valuePrice={item.price.value}
-                              productId={item.id} />
-                          ))}
-                          <div className="add-button">
-                              <button className="add-review">Добавить отзыв</button>
-                          </div>
-                              </div>
-                          
+            <div className="mobile-reviews">
+              <div className="review-rating">
+                <p>Отзывы</p>
+                <div className="product-rating">
+                  <span className="active" />
+                  <span className="active" />
+                  <span className="active" />
+                  <span className="active" />
+                  <span />
+                </div>
+              </div>
+              <SavedReviews
+                valuePrice={valuePrice}
+                productId={productId}
+                key={productId}
+              />
+              <div className="add-button">
+                <button className="add-review">Добавить отзыв</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
