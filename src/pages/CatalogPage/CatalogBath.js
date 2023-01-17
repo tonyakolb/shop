@@ -33,6 +33,21 @@ const CatalogKitchen = () => {
           <div className="page-image">
             <Image src={BathImage} alt="bathroom" />
                   </div>
+
+                  <div className='product-type'>
+                      <button className="type">Смесители для ванной и душа</button>
+                      <button className="type">Смесители для раковины</button>
+                      <button className="type">Верхний душ</button>
+                      <button className="type">Душевые лейки</button>
+                      <button className="type">Душевые системы</button>
+                      <button className="type">Душевые трапы</button>
+                      <button className="type">Наборы</button>
+                      <button className="type">Полки и вешалки</button>
+                      <button className="type">Аксессуары для ванной</button>
+                      <button className="type">Уцененные</button>
+
+                  </div>
+
                   <div className='filter'>
                   <TitleBlock
                       titleBlock="Все товары"
@@ -48,7 +63,7 @@ const CatalogKitchen = () => {
                       <a href="/">Акционные товары</a>
                   </div>
                   </div>
-
+                 
                   <AllProducts />
         </div>
       </div>

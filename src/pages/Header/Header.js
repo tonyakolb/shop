@@ -24,8 +24,10 @@ const Header = () => {
   return (
     <div className="header">
       <Image src={Menu} alt="menu" className="menu-icon" onClick={menu} />
-      <Image src={Logotype} alt="logotype" className="logo" />
-      <Search />
+          <Image src={Logotype} alt="logotype" className="logo" />
+          <div>
+              <Search />
+              </div>
       <NavigateElement
         navigate_context="Каталог"
         navigate_elem="navigate_elem"

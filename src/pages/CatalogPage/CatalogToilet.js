@@ -35,6 +35,16 @@ const CatalogKitchen = () => {
           <div className="page-image">
             <Image src={ToiletImage} alt="toilet" />
                   </div>
+
+                  <div className='product-type'>
+                      <button className="type">Унитазные бачки</button>
+                      <button className="type">Смесители и атрибуты для биде</button>
+                      <button className="type">Держатели</button>
+                      <button className="type">Ершики</button>
+                      <button className="type">Уцененные</button>
+
+                  </div>
+
                   <div className='filter'>
                   <TitleBlock
                       titleBlock="Все товары"
