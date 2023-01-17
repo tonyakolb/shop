@@ -1,9 +1,12 @@
 ﻿.add-to-cart {
-  width: 519px;
-  height: 520px;
-  margin: 5% auto 0;
-  border-radius: 28px;
-  background-color: #ffffff;
+    width: 519px;
+    height: 520px;
+    top: 20%;
+    left: 35%;
+    border-radius: 28px;
+    background-color: #ffffff;
+    z-index: 2;
+    position: fixed;
 }
 
 .add-to-cart-close {
