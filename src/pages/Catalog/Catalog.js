@@ -27,7 +27,7 @@ const Catalog = () => {
           <div className="catalog-categories-caption">
             <p>Каталог</p>
             <div className="catalog-search">
-                          <Search />
+               <Search />
             </div>
           </div>
           <Categories />
