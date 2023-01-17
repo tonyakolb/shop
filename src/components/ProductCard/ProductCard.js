@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router";
 import BagButton from "../BagButton/BagButton";
 import CountAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
@@ -17,7 +16,6 @@ const ProductCard = ({
   name,
 }) => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const [disabled, setDisabled] = useState(false);
   const apiResult = useSelector((state) => state.apiResult.response);

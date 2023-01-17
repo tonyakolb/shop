@@ -3,10 +3,11 @@ import React from "react";
 import Image from "../Image/Image";
 import Icon from "../../assets/images/Icon-basket-no-frame.svg";
 
-const BagButton = ({ onClick, className, disabled }) => {
+const BagButton = ({ onClick, className, disabled,value }) => {
   return (
     <button className={className} onClick={onClick} disabled={disabled}>
-      <Image src={Icon} alt="bag-button" />
+        {value}
+        <Image src={Icon} alt="bag-button" />
     </button>
   );
 };
