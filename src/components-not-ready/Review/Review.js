@@ -2,13 +2,24 @@
 import "./Review.css";
 import Cross from "../../assets/images/Cross.svg";
 import Input from "../../components/Input/Input";
+import { useNavigate } from "react-router";
+
+import Image from "../../components/Image/Image";
 
 const Review = () => {
+
+    const navigate = useNavigate();
+
+    const close = () => {
+        navigate("/");
+    };
+
   return (
     <div>
       <div className="make-review">
         <div className="review-close">
-          <img src={Cross} alt="close" />
+
+          <Image src={Cross} alt="close" onClick={close}/>
         </div>
         <form action="/">
           <div className="review-form">

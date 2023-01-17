@@ -28,7 +28,12 @@ const Card = ({
   const navigate = useNavigate();
   const close = () => {
     navigate("/");
-  };
+    };
+
+    const AddReview = () => {
+        navigate("/Отзыв");
+
+    };
   const addToBag = (e) => {
     e.target.value;
     setDisabled(!disabled);
@@ -79,7 +84,7 @@ const Card = ({
                                       productId={item.id} />
                               ))}
                               <div className="add-button">
-                                  <button className="add-review">Добавить отзыв</button>
+                                  <button className="add-review" onClick={AddReview}>Добавить отзыв</button>
                               </div>
                                   </div>
                               
@@ -151,3 +156,6 @@ const Card = ({
 };
 
 export default Card;
+
+
+

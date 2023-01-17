@@ -13,6 +13,7 @@ import Menu from "../../components/Menu/Menu";
 import Stock from "../../components/Stock/Stock";
 import ProductPage from "../ProductPage/ProductPage";
 import AddToCart from "../../components/AddToCart/AddToCart";
+import Review from "../../components-not-ready/Review/Review";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
             element={<CatalogToilet />}
           />
           <Route path="/Каталог/Прочее" element={<CatalogOther />} />
+           <Route path="/Отзыв" element={<Review />} />
         </Routes>
       </BrowserRouter>
     </>
