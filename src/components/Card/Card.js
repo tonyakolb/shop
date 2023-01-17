@@ -2,14 +2,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import CountAction from "../../redux/actions/countBagAction";
-
 import BagAction from "../../redux/actions/bagAction";
 import SavedReviews from "../SavedReviews/SavedReviews";
-import { apiMain } from "../../assets/constants/requests";
 import BagButton from "../BagButton/BagButton";
-import AddToCart from "../AddToCart/AddToCart";
+// import AddToCart from "../AddToCart/AddToCart";
 import Cross from "../../assets/images/Cross.svg";
 import "./Card.css";
+import AddToCart from "../AddToCart/AddToCart";
 
 const Card = ({
   detailImages,
@@ -19,9 +18,6 @@ const Card = ({
   productId,
   currency,
 }) => {
-  const [product, setProduct] = useState([]);
-  apiMain(setProduct);
-
   const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
   const apiResult = useSelector((state) => state.apiResult.response);
@@ -30,11 +26,17 @@ const Card = ({
     navigate("/");
   };
 
+  const closeAdd = () => {
+    document.getElementById("cross").classList.add("not-available");
+  };
+
   const AddReview = () => {
     navigate("/Отзыв");
   };
+
   const addToBag = (e) => {
     e.target.value;
+    navigate("/Добавленный-товар");
     setDisabled(!disabled);
     dispatch(CountAction.increment());
     const resultAdd = apiResult.filter((item) =>
@@ -67,7 +69,6 @@ const Card = ({
               <div className="full-reviews">
                 <div className="review-rating">
                   <p>Отзывы</p>
-
                   <div className="product-rating">
                     <span className="active" />
                     <span className="active" />
@@ -76,12 +77,11 @@ const Card = ({
                     <span />
                   </div>
                 </div>
-                {product.map((item) => (
-                  <SavedReviews
-                    valuePrice={item.price.value}
-                    productId={item.id}
-                  />
-                ))}
+                <SavedReviews
+                  valuePrice={valuePrice}
+                  productId={productId}
+                  key={productId}
+                />
                 <div className="add-button">
                   <button className="add-review" onClick={AddReview}>
                     Добавить отзыв
@@ -102,15 +102,31 @@ const Card = ({
                     </div>
                     <div className="price-old">{valuePrice}</div>
                   </div>
-
                   {!disabled ? (
-                    <BagButton className="add " onClick={addToBag} />
+                    <BagButton
+                      className="add"
+                      onClick={addToBag}
+                      value="Добавить в корзину"
+                    />
                   ) : (
                     <div>
-                      <BagButton className="add " disabled={true} />
-                      <AddToCart src={detailImages} name={productName} />
+                      <BagButton
+                        className="add "
+                        disabled={true}
+                        value="Добавить в корзину"
+                      />
+                      {/*<AddToCart src={detailImages} name={productName} className='back'/>}*/}
                     </div>
                   )}
+                  <AddToCart
+                    src={detailImages}
+                    name={productName}
+                    className=" "
+                    // className={`${disabled ? "not-available" : " "}`}
+                    onClick={closeAdd}
+                    id="cross"
+                  />
+                  }
                 </div>
                 <div className="product-description">
                   <p>Описание</p>
@@ -121,7 +137,6 @@ const Card = ({
               </div>
               <div className="product-details">
                 <div className="product-details-caption">Характеристика</div>
-
                 <div className="product-detail-group">Общие</div>
                 <div className="product-detail-item">
                   <div className="product-detail-label">Исполнение излива</div>
@@ -134,7 +149,6 @@ const Card = ({
             <div className="mobile-reviews">
               <div className="review-rating">
                 <p>Отзывы</p>
-
                 <div className="product-rating">
                   <span className="active" />
                   <span className="active" />
@@ -143,12 +157,11 @@ const Card = ({
                   <span />
                 </div>
               </div>
-              {product.map((item) => (
-                <SavedReviews
-                  valuePrice={item.price.value}
-                  productId={item.id}
-                />
-              ))}
+              <SavedReviews
+                valuePrice={valuePrice}
+                productId={productId}
+                key={productId}
+              />
               <div className="add-button">
                 <button className="add-review">Добавить отзыв</button>
               </div>
