@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import Search from "../../components/Search/Search";
 
 import Categories from "../../components/Categories/Categories";
 import Filter from "../../components/Filter/Filter";
-import TitleBlock from "../../components/TitleBlock/TitleBlock";
+// import TitleBlock from "../../components/TitleBlock/TitleBlock";
 import AllProducts from "../../components/AllProducts/AllProducts";
 import Image from "../../components/Image/Image";
 import Cross from "../../assets/images/Cross.svg";
@@ -13,6 +13,7 @@ import "./Catalog.css";
 
 const Catalog = () => {
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
   const close = () => {
     navigate("/");
   };
@@ -27,19 +28,32 @@ const Catalog = () => {
           <div className="catalog-categories-caption">
             <p>Каталог</p>
             <div className="catalog-search">
-                          <Search />
+              <Search />
             </div>
           </div>
           <Categories />
-          <div className="filter">
-            <TitleBlock
-              titleBlock="Все товары"
-              titleBlockLast="Фильтр"
-              classNameBlock="classNameBlock"
-              classNameBlockLast="classNameBlockLast"
-            />
-            <Filter />
+
+          {/*<TitleBlock*/}
+          {/*  titleBlock="Все товары"*/}
+          {/*  titleBlockLast="Фильтр"*/}
+          {/*  classNameBlock="classNameBlock"*/}
+          {/*  classNameBlockLast="classNameBlockLast"*/}
+          {/*/>*/}
+          <div className="classNameBlock">
+            Все товары
+            <button
+              onClick={() => setOpen(true)}
+              className="classNameBlockLast"
+            >
+              Фильтр
+            </button>
+            {open && (
+              <div className="filter ">
+                <Filter className='dropdown-content' />
+              </div>
+            )}
           </div>
+
           <AllProducts />
         </div>
       </div>
