@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\assets",
-    "\\src\\assets\\images",
+    "\\src\\assets\\constants",
     "\\src\\components",
-    "\\src\\components\\BagCard",
-    "\\src\\components\\Delivery",
-    "\\src\\components\\ProductCard",
+    "\\src\\components\\Input",
+    "\\src\\components\\OrderReady",
+    "\\src\\components\\Review",
     "\\src\\pages",
-    "\\src\\pages\\Bag"
+    "\\src\\pages\\App"
   ],
-  "SelectedNode": "\\src\\components\\BagCard\\BagCard.js",
+  "SelectedNode": "\\src\\pages\\App\\App.js",
   "PreviewInSolutionExplorer": false
 }

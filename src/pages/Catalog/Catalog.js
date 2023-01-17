@@ -34,10 +34,7 @@ const Catalog = () => {
           <Categories />
           <div className="classNameBlock">
             Все товары
-            <button
-                onClick={toggleFilter}
-              className="classNameBlockLast"
-            >
+            <button onClick={toggleFilter} className="classNameBlockLast">
               Фильтр
             </button>
           </div>

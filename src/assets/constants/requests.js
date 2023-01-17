@@ -30,20 +30,3 @@ export const sendProduct = (bagItem, setProductSend) => {
             console.log(error);
         });
 };
-
-// export const sendEmail = (inputEmail, setEmailSend) => {
-//     fetch(`https://if-modnikky-api.onrender.com/api/subscription`, {
-//         method: 'POST',
-//         body: JSON.stringify({ email: inputEmail }),
-//         headers: {
-//             'Content-type': 'application/json',
-//         },
-//     })
-//         .then((response) => response.json())
-//         .then((data) => {
-//             setEmailSend(data);
-//         })
-//         .catch((error) => {
-//             console.log(error);
-//         });
-// };

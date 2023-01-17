@@ -5,10 +5,9 @@ import CountAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
 import SavedReviews from "../SavedReviews/SavedReviews";
 import BagButton from "../BagButton/BagButton";
-// import AddToCart from "../AddToCart/AddToCart";
+import AddToCart from "../AddToCart/AddToCart";
 import Cross from "../../assets/images/Cross.svg";
 import "./Card.css";
-import AddToCart from "../AddToCart/AddToCart";
 
 const Card = ({
   detailImages,
@@ -18,16 +17,13 @@ const Card = ({
   productId,
   currency,
 }) => {
-
-
   const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
   const apiResult = useSelector((state) => state.apiResult.response);
   const navigate = useNavigate();
   const close = () => {
     navigate("/");
-    };
-
+  };
 
   const AddReview = () => {
     navigate("/Отзыв");
@@ -36,16 +32,16 @@ const Card = ({
   const addToBag = (e) => {
     e.target.value;
     setDisabled(!disabled);
-      dispatch(CountAction.increment());
-      setModal(true);
+    dispatch(CountAction.increment());
+    setModal(true);
     const resultAdd = apiResult.filter((item) =>
       Object.values(item).includes(productId)
     );
     dispatch(BagAction.addToBagAction(resultAdd));
   };
 
-    const [isModal, setModal] = React.useState(false)
-    const onClose = () => setModal(false)
+  const [isModal, setModal] = React.useState(false);
+  const onClose = () => setModal(false);
 
   return (
     <div>
@@ -117,10 +113,14 @@ const Card = ({
                         disabled={true}
                         value="Добавить в корзину"
                       />
-                                              <AddToCart visible={isModal} src={detailImages} name={productName} onClose={onClose} />
+                      <AddToCart
+                        visible={isModal}
+                        src={detailImages}
+                        name={productName}
+                        onClose={onClose}
+                      />
                     </div>
                   )}
-                  
                 </div>
                 <div className="product-description">
                   <p>Описание</p>
@@ -168,6 +168,3 @@ const Card = ({
 };
 
 export default Card;
-
-
-

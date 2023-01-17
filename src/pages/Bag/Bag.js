@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-
+import Order from "../../components/Order/Order";
 import Input from "../../components/Input/Input";
 import BagCard from "../../components/BagCard/BagCard";
-
+import countBagAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
 import { sendProduct } from "../../assets/constants/requests";
 
 import Cross from "../../assets/images/Cross.svg";
 
 import "./Bag.css";
-import Order from "../../components/Order/Order";
 
 const Bag = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const close = () => {
     navigate("/");
   };
   const [productSend, setProductSend] = useState("");
   const [disabled, setDisabled] = useState(false);
   const bagProducts = useSelector((state) => state.bagReducer.bagProducts);
-  const dispatch = useDispatch();
+
   const apiResult = useSelector((state) => state.apiResult.response);
 
   const productDetailsFilter = apiResult.filter((item) =>

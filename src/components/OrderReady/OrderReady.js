@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import "./OrderReady.css";
+
 import OrderDone from "../../assets/images/OrderDone.svg";
 import Cross from "../../assets/images/Cross.svg";
 import Image from "../../components/Image/Image";
@@ -26,9 +26,9 @@ const OrderReady = () => {
           <p> Номер вашего заказа: 000001 </p>
           <p> Наш менеджер в ближайшее время свяжется с вами. </p>
           <h2> Спасибо, что доверяете нам! </h2>
-                  <div className="order-pay">
-                      <button className="pay" >Оплатить счет</button>
-                  </div>
+          <div className="order-pay">
+            <button className="pay">Оплатить счет</button>
+          </div>
         </div>
       </div>
     </div>

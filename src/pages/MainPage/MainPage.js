@@ -7,7 +7,6 @@ import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../pages/Novelties/Novelties";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
-//import OrderReady from "../../components-not-ready/OrderReady/OrderReady";
 
 const MainPage = () => {
   return (

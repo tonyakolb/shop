@@ -1,39 +1,35 @@
 ﻿import React from "react";
-import "./Review.css";
-import Cross from "../../assets/images/Cross.svg";
-import Input from "../../components/Input/Input";
 import { useNavigate } from "react-router";
 
-import Image from "../../components/Image/Image";
+import Input from "../Input/Input";
+import Image from "../Image/Image";
 
+import Cross from "../../assets/images/Cross.svg";
+import "./Review.css";
 const Review = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-
-    const close = () => {
-        navigate("/");
-    };
+  const close = () => {
+    navigate("/");
+  };
 
 
   return (
     <div>
       <div className="make-review">
         <div className="review-close">
-
-          <Image src={Cross} alt="close" onClick={close}/>
+          <Image src={Cross} alt="close" onClick={close} />
         </div>
         <form action="/">
           <div className="review-form">
             <label className="required">Имя</label>
             <Input className="review-info" required />
-
             <label className="required">Контактный телефон</label>
             <Input
               className="review-info"
               required
               placeholder="+375 (00) 000-00-00"
             />
-
             <label>Электронная почта</label>
             <Input className="review-info" type="email" />
 

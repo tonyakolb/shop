@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%
+  width: 100%;
 }
 
 .main-share {
@@ -42,19 +42,19 @@
 }
 
 .main-more {
-    position: absolute;
-    cursor: pointer;
-    left: 93%;
-    width: auto;
+  position: absolute;
+  cursor: pointer;
+  left: 93%;
+  width: auto;
 }
 
 .main-less {
-    position: absolute;
-    cursor: pointer;
-    left: 3%;
-    width: auto;
-    transform: rotate(180deg);
-    z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  left: 3%;
+  width: auto;
+  transform: rotate(180deg);
+  z-index: 1;
 }
 
 @media screen and (max-width: 1200px) {
@@ -108,12 +108,13 @@
     flex: 20 1 100px;
   }
 
-    .main-more img, .main-less img {
-        width: 24px;
-        height: 24px;
-    }
+  .main-more img,
+  .main-less img {
+    width: 24px;
+    height: 24px;
+  }
 
-    .main-less {
-        left: 2%;
-    }
+  .main-less {
+    left: 2%;
+  }
 }

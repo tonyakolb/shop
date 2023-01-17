@@ -4,7 +4,6 @@ import Image from "../Image/Image";
 
 import { apiMain } from "../../assets/constants/requests";
 import SearchIcon from "../../assets/images/search-icon.svg";
-// import './Search.css';
 
 const Search = () => {
     const [search, setSearch] = useState('');
