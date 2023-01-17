@@ -1,7 +1,5 @@
 import React from "react";
-
 import Image from "../Image/Image";
-import "./Arrow.css";
 
 const Arrow = ({
   src,
