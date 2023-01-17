@@ -18,23 +18,23 @@
 }
 
 .catalog-search .search-icon {
-    position: absolute;
-    z-index: 1;
-    padding-top: 6px;
-    padding-left: 10px;
-    width: 18px;
-    height: 18px;
+  position: absolute;
+  z-index: 1;
+  padding-top: 6px;
+  padding-left: 10px;
+  width: 18px;
+  height: 18px;
 }
 
 .catalog-search input {
-    width: 1137px;
-    height: 40px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    float: left;
-    padding-left: 40px;
-    position: relative;
+  width: 1137px;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  float: left;
+  padding-left: 40px;
+  position: relative;
 }
 
 .catalog-search::placeholder {
@@ -64,6 +64,7 @@
   justify-content: space-between;
   padding-bottom: 40px;
   align-items: center;
+  position: relative;
 }
 
 .classNameBlockLast {
@@ -76,7 +77,30 @@
   cursor: pointer;
 }
 
+.dropdown-content {
+  position: absolute;
+  width: 255px;
+  background: #f0f0f2;
+  z-index: 1;
+  border: 1px solid #a7a7a8;
+  border-radius: 28px;
+  padding: 26px 0 0 36px;
+  left: 82%;
+}
+
+.dropdown-content button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #292d51;
+  padding-bottom: 28px;
+  text-decoration: none;
+  display: block;
+  border: none;
+}
+
 .filter {
+  z-index: 100;
   position: relative;
 }
 
@@ -85,7 +109,7 @@
     padding: 20px 0;
   }
 
-  .catalog-search input{
+  .catalog-search input {
     height: 35px;
     width: 256px;
   }
@@ -100,7 +124,12 @@
     padding-bottom: 27px;
   }
 
-    .catalog-search .search-icon {
-        padding-top: 4px;
-    }
+  .dropdown-content {
+    top: 30px;
+    left: 25%;
+  }
+
+  .catalog-search .search-icon {
+    padding-top: 4px;
+  }
 }

@@ -1,31 +1,8 @@
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  position: absolute;
-  width: 255px;
-  background: #f0f0f2;
-  z-index: 1;
-  border: 1px solid #a7a7a8;
-  border-radius: 28px;
-  padding: 26px 0 0 36px;
-  top: 70px;
-  left: 82%;
-  display: none;
-}
-
-/* Links inside the dropdown */
-.dropdown-content button {
+button {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   color: #292d51;
   padding-bottom: 28px;
-  text-decoration: none;
-  display: block;
 }
 
-@media screen and (max-width: 450px) {
-  .dropdown-content {
-    top: 30px;
-    left: 25%;
-  }
-}

@@ -67,13 +67,11 @@
     border: 1px solid #a7a7a8;
     border-radius: 28px;
     padding: 26px 0 0 36px;
-    top: 70px;
     left: 82%;
-    display: none
 }
 
     /* Links inside the dropdown */
-    .dropdown-content a {
+    .dropdown-content button {
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
@@ -81,6 +79,7 @@
         padding-bottom: 28px;
         text-decoration: none;
         display: block;
+        border: none;
     }
 
 .classNameBlock {

@@ -10,7 +10,7 @@ const Search = () => {
     const [search, setSearch] = useState('');
     const [product, setProduct] = useState([]);
     const [searchArrayBook, setSearchArrayBook] = useState([]);
-    const [focused, setFocused] = React.useState(false);
+    const [focused, setFocused] = useState(false);
     apiMain(setProduct);
 
     const searchChange = (event) => {
