@@ -55,8 +55,8 @@ const MainPage = () => {
       )}
 
 
-          {/*<MainShare />*/}
-          {/*<Advantages />*/}
+       <MainShare />
+      <Advantages />
       <Bestsellers />
       <CatalogCategories />
       <Novelties />
