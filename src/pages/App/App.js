@@ -12,7 +12,6 @@ import PaymentMethods from "../../components/PaymentMethods/PaymentMethods";
 import Menu from "../../components/Menu/Menu";
 import Stock from "../../components/Stock/Stock";
 import ProductPage from "../ProductPage/ProductPage";
-import AddToCart from "../../components/AddToCart/AddToCart";
 import Review from "../../components-not-ready/Review/Review";
 
 const App = () => {
@@ -28,10 +27,6 @@ const App = () => {
           <Route path="/Акции" element={<Stock />} />
           <Route path="/Каталог/:id" element={<ProductPage />} />\
           <Route path="/Меню" element={<Menu />} />
-          <Route
-            path="/Каталог/:id/Добавленный-товар"
-            element={<AddToCart />}
-          />
           <Route path="/Каталог/Кухня" element={<CatalogKitchen />} />
           <Route path="/Каталог/Ванная комната" element={<CatalogBath />} />
           <Route

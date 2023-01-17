@@ -4,7 +4,6 @@ import Search from "../../components/Search/Search";
 
 import Categories from "../../components/Categories/Categories";
 import Filter from "../../components/Filter/Filter";
-// import TitleBlock from "../../components/TitleBlock/TitleBlock";
 import AllProducts from "../../components/AllProducts/AllProducts";
 import Image from "../../components/Image/Image";
 import Cross from "../../assets/images/Cross.svg";
@@ -32,13 +31,6 @@ const Catalog = () => {
             </div>
           </div>
           <Categories />
-
-          {/*<TitleBlock*/}
-          {/*  titleBlock="Все товары"*/}
-          {/*  titleBlockLast="Фильтр"*/}
-          {/*  classNameBlock="classNameBlock"*/}
-          {/*  classNameBlockLast="classNameBlockLast"*/}
-          {/*/>*/}
           <div className="classNameBlock">
             Все товары
             <button
@@ -47,7 +39,7 @@ const Catalog = () => {
             >
               Фильтр
             </button>
-            
+
           </div>
                   {open && (
                       <div className="filter ">

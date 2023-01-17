@@ -7,8 +7,15 @@ import CountAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
 
 import "./ProductCard.css";
+import AddToCart from "../AddToCart/AddToCart";
 
-const ProductCard = ({ urlImg, valuePrice, catalogSearch, productId }) => {
+const ProductCard = ({
+  urlImg,
+  valuePrice,
+  catalogSearch,
+  productId,
+  name,
+}) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -17,7 +24,6 @@ const ProductCard = ({ urlImg, valuePrice, catalogSearch, productId }) => {
 
   const addToBag = (e) => {
     e.target.value;
-    navigate("/Каталог/:id/Добавленный-товар");
     setDisabled(!disabled);
     dispatch(CountAction.increment());
     const resultAdd = apiResult.filter((item) =>
@@ -51,10 +57,13 @@ const ProductCard = ({ urlImg, valuePrice, catalogSearch, productId }) => {
                   onClick={addToBag}
                 />
               ) : (
-                <BagButton
-                  className="add-to-basket not-available"
-                  disabled={true}
-                />
+                <div>
+                  <BagButton
+                    className="add-to-basket not-available"
+                    disabled={true}
+                  />
+                  <AddToCart src={urlImg} name={name} />
+                </div>
               )}
             </div>
             <div className="rating">
