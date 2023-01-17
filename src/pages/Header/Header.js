@@ -6,13 +6,12 @@ import { useNavigate } from "react-router";
 import TextBlock from "../../components/TextBlock/TextBlock";
 import Image from "../../components/Image/Image";
 import NavigateElement from "../../components/NavigateElement/NavigateElement";
-
+import Search from "../../components/Search/Search";
 import BasketIcon from "../../assets/images/Icon-basket.svg";
 import Logotype from "../../assets/images/Logo.svg";
 import Menu from "../../assets/images/Icon_Menu.svg";
 
 import "./Header.css";
-import Search from "../../components/Search/Search";
 
 const Header = () => {
   const count = useSelector((state) => state.counter);
@@ -24,10 +23,10 @@ const Header = () => {
   return (
     <div className="header">
       <Image src={Menu} alt="menu" className="menu-icon" onClick={menu} />
-          <Image src={Logotype} alt="logotype" className="logo" />
-          <div className='search-menu'>
-              <Search />
-              </div>
+      <Image src={Logotype} alt="logotype" className="logo" />
+      <div className="search-menu">
+        <Search />
+      </div>
       <NavigateElement
         navigate_context="Каталог"
         navigate_elem="navigate_elem"

@@ -12,8 +12,7 @@ import PaymentMethods from "../../components/PaymentMethods/PaymentMethods";
 import Menu from "../../components/Menu/Menu";
 import Stock from "../../components/Stock/Stock";
 import ProductPage from "../ProductPage/ProductPage";
-import Review from "../../components-not-ready/Review/Review";
-import AddToCart from "../../components/AddToCart/AddToCart";
+import Review from "../../components/Review/Review";
 
 const App = () => {
   return (
@@ -34,12 +33,8 @@ const App = () => {
             path="/Каталог/Туалетная комната"
             element={<CatalogToilet />}
           />
-          <Route
-              path="/Добавленный-товар/:id'"
-              element={<AddToCart />}
-          />
           <Route path="/Каталог/Прочее" element={<CatalogOther />} />
-           <Route path="/Отзыв" element={<Review />} />
+          <Route path="/Отзыв" element={<Review />} />
         </Routes>
       </BrowserRouter>
     </>

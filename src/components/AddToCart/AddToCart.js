@@ -1,40 +1,28 @@
-﻿import React from "react";
+﻿import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Image from "../Image/Image";
 import Cross from "../../assets/images/Cross.svg";
 
 import "./AddToCart.css";
 
-const AddToCart = ({
-    visible = false,
-    name,
-    src,
-    onClose,
-}) => {
-
-    const onKeydown = ({ key }) => {
-        switch (key) {
-            case 'Escape':
-                onClose()
-                break
-        }
+const AddToCart = ({ visible = false, name, src, onClose }) => {
+  const onKeydown = ({ key }) => {
+    switch (key) {
+      case "Escape":
+        onClose();
+        break;
     }
-
-    React.useEffect(() => {
-        document.addEventListener('keydown', onKeydown)
-        return () => document.removeEventListener('keydown', onKeydown)
-    })
-
-
-
-    if (!visible) return null;
+  };
+  useEffect(() => {
+    document.addEventListener("keydown", onKeydown);
+    return () => document.removeEventListener("keydown", onKeydown);
+  });
+  if (!visible) return null;
 
   return (
     <div className="back">
-
       <div className="add-to-cart">
         <div className="add-to-cart-close">
-                  <img onClick={onClose} src={Cross} alt="close" />
+          <img onClick={onClose} src={Cross} alt="close" />
         </div>
         <div className="add-to-cart-caption">Товар добавлен в корзину</div>
         <div className="add-to-item-img">
@@ -51,8 +39,7 @@ const AddToCart = ({
         </div>
       </div>
     </div>
-    );
-
+  );
 };
 
 export default AddToCart;

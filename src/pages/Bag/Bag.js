@@ -85,7 +85,7 @@ const Bag = () => {
         </div>
         <div className="order-details">Контактные данные</div>
 
-        <form >
+        <form>
           <div className="order">
             <div className="order-form imp">
               <label className="required">Имя</label>
