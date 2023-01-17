@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SearchCard from "../../components/SearchCard/SearchCard";
-import Image from "../../components/Image/Image";
+import SearchCard from "../SearchCard/SearchCard";
+import Image from "../Image/Image";
 
 import {apiMain} from "../../assets/constants/requests";
 import SearchIcon from "../../assets/images/search-icon.svg";
@@ -12,6 +12,7 @@ const Search = () => {
     const [searchArrayBook, setSearchArrayBook] = useState([]);
     const [focused, setFocused] = React.useState(false);
     apiMain(setProduct);
+
     const searchChange = (event) => {
         setSearch(event.target.value);
         setSearchArrayBook(
@@ -40,7 +41,7 @@ const Search = () => {
                     {searchArrayBook.map((item) => (
                         <SearchCard
                             urlImg={item.images[0]}
-                            id={item.id}
+                            catalogSearch={item.id}
                             valuePrice={item.price.value}
                             name={item.name}
                             key={item.id}

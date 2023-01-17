@@ -12,7 +12,7 @@ import Logotype from "../../assets/images/Logo.svg";
 import Menu from "../../assets/images/Icon_Menu.svg";
 
 import "./Header.css";
-import Search from "../../components-not-ready/Search/Search";
+import Search from "../../components/Search/Search";
 
 const Header = () => {
   const count = useSelector((state) => state.counter);

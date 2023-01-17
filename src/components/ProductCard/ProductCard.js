@@ -17,7 +17,7 @@ const ProductCard = ({ urlImg, valuePrice, catalogSearch, productId }) => {
 
   const addToBag = (e) => {
     e.target.value;
-    navigate("//Каталог/:id/Добавленный-товар");
+    navigate("/Каталог/:id/Добавленный-товар");
     setDisabled(!disabled);
     dispatch(CountAction.increment());
     const resultAdd = apiResult.filter((item) =>
