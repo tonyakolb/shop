@@ -54,7 +54,7 @@ const BagCard = ({
         <p className="price-label"> Цена </p>
         <p> {valuePrice} руб </p>
       </div>
-      <div className="item-number">
+      <div className="items-number">
         <p className="number-label"> Количество </p>
         {/*<div className="number" >*/}
         <select className="number" onChange={selectValue}>
@@ -63,6 +63,11 @@ const BagCard = ({
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
+          <option value="1">6</option>
+          <option value="2">7</option>
+          <option value="3">8</option>
+          <option value="4">9</option>
+          <option value="5">10</option>
         </select>
         {/*<button className="less" onClick={() => setCount(count - 1)}>*/}
         {/*  {" "}*/}

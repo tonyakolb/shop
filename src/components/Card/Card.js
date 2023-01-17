@@ -52,8 +52,8 @@ const Card = ({
                 <div className="main-img">
                   <img src={detailImages} alt="product image" />
                 </div>
-              </div>
-
+                          </div>
+                          <div className='full-reviews'>
               <div className="product-reviews">
                 <div className="review-rating">
                   <p>Отзывы</p>
@@ -93,7 +93,8 @@ const Card = ({
 
               <div className="add-button">
                 <button className="add-review">Добавить отзыв</button>
-              </div>
+                              </div>
+                              </div>
             </div>
             <div className="sec-column">
               <div className="product-about">
@@ -132,6 +133,48 @@ const Card = ({
                 </div>
               </div>
             </div>
+                      <div className='mobile-reviews'>
+                          <div className="product-reviews">
+                              <div className="review-rating">
+                                  <p>Отзывы</p>
+
+                                  <div className="product-rating">
+                                      <span className="active" />
+                                      <span className="active" />
+                                      <span className="active" />
+                                      <span className="active" />
+                                      <span />
+                                  </div>
+                              </div>
+
+                              <div className="review">
+                                  <div className="author-rating">
+                                      <p>Юлия</p>
+                                      <div className="reviewer-rating">
+                                          <span className="active" />
+                                          <span className="active" />
+                                          <span className="active" />
+                                          <span className="active" />
+                                          <span className="active" />
+                                      </div>
+                                  </div>
+                                  <div className="review-text">
+                                      <p>27 октября 2022</p> {/*Дата*/}
+                                      <p>
+                                          Смеситель нормальный, пока все работает, не течёт. Муж
+                                          оценил как хороший)
+                                      </p>{" "}
+                                      {/*Отзыв*/}
+                                      <p>Плюсы: </p>
+                                      <p>Минусы: </p>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div className="add-button">
+                              <button className="add-review">Добавить отзыв</button>
+                          </div>
+                      </div>
           </div>
         </div>
       </div>

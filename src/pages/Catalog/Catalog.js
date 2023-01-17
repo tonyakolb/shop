@@ -4,14 +4,29 @@ import Input from "../../components/Input/Input";
 import TitleBlock from "../../components/TitleBlock/TitleBlock";
 import AllProducts from "../../components/AllProducts/AllProducts";
 import SearchIcon from "../../assets/images/search-icon.svg";
+import Cross from "../../assets/images/Cross.svg";
+import Image from "../../components/Image/Image";
+import { useNavigate } from "react-router";
 
 import "./Catalog.css";
 
 const Catalog = () => {
+
+    const navigate = useNavigate();
+
+    const close = () => {
+        navigate("/");
+    };
+
   return (
     <>
       <div className="catalog">
+
+        <div className="catalog-close">
+          <Image src={Cross} alt="close" onClick={close} />
+        </div>
         <div className="catalog-categories-info">
+        
           <div className="catalog-categories-caption">
             <p>Каталог</p>
             <div className="search">

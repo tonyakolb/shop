@@ -58,13 +58,17 @@
 }
 
 .item-name p {
+    width: 300px;
+}
+
+.item-name p {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     color: #292D51;
 }
 
-.item-price p, .item-number p, .item-sale p{
+.item-price p, .items-number p, .item-sale p{
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
@@ -84,16 +88,23 @@ p.number-label {
     font-size: 24px;
     line-height: 33px;
     color: #292D51;
-    margin-top: 25px;
+    padding-bottom: 36px;
 }
 
 .number {
-    display: flex;
-    width: 110px;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
-    padding-top: 35px;
+    height: 44px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+    border-color: #292D51;
+    display: inline-block;
+    color: #292D51;
+}
+
+.number option {
+    background-color: #292D51;
+    color: #F0F0F2;
 }
 
 button.less {
@@ -422,3 +433,174 @@ p.order-price-label {
     width: 400px;
 }
 
+@media screen and (max-width: 450px) {
+    .shopping-cart {
+        width: 343px;
+    }
+
+    .cart-caption {
+        padding: 17px 0 21px 0;
+    }
+
+        .cart-caption p, .order-details, .your-order-caption {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+    .personal-cart {
+        padding: 0 10px 0 8px;
+        margin-bottom: 20px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+
+        .cart-item img {
+            width: 11px;
+        }
+
+    .item-image {
+        width: 147px;
+        height: 175px;
+    }
+
+        .item-image img {
+            width: 147px;
+            height: 175px;
+        }
+
+    .item-name p {
+        width: 147px;
+    }
+
+
+    .your-order-caption, .item-name p, .item-price p, .items-number p, .item-sale p, p.price-label, p.sale-label, p.full-price-label, p.number-label, .delivery-form p, .payment-form p, .your-order-price p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    p.price-label, p.sale-label {
+        padding-bottom: 26px;
+    }
+
+    p.number-label {
+        padding-bottom: 20px;
+    }
+
+    .number {
+        height: 24px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .line {
+        border-bottom: 1px solid #292D51;
+        width: 300px;
+        margin: 0 auto 10px auto;
+    }
+
+    .order-price {
+        justify-content: space-around;
+        padding-bottom: 16px;
+    }
+
+    p.order-price-label {
+        margin-right: 80px;
+    }
+
+    .order-price p, p.order-price-label {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .order {
+        width: 343px;
+        padding-bottom: 10px;
+    }
+
+    .order-info {
+        padding-left: 10px;
+        margin: 11px 0 8px;
+    }
+
+    .order-details {
+        padding-bottom: 16px;
+    }
+
+    .order-form {
+        width: 100%;
+    }
+
+    .order-form label{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    #text {
+        padding: 5px 0 0 10px;
+    }
+
+    .delivery-form, .payment-form {
+        width: 100%;
+    }
+
+        .delivery-form p, .payment-form p {
+            padding-bottom: 20px;
+        }
+
+    .delivery-type, .payment-type {
+        margin-bottom: 16px;
+    }
+
+        .delivery-type label, .payment-type label, .delivery-type span {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 400;
+        }
+
+
+    .delivery-info {
+        margin-right: 16px;
+    }
+
+    .imp {
+        order: -1;
+    }
+
+    .your-order {
+        width: 100%;
+    }
+
+    .your-order-caption {
+        padding: 20px 0 20px;
+    }
+
+    .details-number {
+        margin-left: 0;
+    }
+
+    .your-order-price {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+
+    .your-order-price p{
+        margin-left: 0;
+    }
+
+    .payment-info {
+        margin-right: 16px;
+    }
+
+    .agreement-check {
+        padding-bottom: 20px;
+    }
+
+    .order-submit {
+        width: 195px;
+        margin: 0 auto
+    }
+}

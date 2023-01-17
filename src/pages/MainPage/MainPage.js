@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import ModalWeb from "../ModalWeb/ModalWeb";
 import Header from "../Header/Header";
-// import MainShare from "../../components/MainShare/MainShare";
-// import Advantages from "../../components/Advantages/Advantages";
+import MainShare from "../../components/MainShare/MainShare";
+import Advantages from "../../components/Advantages/Advantages";
 import CatalogCategories from "../../components/CatalogCategories/CatalogCategories";
 import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../pages/Novelties/Novelties";
@@ -55,8 +55,8 @@ const MainPage = () => {
       )}
 
 
-      {/*<MainShare />*/}
-      {/*<Advantages />*/}
+          {/*<MainShare />*/}
+          {/*<Advantages />*/}
       <Bestsellers />
       <CatalogCategories />
       <Novelties />

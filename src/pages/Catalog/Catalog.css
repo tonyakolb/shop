@@ -1,4 +1,18 @@
-﻿.catalog {
+﻿.catalog-close {
+    padding-right: 3%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -25px;
+}
+
+.catalog-close img {
+    width: 17px;
+    cursor: pointer;
+    height: 17px;
+}
+
+
+.catalog {
   background-color: #f0f0f2;
   padding: 40px 0;
 }

@@ -16,7 +16,7 @@ const Categories = () => {
                 text="Кухня"
             />
             <Category
-                inputValueText="Ванная"
+                inputValueText="Ванная комната"
                 src={BathroomImage}
                 alt="bathroom"
                 text="Ванная комната"

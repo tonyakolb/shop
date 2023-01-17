@@ -103,7 +103,7 @@ const Bag = () => {
 
         <form action="/">
           <div className="order">
-            <div className="order-form">
+            <div className="order-form imp">
               <label className="required">Имя</label>
               <Input className="order-info" required />
 
@@ -124,7 +124,7 @@ const Bag = () => {
               <textarea className="order-comment" id="text" />
             </div>
 
-            <div className="delivery-form">
+            <div className="delivery-form imp">
               <p>Способы доставки</p>
 
               <div className="delivery-type">
@@ -220,7 +220,7 @@ const Bag = () => {
               </div>
             </div>
 
-            <div className="payment-form">
+            <div className="payment-form imp">
               <p>Способы оплаты</p>
 
               <div className="payment-type">
@@ -272,8 +272,8 @@ const Bag = () => {
                 required
               />
               <label htmlFor="agree">
-                Я прочитал(-а)&nbsp;<a href="/"> Договор публичной оферты </a>
-                &nbsp;и согласен(-на) с условиями
+                              <span>Я прочитал(-а)&nbsp;<a href="/"> Договор публичной оферты </a>
+                                  &nbsp;и согласен(-на) с условиями</span>
               </label>
             </div>
             <div className="order-submit">

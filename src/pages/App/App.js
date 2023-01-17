@@ -1,7 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUs from "../../components/AboutUs/AboutUs";
-import Footer from "../../components/Footer/Footer";
+import CatalogKitchen from "../../pages/CatalogPage/CatalogKitchen";
+import CatalogBath from "../../pages/CatalogPage/CatalogBath";
+import CatalogToilet from "../../pages/CatalogPage/CatalogToilet";
+import CatalogOther from "../../pages/CatalogPage/CatalogOther";
 import MainPage from "../MainPage/MainPage";
 import Catalog from "../Catalog/Catalog";
 import Bag from "../Bag/Bag";
@@ -24,7 +27,11 @@ const App = () => {
           <Route path="/Оплата" element={<PaymentMethods />} />
           <Route path="/Акции" element={<Stock />} />
           <Route path='/Каталог/:id' element={<ProductPage/>}/>\
-                  <Route path="/Меню" element={<Menu />} />
+          <Route path="/Меню" element={<Menu />} />
+          <Route path="/Каталог/Кухня" element={<CatalogKitchen />} />
+          <Route path="/Каталог/Ванная комната" element={<CatalogBath />} />
+          <Route path="/Каталог/Туалетная комната" element={<CatalogToilet />} />
+          <Route path="/Каталог/Прочее" element={<CatalogOther />} />
         </Routes>
       </BrowserRouter>
     </>

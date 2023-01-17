@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\images",
     "\\src\\components",
-    "\\src\\components-not-ready",
-    "\\src\\components\\Arrow",
+    "\\src\\components\\BagCard",
+    "\\src\\components\\Delivery",
     "\\src\\components\\ProductCard",
-    "\\src\\components\\Promotion",
-    "\\src\\components\\Stock",
     "\\src\\pages",
-    "\\src\\pages\\ModalWeb"
+    "\\src\\pages\\Bag"
   ],
-  "SelectedNode": "\\src\\components\\Arrow\\Arrow.css",
+  "SelectedNode": "\\src\\components\\BagCard\\BagCard.js",
   "PreviewInSolutionExplorer": false
 }
