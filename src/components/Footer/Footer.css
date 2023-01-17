@@ -16,17 +16,17 @@
 }
 
 .contacts {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 67px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 67px;
 }
 
 .column-name {
-    padding-bottom: 2px;
-    border-bottom: 0.5px solid;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
+  padding-bottom: 2px;
+  border-bottom: 0.5px solid;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
 }
 
 .column-info {
@@ -63,31 +63,31 @@
 }
 
 .contacts-link {
-    display: none
+  display: none;
 }
 
 .address {
-    width: 274px;
+  width: 274px;
 }
 
 .map {
-    width: 1122px;
-    height: 406px;
+  width: 1122px;
+  height: 406px;
 }
 
 .mobile-map {
-    display: none;
+  display: none;
 }
 
 .mobile-cont {
-    display: none
+  display: none;
 }
 
 .location {
-    display: flex;
-    padding: 40px 0 30px;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  padding: 40px 0 30px;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .shop-photos img {
@@ -107,80 +107,80 @@
 }
 
 @media screen and (max-width: 450px) {
+  .footer {
+    padding: 18px 0 15px 0;
+    height: 901px;
+  }
 
-    .footer {
-        padding: 18px 0 15px 0;
-        height: 901px;
-    }
+  .footer-info {
+    width: 343px;
+  }
 
-    .footer-info {
-        width: 343px;
-    }
+  .footer-contacts {
+    flex-wrap: wrap;
+    gap: 22px 0;
+  }
 
-    .footer-contacts {
-        flex-wrap: wrap;
-        gap: 22px 0;
-    }
+  .contacts {
+    flex-direction: column;
+    gap: 35px 0;
+  }
 
-    .contacts {
-        flex-direction: column;
-        gap: 35px 0;
-    }
+  .column-name {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
-    .column-name {
-        font-size: 16px;
-        line-height: 22px;
-    }
+  .footer-column,
+  .address {
+    width: 161px;
+  }
 
-    .footer-column, .address {
-        width: 161px;
-    }
+  .contacts-link {
+    display: inline-block;
+  }
 
-    .contacts-link{
-        display: inline-block
-    }
+  .column-info img {
+    margin-right: 7px;
+  }
 
-    .column-info img {
-        margin-right: 7px;
-    }
+  .contacts-list li {
+    font-size: 14px;
+  }
 
-    .contacts-list li{
-        font-size: 14px;
-    }
+  .mobile-cont {
+    display: inline;
+  }
 
-    .mobile-cont {
-        display: inline;
-    }
+  .map {
+    width: 227px;
+    height: 123px;
+  }
 
-    .map {
-        width: 227px;
-        height: 123px;
-    }
+  .mobile-map {
+    display: inline-block;
+  }
 
-    .mobile-map {
-        display: inline-block;
-    }
+  .full-map {
+    display: none;
+  }
 
-    .full-map {
-        display: none;
-    }
+  .location {
+    padding: 20px 0 16px;
+  }
 
-    .location {
-        padding: 20px 0 16px;
-    }
+  .shop-photos img {
+    height: 123px;
+  }
 
-    .shop-photos img {
-        height: 123px;
-    }
+  img.second-img {
+    display: none;
+  }
 
-    img.second-img {
-        display: none;
-    }
-
-    .shop-about p {
-        font-size: 14px;
-        line-height: 19px;
-        padding-bottom: 16px;
-        padding-right: 0;
-    }
+  .shop-about p {
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 16px;
+    padding-right: 0;
+  }
 }

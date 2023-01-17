@@ -1,7 +1,7 @@
 import React from "react";
 
 import Input from "../../components/Input/Input";
-import SearchResult from "../../components-not-ready/SearchResult/SearchResult";
+import SearchResult from "../../components/SearchResult/SearchResult";
 import Image from "../../components/Image/Image";
 
 import CloseIcon from "../../assets/images/close-icon.svg";

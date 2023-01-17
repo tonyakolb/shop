@@ -1,18 +1,18 @@
 ﻿.all-items {
-    background-color: #F0F0F2;
-    position: relative;
+  background-color: #f0f0f2;
+  position: relative;
 }
 
 .products_items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 25px;
 }
 
 @media screen and (max-width: 450px) {
-    .products_items {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 19px 16px;
-    }
+  .products_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px 16px;
+  }
 }

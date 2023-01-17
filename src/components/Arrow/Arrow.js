@@ -12,9 +12,7 @@ const Arrow = ({
   className,
 }) => {
   if (!(sliderMin === 0 || sliderMax >= arrayLength)) {
-    return (
-        <Image src={src} onClick={onClick} className={className}/>
-    );
+    return <Image src={src} onClick={onClick} className={className} />;
   }
 };
 

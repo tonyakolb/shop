@@ -272,8 +272,10 @@ const Bag = () => {
                 required
               />
               <label htmlFor="agree">
-                              <span>Я прочитал(-а)&nbsp;<a href="/"> Договор публичной оферты </a>
-                                  &nbsp;и согласен(-на) с условиями</span>
+                <span>
+                  Я прочитал(-а)&nbsp;<a href="/"> Договор публичной оферты </a>
+                  &nbsp;и согласен(-на) с условиями
+                </span>
               </label>
             </div>
             <div className="order-submit">

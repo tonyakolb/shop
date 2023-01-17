@@ -9,10 +9,7 @@ import Bestsellers from "../Bestsellers/Bestsellers";
 import Novelties from "../../pages/Novelties/Novelties";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
-//import Menu from "../../components/Menu/Menu";
-
 //import OrderReady from "../../components-not-ready/OrderReady/OrderReady";
-//import AddToCart from "../../components-not-ready/AddToCart/AddToCart";
 
 const MainPage = () => {
   const [searchModalWeb, setSearchModal] = useState(false);
@@ -53,18 +50,13 @@ const MainPage = () => {
       ) : (
         <Header searchModal={searchModal} />
       )}
-
-
-       <MainShare />
+      <MainShare />
       <Advantages />
       <Bestsellers />
       <CatalogCategories />
       <Novelties />
       <AboutUs />
       <Footer />
-          {/*<OrderReady />*/}
-          {/*<AddToCart />*/}
-
     </>
   );
 };

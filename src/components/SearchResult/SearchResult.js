@@ -1,8 +1,8 @@
 import React from "react";
 import SearchCard from "../SearchCard/SearchCard";
 import { useState } from "react";
-import Button from "../../components/Button/Button";
-import TitleBlock from "../../components/TitleBlock/TitleBlock";
+import Button from "../Button/Button";
+import TitleBlock from "../TitleBlock/TitleBlock";
 
 const SearchResult = ({ product }) => {
   const [arrowMin] = useState(0);

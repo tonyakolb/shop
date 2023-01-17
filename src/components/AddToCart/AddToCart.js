@@ -4,17 +4,13 @@ import { Link } from "react-router-dom";
 
 import Cross from "../../assets/images/Cross.svg";
 import Item from "../../assets/images/Item.png";
-<<<<<<< HEAD:src/components-not-ready/AddToCart/AddToCart.js
-//import Button from '../../components/Button/Button';
-=======
 
 import "./AddToCart.css";
->>>>>>> 07678f15d7c7a93ee11b4b694a26331e93e47a7a:src/components/AddToCart/AddToCart.js
 
 const AddToCart = () => {
   const navigate = useNavigate();
   const close = () => {
-    navigate("./");
+    navigate("/");
   };
 
   return (
@@ -32,7 +28,7 @@ const AddToCart = () => {
           <Link to="/Каталог/Корзина">
             <button className="next-page">Перейти в корзину</button>
           </Link>
-          <Link to="./">
+          <Link to="/Каталог/">
             <button className="next-page">Продолжить покупки</button>
           </Link>
         </div>
