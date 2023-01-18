@@ -14,6 +14,8 @@ import Stock from "../../components/Stock/Stock";
 import ProductPage from "../ProductPage/ProductPage";
 import Review from "../../components/Review/Review";
 import OrderReady from "../../components/OrderReady/OrderReady";
+import Agreement from "../../components/Agreement/Agreement";
+
 
 const App = () => {
   return (
@@ -37,6 +39,7 @@ const App = () => {
           />
           <Route path="/Каталог/Прочее" element={<CatalogOther />} />
           <Route path="/Отзыв" element={<Review />} />
+          <Route path="/Договор" element={<Agreement />} />
         </Routes>
       </BrowserRouter>
     </>

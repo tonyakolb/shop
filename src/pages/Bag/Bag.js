@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import Order from "../../components/Order/Order";
 import Input from "../../components/Input/Input";
 import BagCard from "../../components/BagCard/BagCard";
-import countBagAction from "../../redux/actions/countBagAction";
 import BagAction from "../../redux/actions/bagAction";
 import { sendProduct } from "../../assets/constants/requests";
 
@@ -18,7 +17,11 @@ const Bag = () => {
   const dispatch = useDispatch();
   const close = () => {
     navigate("/");
-  };
+    };
+    const agree = () => {
+        navigate("/Договор");
+    };
+
   const [productSend, setProductSend] = useState("");
   const [disabled, setDisabled] = useState(false);
   const bagProducts = useSelector((state) => state.bagReducer.bagProducts);
@@ -46,7 +49,8 @@ const Bag = () => {
     setDisabled(!disabled);
     sendProduct(bagItem, setProductSend);
       dispatch(BagAction.clearToBagAction());
-      navigate("/Оформление заказа");
+      navigate("/Оформление заказа", { replace: true });
+
   };
 
   return (
@@ -257,10 +261,8 @@ const Bag = () => {
                               required
                           />
                           <label htmlFor="agree">
-                              <span>
-                                  Я прочитал(-а)&nbsp;<a href="/"> Договор публичной оферты </a>
+                                  Я прочитал(-а)&nbsp;<span onClick={agree}> Договор публичной оферты </span>
                                   &nbsp;и согласен(-на) с условиями
-                              </span>
                           </label>
                       </div>
                       <div className="order-submit">

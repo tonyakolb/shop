@@ -3,7 +3,7 @@
 import Cross from "../../assets/images/Cross.svg";
 import "./Agreement.css";
 
-const OrderReady = () => {
+const Agreement = () => {
   return (
     <div className="agreement-container">
       <div className="agreement">
@@ -255,4 +255,4 @@ const OrderReady = () => {
   );
 };
 
-export default OrderReady;
+export default Agreement;

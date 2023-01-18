@@ -5,12 +5,12 @@
     "\\src\\assets",
     "\\src\\assets\\constants",
     "\\src\\components",
-    "\\src\\components\\Input",
-    "\\src\\components\\OrderReady",
-    "\\src\\components\\Review",
+    "\\src\\components\\Agreement",
     "\\src\\pages",
-    "\\src\\pages\\App"
+    "\\src\\pages\\App",
+    "\\src\\pages\\Bag",
+    "\\src\\pages\\MainPage"
   ],
-  "SelectedNode": "\\src\\pages\\App\\App.js",
+  "SelectedNode": "\\src\\pages\\Bag\\Bag.css",
   "PreviewInSolutionExplorer": false
 }

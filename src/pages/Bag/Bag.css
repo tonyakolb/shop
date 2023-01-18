@@ -414,7 +414,7 @@ p.order-price-label {
   color: #000000;
 }
 
-.agreement-check a {
+.agreement-check span {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
